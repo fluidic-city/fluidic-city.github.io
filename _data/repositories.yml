@@ -1,10 +1,10 @@
-github_users:
-  - poudel-bibek
-  - tmvllrrl
-  - daweidavidwang
+# github_users:
+#   - poudel-bibek
+#   - tmvllrrl
+#   - daweidavidwang
 
 github_repos:
-  - poudel-bibekCARL/
+  - poudel-bibekCARL
   - poudel-bibek/EnduRL
   - tmvllrrl/ecomobility-mtc
   - daweidavidwang/MixedTrafficControl
@@ -13,4 +13,3 @@ github_repos:
   - tmvllrrl/AutoJoin
   - poudel-bibek/NFQ_Golf_Cart
   - poudel-bibek/black_box_traffic
-  
