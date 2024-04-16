@@ -1,12 +1,16 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - poudel-bibek
+  - tmvllrrl
+  - daweidavidwang
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - poudel-bibekCARL/
+  - poudel-bibek/EnduRL
+  - tmvllrrl/ecomobility-mtc
+  - daweidavidwang/MixedTrafficControl
+  - tmvllrrl/mtc-pixels
+  - tmvllrrl/its-study
+  - tmvllrrl/AutoJoin
+  - poudel-bibek/NFQ_Golf_Cart
+  - poudel-bibek/black_box_traffic
+  
