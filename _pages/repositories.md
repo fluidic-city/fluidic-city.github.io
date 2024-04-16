@@ -2,7 +2,7 @@
 layout: page
 permalink: /code_and_data/
 title: code & data
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Datasets released from the lab and Repositories related to publications.
 nav: true
 nav_order: 6
 ---
@@ -37,6 +37,7 @@ nav_order: 6
 {% endif %}
 
 ## Datasets
+ - [Beacon: A Naturalistic Driving Dataset During Blackouts for Traffic Reconstruction and Control Benchmarking](drive.google.com)
 
 
 ## GitHub Repositories
