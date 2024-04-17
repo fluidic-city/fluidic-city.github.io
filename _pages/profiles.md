@@ -30,4 +30,24 @@ profiles:
     more_info: >
       <p>Supriya Sarker</p>
 
+  - align: center
+    image: people/Songyang.jpg
+    # content: about_people/
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p>Songyang</p>
+
+  - align: center
+    image: people/Albert_color.jpg
+    # content: about_people/
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p>Albert Einstien</p>
+
+  - align: center
+    image: people/Albert_bw.jpg
+    # content: about_people/
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p>Albert Again</p>
 ---
