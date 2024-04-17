@@ -1,8 +1,8 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
-description: members of the lab
+title: The Team and Collaborators
+description: Great science requires a great team.
 nav: true
 nav_order: 2
 
@@ -10,20 +10,24 @@ profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: right
-    image: prof_pic.jpg
-    content: about_people/about_einstein.md
+    image: people/Iftekhar.jpg
+    # content: about_people/about_bibek.md
     image_circular: true # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>Bibek Poudel</p>
+      
+  - align: left
+    image: people/Bibek.jpg
+    # content: about_people/about_iftekhar.md
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p>Iftekhar</p>
 
   - align: left
-    image: prof_pic.jpg
-    content: about_people/about_einstein.md
+    image: people/Supriya.jpg
+    # content: about_people/about_supriya.md
     image_circular: true # crops the image to make it circular
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>Supriya Sarker</p>
+
 ---
