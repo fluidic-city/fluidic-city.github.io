@@ -1,7 +1,7 @@
 ---
 layout: profiles
 permalink: /people/
-title: The Team and Collaborators
+title: people
 description: Great science requires a great team.
 nav: true
 nav_order: 2
@@ -14,14 +14,14 @@ profiles:
     # content: about_people/about_bibek.md
     image_circular: true # crops the image to make it circular
     more_info: >
-      <p>Bibek Poudel</p>
+      <p>Iftekhar</p>
       
   - align: left
     image: people/Bibek.jpg
     # content: about_people/about_iftekhar.md
     image_circular: true # crops the image to make it circular
     more_info: >
-      <p>Iftekhar</p>
+      <p>Bibek Poudel</p>
 
   - align: left
     image: people/Supriya.jpg
