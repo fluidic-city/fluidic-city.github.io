@@ -197,7 +197,7 @@ ul.task-list input[type="checkbox"] {
 
   .more-info {
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 3px;
     font-family: monospace;
 
     p {
@@ -251,10 +251,41 @@ ul.task-list input[type="checkbox"] {
 }
 
 .navbar-wider {
-  max-width: 120%;
-  width: 120%;
-  margin-left: -10%;
-  margin-right: -10%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-wider .container {
+  width: 100%;
+  max-width: none;
+}
+
+@media (min-width: 576px) {
+  .navbar-wider {
+    padding-left: calc(50% - 270px);
+    padding-right: calc(50% - 270px);
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-wider {
+    padding-left: calc(50% - 360px);
+    padding-right: calc(50% - 360px);
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-wider {
+    padding-left: calc(50% - 480px);
+    padding-right: calc(50% - 480px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-wider {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+  }
 }
 
 .navbar .dropdown-menu {
