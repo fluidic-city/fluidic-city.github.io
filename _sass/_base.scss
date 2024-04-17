@@ -250,6 +250,7 @@ ul.task-list input[type="checkbox"] {
   opacity: 0.95;
 }
 
+// Navbar widening
 .navbar-wider {
   padding-left: 15px;
   padding-right: 15px;
@@ -262,29 +263,29 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .navbar-wider {
-    padding-left: calc(50% - 270px);
-    padding-right: calc(50% - 270px);
+    padding-left: calc(50% - 300px);
+    padding-right: calc(50% - 300px);
   }
 }
 
 @media (min-width: 768px) {
   .navbar-wider {
-    padding-left: calc(50% - 360px);
-    padding-right: calc(50% - 360px);
+    padding-left: calc(50% - 390px);
+    padding-right: calc(50% - 390px);
   }
 }
 
 @media (min-width: 992px) {
   .navbar-wider {
-    padding-left: calc(50% - 480px);
-    padding-right: calc(50% - 480px);
+    padding-left: calc(50% - 510px);
+    padding-right: calc(50% - 510px);
   }
 }
 
 @media (min-width: 1200px) {
   .navbar-wider {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
   }
 }
 
