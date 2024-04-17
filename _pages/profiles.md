@@ -1,7 +1,7 @@
 ---
 layout: profiles
 permalink: /people/
-title: people
+title: People
 description: Great science requires a great team.
 nav: true
 nav_order: 2
@@ -9,21 +9,21 @@ nav_order: 2
 profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
-  - align: right
+  - align: center
     image: people/Iftekhar.jpg
     # content: about_people/about_bibek.md
     image_circular: true # crops the image to make it circular
     more_info: >
       <p>Iftekhar</p>
       
-  - align: left
+  - align: center
     image: people/Bibek.jpg
     # content: about_people/about_iftekhar.md
     image_circular: true # crops the image to make it circular
     more_info: >
       <p>Bibek Poudel</p>
 
-  - align: left
+  - align: center
     image: people/Supriya.jpg
     # content: about_people/about_supriya.md
     image_circular: true # crops the image to make it circular

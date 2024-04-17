@@ -21,4 +21,3 @@ nav_order: 5
     <img src="/assets/img/2.jpg" alt="Snow" style="width:100%">
   </div>
 </div>
-```

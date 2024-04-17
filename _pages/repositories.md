@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /code_and_data/
-title: code & data
+title: Code & Data
 description: Datasets released from the lab and Repositories related to publications.
 nav: true
 nav_order: 6
