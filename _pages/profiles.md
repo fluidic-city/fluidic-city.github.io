@@ -10,6 +10,13 @@ profiles:
   # if you want to include more than one profile, just replicate the following block
   # and create one content file for each profile inside _pages/
   - align: center
+    image: people/Weizi.jpg
+    # content: about_people/about_bibek.md
+    image_circular: true # crops the image to make it circular
+    more_info: >
+      <p>Weizi Li</p>
+
+  - align: center
     image: people/Iftekhar.jpg
     # content: about_people/about_bibek.md
     image_circular: true # crops the image to make it circular
