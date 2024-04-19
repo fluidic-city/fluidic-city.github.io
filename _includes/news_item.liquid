@@ -1,0 +1,33 @@
+<div class="grid-sizer"></div>
+<div class="grid-item">
+  <a href="{% if item.redirect %}{{ item.redirect }}{% else %}{{ item.url | relative_url }}{% endif %}">
+    <div class="card hoverable">
+      {% if item.img %}
+        {% include figure.liquid loading="eager" path=item.img sizes="250px" alt="news thumbnail" %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title text-lowercase">{{ item.title }}</h2>
+        <p class="card-text">
+          {% if item.inline %}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify | truncatewords: 20 }}
+          {% else %}
+            {{ item.description | default: item.excerpt | strip_html | truncatewords: 20 }}
+          {% endif %}
+        </p>
+        <div class="row ml-1 mr-1 p-0">
+          <p class="card-date">
+            <i class="far fa-calendar-alt"></i> {{ item.date | date: '%B %d, %Y' }}
+          </p>
+          {% if item.categories %}
+            <p class="card-categories">
+              <i class="fas fa-tags"></i>
+              {% for category in item.categories %}
+                <span class="category">{{ category }}</span>
+              {% endfor %}
+            </p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
