@@ -1,0 +1,38 @@
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .news-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .news-thumbnail {
+    margin-bottom: 10px;
+  }
+  
+  .news-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .news-excerpt {
+    margin-bottom: 10px;
+  }
+  
+  .news-date {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .news-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .news-list li {
+    margin-bottom: 5px;
+  }
+  
