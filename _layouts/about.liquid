@@ -47,7 +47,7 @@ layout: default
       </h2>
       <ul class="news-list">
         {% assign sorted_news = site.news | sort: "date" | reverse %}
-        {% for item in sorted_news limit: 3 %}
+        {% for item in sorted_news limit: 5 %}
           <li>
             <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
           </li>
