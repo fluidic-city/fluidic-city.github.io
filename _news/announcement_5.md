@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2 papers accepted in NeurIPS
-date: 2016-01-15 07:59:00-0400
+date: 2016-01-15
 inline: false
 related_posts: false
 ---

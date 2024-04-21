@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Lab member wins Turing Award!!
-date: 2016-01-15 07:59:00-0400
+title: Lab alumni wins Turing Award!!
+date: 2016-01-15
 inline: true
 related_posts: false
 ---
