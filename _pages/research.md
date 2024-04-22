@@ -20,3 +20,7 @@ nav_order: 5
   </div>
 
 </div>
+
+---
+Sponsors
+(see the reference page for a grid)
