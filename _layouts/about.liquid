@@ -49,7 +49,7 @@ layout: default
         {% assign sorted_news = site.news | sort: "date" | reverse %}
         {% for item in sorted_news limit: 5 %}
           <li>
-            <span class="date">{{ item.date | date: "%Y-%m" }}</span>
+            <div class="date">{{ item.date | date: "%Y-%m" }}</div>
             <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
           </li>
         {% endfor %}
