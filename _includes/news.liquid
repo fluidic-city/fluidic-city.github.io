@@ -13,3 +13,27 @@ nav_order: 4
     {% include news_item.liquid %}
   {% endfor %}
 </div>
+
+
+
+
+<div class="news-item">
+  <a href="{% if item.redirect %}{{ item.redirect }}{% else %}{{ item.url | relative_url }}{% endif %}">
+    <div class="news-thumbnail">
+      {% if item.img %}
+        {% include figure.liquid loading="eager" path=item.img sizes="250px" alt="news thumbnail" %}
+      {% endif %}
+    </div>
+    <div class="news-content">
+      <h3 class="news-title">{{ item.title }}</h3>
+      <p class="news-excerpt">
+        {% if item.inline %}
+          {{ item.content | remove: '<p>' | remove: '</p>' | emojify | truncatewords: 20 }}
+        {% else %}
+          {{ item.description | default: item.excerpt | strip_html | truncatewords: 20 }}
+        {% endif %}
+      </p>
+      <p class="news-date">{{ item.date | date: '%B %d, %Y' }}</p>
+    </div>
+  </a>
+</div>
