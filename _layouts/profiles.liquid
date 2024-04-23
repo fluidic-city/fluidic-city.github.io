@@ -31,6 +31,22 @@ layout: page
     font-weight: 400;
   }
 
+  .profile-role {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+  }
+
+  .profile-links a {
+  color: #333;
+  font-size: 18px;
+  margin-right: 5px;
+  }
+
+  .profile-links a:hover {
+    color: #000;
+  }
+
   @media (max-width: 768px) {
     .profile-item {
       width: calc(33.33% - 10px);
@@ -48,13 +64,39 @@ layout: page
   {% if page.profiles %}
     {% for profile in page.profiles %}
       <div class="profile-item">
+
         {% if profile.image %}
           {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
           {% include figure.liquid loading="eager" path=profile_image_path class="profile-image z-depth-1" alt=profile.image %}
         {% endif %}
-        {% if profile.more_info %}
-          <div class="profile-name">{{ profile.more_info }}</div>
+        <div class="profile-name">{{ profile.name }}</div>
+        <div class="profile-role">{{ profile.role }}</div>
+
+        {% if profile.links %}
+          <div class="profile-links">
+            {% for link in profile.links %}
+            
+              {% if link.label == 'Website' %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-globe"></i>
+                </a>
+
+              {% elsif link.label == 'LinkedIn' %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+
+              {% elsif link.label == 'Google Scholar' %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-graduation-cap"></i>
+                </a>
+
+              {% endif %}
+            {% endfor %}
+          </div>
         {% endif %}
+
+
       </div>
     {% endfor %}
   {% endif %}
