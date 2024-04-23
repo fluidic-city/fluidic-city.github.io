@@ -1,21 +1,23 @@
-
-<div class="news-item">
-  <a href="{% if item.redirect %}{{ item.redirect }}{% else %}{{ item.url | relative_url }}{% endif %}">
-    <div class="news-thumbnail">
-      {% if item.img %}
-        {% include figure.liquid loading="eager" path=item.img sizes="250px" alt="news thumbnail" %}
-      {% endif %}
-    </div>
-    <div class="news-content">
-      <h3 class="news-title">{{ item.title }}</h3>
-      <p class="news-excerpt">
-        {% if item.inline %}
-          {{ item.content | remove: '<p>' | remove: '</p>' | emojify | truncatewords: 20 }}
-        {% else %}
-          {{ item.description | default: item.excerpt | strip_html | truncatewords: 20 }}
+<div class="card-item col">
+  <a href="{% if news.redirect %}{{ news.redirect }}{% else %}{{ news.url | relative_url }}{% endif %}">
+    <div class="card hoverable">
+      <div class="row g-0">
+        {% if news.img %}
+          <div class="card-img col-md-6">
+            {% 
+            include figure.liquid 
+            loading="eager" 
+            path=news.img sizes="(min-width: 768px) 156px, 50vw"
+            alt="news thumbnail" 
+            %}
+          </div>
         {% endif %}
-      </p>
-      <p class="news-date">{{ item.date | date: '%B %d, %Y' }}</p>
+        <div class="{% if news.img %}col-md-6{% else %}col-md-12{% endif %}">
+          <div class="card-body">
+            <h3 class="card-title text-lowercase">{{ news.title }}</h3>
+            <p class="card-text">{{ news.description }}</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </a>
 </div>

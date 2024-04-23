@@ -4,10 +4,6 @@ title: Postdoc position available
 date: 2015-10-22 
 inline: false
 related_posts: false
-# img: /assets/img/news/announcement1.jpg
-# categories:
-#   - category1
-#   - category2
 ---
 
 We are looking for a new postdoc to join our lab! :sparkles: :smile:
