@@ -47,14 +47,14 @@ layout: page
   /* Light mode styles */
   :root {
     --profile-link-color: #8cb3d9;
-    --profile-link-hover-color: #1565c0;
+    --profile-link-hover-color: #33a5ff;
   }
 
   /* Dark mode styles */
   @media (prefers-color-scheme: dark) {
     :root {
       --profile-link-color: #666;
-      --profile-link-hover-color: #ccc;
+      --profile-link-hover-color: #33a5ff;
     }
   }
 
@@ -70,9 +70,13 @@ layout: page
     width: 100%;
     height: 1px;
     background-color: #ccc;
-    margin: 40px 0;
+    margin: 10px 40px;
   }
 
+  .section-title {
+    text-align: center;
+  }
+  
   @media (max-width: 768px) {
     .profile-item {
       width: calc(50% - 40px);
@@ -86,7 +90,7 @@ layout: page
   }
 </style>
 
-<h4>Current Members</h4>
+<h4 class="section-title">Current Members</h4>
 <div class="separator"></div>
 <div class="profile-image-container">
   {% if page.profiles %}
@@ -129,7 +133,7 @@ layout: page
   {% endif %}
 </div>
 
-<h4>Alumni</h4>
+<h4 class="section-title">Alumni</h4>
 <div class="separator"></div>
 <div class="profile-image-container">
   {% if page.profiles %}
