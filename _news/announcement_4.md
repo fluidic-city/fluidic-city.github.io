@@ -2,6 +2,8 @@
 layout: post
 title: Lab alumni wins Turing Award!!
 date: 2016-01-15
+img: assets/img/3.jpg
+importance: 1 
 inline: true
 related_posts: false
 ---

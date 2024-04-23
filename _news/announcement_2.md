@@ -2,6 +2,8 @@
 layout: post
 title: A long announcement with details
 date: 2015-11-07
+img: assets/img/3.jpg
+importance: 1 
 inline: false
 related_posts: false
 ---

@@ -1,7 +1,10 @@
 ---
 layout: post
 title: Postdoc position available
-date: 2015-10-22 
+date: 2015-10-22
+img: assets/img/12.jpg
+importance: 1 
+redirect: https://unsplash.com
 inline: false
 related_posts: false
 ---

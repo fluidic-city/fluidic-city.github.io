@@ -5,7 +5,7 @@ permalink: /news/
 description: A collection of news and announcements.
 nav: true
 nav_order: 4
-horizontal: true # News item does not write individual pages (the md files themselves do..) news_item writes the news page.
+# News item does not write individual pages (the md files themselves do..) news_item writes the news page.
 ---
 
 {% assign sorted_news = site.news | sort: "date" | reverse%}

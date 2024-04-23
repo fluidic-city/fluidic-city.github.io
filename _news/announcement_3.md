@@ -2,6 +2,8 @@
 layout: post
 title: A quick announcement
 date: 2016-01-15 
+img: assets/img/3.jpg
+importance: 1 
 inline: false
 related_posts: false
 ---

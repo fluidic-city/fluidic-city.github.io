@@ -2,6 +2,8 @@
 layout: post
 title: News about a project
 date: 2016-01-01
+img: assets/img/3.jpg
+importance: 1 
 inline: false
 related_posts: false
 ---
