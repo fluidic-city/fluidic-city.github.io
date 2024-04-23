@@ -244,11 +244,11 @@ ul.task-list input[type="checkbox"] {
 // about
 .news-list li {
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .news-list .date {
-  margin-left: 0px;
+  margin-left: 10px;
   margin-right: 10px;
   font-size: 1.0 em;
   color: #888;
