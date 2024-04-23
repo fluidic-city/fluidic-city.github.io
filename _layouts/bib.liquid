@@ -12,7 +12,7 @@
             include figure.liquid
             loading="eager"
             path=entry_path
-            sizes = "400px"
+            sizes = "350px"
             class="preview z-depth-1 rounded"
             zoomable=false
             alt=entry.preview
@@ -39,7 +39,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-12{% else %}col-sm-12{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
