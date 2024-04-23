@@ -6,7 +6,7 @@ layout: page
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
   }
 
   .profile-item {
@@ -14,7 +14,7 @@ layout: page
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: calc(25% - 10px);
+    width: calc(33.33% - 20px);
   }
 
   .profile-image {
@@ -38,24 +38,25 @@ layout: page
   }
 
   .profile-links a {
-  color: #333;
-  font-size: 18px;
+  color: #007bff;
+  font-size: 14px;
   margin-right: 5px;
+  transition: color 0.3s;
   }
 
   .profile-links a:hover {
-    color: #000;
+    color: #0056b3;
   }
 
   @media (max-width: 768px) {
     .profile-item {
-      width: calc(33.33% - 10px);
+      width: calc(50% - 20px);
     }
   }
 
   @media (max-width: 576px) {
     .profile-item {
-      width: calc(50% - 10px);
+      width: calc(100% - 20px);
     }
   }
 </style>
@@ -75,7 +76,7 @@ layout: page
         {% if profile.links %}
           <div class="profile-links">
             {% for link in profile.links %}
-            
+
               {% if link.label == 'Website' %}
                 <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                   <i class="fas fa-globe"></i>
@@ -89,6 +90,11 @@ layout: page
               {% elsif link.label == 'Google Scholar' %}
                 <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                   <i class="fas fa-graduation-cap"></i>
+                </a>
+
+              {% elsif link.label == 'GitHub' %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
                 </a>
 
               {% endif %}

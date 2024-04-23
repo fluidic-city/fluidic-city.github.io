@@ -10,7 +10,7 @@ profiles:
   - align: center
     name: Weizi Li
     image: people/Weizi.jpg
-    role: Principal Investigato
+    role: Principal Investigator
     image_circular: true 
     links: 
       - label: Website
@@ -68,6 +68,10 @@ profiles:
       - label: Website
         url: https://albert-chen.github.io/
       - label: LinkedIn
+        url: https://albert-chen.github.io/
+      - label: Google Scholar
+        url: https://albert-chen.github.io/
+      - label: GitHub
         url: https://albert-chen.github.io/
 
 ---
