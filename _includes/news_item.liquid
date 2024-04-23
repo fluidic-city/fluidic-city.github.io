@@ -1,18 +1,18 @@
 <div class="grid-sizer"></div>
 <div class="grid-item">
-  <a href="{% if news.redirect %}{{ news.redirect }}{% else %}{{ news.url | relative_url }}{% endif %}">
+  <a href="{% if item.redirect %}{{ item.redirect }}{% else %}{{ item.url | relative_url }}{% endif %}">
     <div class="card hoverable">
-      {% if news.img %}
+      {% if item.img %}
         {% include figure.liquid
           loading="eager"
-          path=news.img
+          path=item.img
           sizes = "250px"
-          alt="news thumbnail"
+          alt="news item thumbnail"
         %}
       {% endif %}
       <div class="card-body">
-        <h2 class="card-title text-lowercase">{{ news.title }}</h2>
-        <p class="card-text">{{ news.description }}</p>
+        <h2 class="card-title text-lowercase">{{ item.title }}</h2>
+        <p class="card-text">{{ item.description }}</p>
       </div>
     </div>
   </a>
