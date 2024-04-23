@@ -6,7 +6,7 @@ layout: page
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
   }
 
   .profile-item {
@@ -40,8 +40,8 @@ layout: page
   .profile-links a {
     color: #666;
     font-size: 14px;
-    margin-right: 0px;
-    transition: color 0.3s;
+    margin-right: 5px;
+    transition: color 0.2s;
   }
 
   /* Light mode styles */
@@ -70,7 +70,7 @@ layout: page
     width: 100%;
     height: 1px;
     background-color: #ccc;
-    margin: 20px 0;
+    margin: 40px 0;
   }
 
   @media (max-width: 768px) {
@@ -86,7 +86,7 @@ layout: page
   }
 </style>
 
-<h2>Current Members</h2>
+<h4>Current Members</h4>
 <div class="separator"></div>
 <div class="profile-image-container">
   {% if page.profiles %}
@@ -129,7 +129,7 @@ layout: page
   {% endif %}
 </div>
 
-<h2>Alumni</h2>
+<h4>Alumni</h4>
 <div class="separator"></div>
 <div class="profile-image-container">
   {% if page.profiles %}
