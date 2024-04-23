@@ -64,46 +64,89 @@ layout: page
 <div class="profile-image-container">
   {% if page.profiles %}
     {% for profile in page.profiles %}
-      <div class="profile-item">
+      {% if profile.alumni != true %}
+        <div class="profile-item">
+          {% if profile.image %}
+            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            {% include figure.liquid loading="eager" path=profile_image_path class="profile-image z-depth-1" alt=profile.image %}
+          {% endif %}
+          <div class="profile-name">{{ profile.name }}</div>
+          <div class="profile-role">{{ profile.role }}</div>
 
-        {% if profile.image %}
-          {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-          {% include figure.liquid loading="eager" path=profile_image_path class="profile-image z-depth-1" alt=profile.image %}
-        {% endif %}
-        <div class="profile-name">{{ profile.name }}</div>
-        <div class="profile-role">{{ profile.role }}</div>
+          {% if profile.links %}
+            <div class="profile-links">
+              {% for link in profile.links %}
 
-        {% if profile.links %}
-          <div class="profile-links">
-            {% for link in profile.links %}
+                {% if link.label == 'Website' %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-globe"></i>
+                  </a>
 
-              {% if link.label == 'Website' %}
-                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-                  <i class="fas fa-globe"></i>
-                </a>
+                {% elsif link.label == 'LinkedIn' %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
 
-              {% elsif link.label == 'LinkedIn' %}
-                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-linkedin"></i>
-                </a>
+                {% elsif link.label == 'Google Scholar' %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-graduation-cap"></i>
+                  </a>
 
-              {% elsif link.label == 'Google Scholar' %}
-                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-                  <i class="fas fa-graduation-cap"></i>
-                </a>
+                {% elsif link.label == 'GitHub' %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                  </a>
 
-              {% elsif link.label == 'GitHub' %}
-                <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-github"></i>
-                </a>
+                {% endif %}
+              {% endfor %}
+            </div>
 
-              {% endif %}
-            {% endfor %}
-          </div>
-        {% endif %}
-
-
-      </div>
+          {% endif %}
+        </div>
+      {% endif %}
     {% endfor %}
   {% endif %}
 </div>
+
+<h2>Alumni</h2>
+<div class="profile-image-container">
+  {% if page.profiles %}
+    {% for profile in page.profiles %}
+      {% if profile.alumni == true %}
+        <div class="profile-item">
+          {% if profile.image %}
+            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+            {% include figure.liquid loading="eager" path=profile_image_path class="profile-image z-depth-1" alt=profile.image %}
+          {% endif %}
+          <div class="profile-name">{{ profile.name }}</div>
+          <div class="profile-role">{{ profile.role }}</div>
+
+          {% if profile.links %}
+            <div class="profile-links">
+              {% for link in profile.links %}
+                {% if link.label == 'Website' %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-globe"></i>
+                  </a>
+                {% elsif link.label == 'LinkedIn' %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                {% elsif link.label == 'Google Scholar' %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-graduation-cap"></i>
+                  </a>
+                {% elsif link.label == 'GitHub' %}
+                  <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+</div>
+
