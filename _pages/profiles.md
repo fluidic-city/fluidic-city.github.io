@@ -35,7 +35,7 @@ profiles:
   - align: center
     name: Supriya Sarker
     image: people/Supriya.jpg
-    role: Ph.D. Student
+    role: M.S. Student
     image_circular: true 
     links:
       - label: Google Scholar
