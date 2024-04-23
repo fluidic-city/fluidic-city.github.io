@@ -14,7 +14,7 @@
   }
 </style>
 
-{% for year in site.data.publications | group_by: 'year' | sort: 'name' | reverse %}
+{% for year in site.data.publications | group_by: 'year' %}
   <div class="year-container">
     <h2 id="{{ year.name }}">{{ year.name }}</h2>
     <span class="date">{{ year.items.size }}</span>
