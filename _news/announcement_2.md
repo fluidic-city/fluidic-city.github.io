@@ -1,8 +1,9 @@
 ---
 layout: post
 title: A long announcement with details
+description: This announcement is a long one, with lots of details and information.
 date: 2015-11-07
-img: assets/img/3.jpg
+img: assets/img/1.jpg
 importance: 1 
 inline: false
 related_posts: false

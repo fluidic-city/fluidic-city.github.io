@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Lab alumni wins Turing Award!!
+description: Our lab alumni, Lann YeCunn, wins the Turing Award for his groundbreaking work in computer science.
 date: 2016-01-15
 img: assets/img/3.jpg
 importance: 1 
