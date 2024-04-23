@@ -8,60 +8,67 @@ nav_order: 2
 
 profiles:
   - align: center
+    name: Weizi Li
     image: people/Weizi.jpg
-    # content: about_people/about_bibek.md
+    role: Principal Investigato
     image_circular: true 
-    more_info: >
-      <p>Weizi Li</p>
-      <p>Principal Investigator</p>
+    links: 
+      - label: Website
+        url: https://weizi-li.github.io/
 
   - align: center
+    name: Iftekhar Islam
     image: people/Iftekhar.jpg
-    # content: about_people/about_bibek.md
+    role: PhD Student
     image_circular: true 
-    more_info: >
-      <p>Iftekhar</p>
-      <p>PhD Student</p>
+    links: 
       
   - align: center
+    name: Bibek Poudel
     image: people/Bibek.jpg
-    # content: about_people/about_iftekhar.md
+    role: PhD Student
     image_circular: true 
-    more_info: >
-      <p>Bibek Poudel</p>
-      <p>PhD Student</p>
+    links:
+      - label: Website
+        url: https://poudel-bibek.github.io/
 
   - align: center
+    name: Supriya Sarker
     image: people/Supriya.jpg
-    # content: about_people/about_supriya.md
+    role: PhD Student
     image_circular: true 
-    more_info: >
-      <p>Supriya Sarker</p>
-      <p>MS Student</p>
+    links:
+      - label: Google Scholar
+        url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
 
   - align: center
+    name: Songyang Liu
     image: people/Songyang.jpg
-    # content: about_people/
+    role: PhD Student
     image_circular: true 
-    more_info: >
-      <p>Songyang</p>
-      <p>Student</p>
-
+    links:
+      
   - align: center
+    name: Albert Einstein
     image: people/Albert_color.jpg
-    # content: about_people/
-    image_circular: true 
-    more_info: >
-      <p>Albert Einstien</p>
-      <p>MS Student</p>
+    image_circular: true
+    alumni: true 
+    role: MS Student
+    links:
+      - label: Website
+        url: https://albert-chen.github.io/
 
   - align: center
-    image: people/Albert_bw.jpg
-    # content: about_people/
-    image_circular: true 
-    more_info: >
-      <p>Albert Again</p>
-      <p>MS Student</p>
+    name: Albert Einstein
+    image: people/Albert_color.jpg
+    image_circular: true
+    alumni: true 
+    role: MS Student
+    links:
+      - label: Website
+        url: https://albert-chen.github.io/
+      - label: LinkedIn
+        url: https://albert-chen.github.io/
 
 ---
 

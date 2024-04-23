@@ -9,7 +9,7 @@ nav_order: 4
 ---
 
 <div class="news">
-  {% assign sorted_news = site.news | sort: "date" %}
+  {% assign sorted_news = site.news | sort: 'date' | reverse %}
   <!-- {% assign sorted_news = site.news | sort: "importance" %} -->
   <div class="grid">
     {% for item in sorted_news %}
