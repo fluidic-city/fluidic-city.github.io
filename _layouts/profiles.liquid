@@ -38,27 +38,23 @@ layout: page
   }
 
   .profile-links a {
-  color: #666;
-  font-size: 14px;
-  margin-right: 0px;
-  transition: color 0.3s;
-  }
-
-  .profile-links a:hover {
-    color: #000;
+    color: #666;
+    font-size: 14px;
+    margin-right: 0px;
+    transition: color 0.3s;
   }
 
   /* Light mode styles */
   :root {
-    --profile-link-color: #666;
-    --profile-link-hover-color: #000;
+    --profile-link-color: #8cb3d9;
+    --profile-link-hover-color: #1565c0;
   }
 
   /* Dark mode styles */
   @media (prefers-color-scheme: dark) {
     :root {
-      --profile-link-color: #ccc;
-      --profile-link-hover-color: #fff;
+      --profile-link-color: #666;
+      --profile-link-hover-color: #ccc;
     }
   }
 
@@ -70,6 +66,12 @@ layout: page
     color: var(--profile-link-hover-color);
   }
 
+  .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
 
   @media (max-width: 768px) {
     .profile-item {
@@ -84,6 +86,8 @@ layout: page
   }
 </style>
 
+<h2>Current Members</h2>
+<div class="separator"></div>
 <div class="profile-image-container">
   {% if page.profiles %}
     {% for profile in page.profiles %}
@@ -99,31 +103,25 @@ layout: page
           {% if profile.links %}
             <div class="profile-links">
               {% for link in profile.links %}
-
                 {% if link.label == 'Website' %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-globe"></i>
                   </a>
-
                 {% elsif link.label == 'LinkedIn' %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin"></i>
                   </a>
-
                 {% elsif link.label == 'Google Scholar' %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-graduation-cap"></i>
                   </a>
-
                 {% elsif link.label == 'GitHub' %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                   </a>
-
                 {% endif %}
               {% endfor %}
             </div>
-
           {% endif %}
         </div>
       {% endif %}
@@ -132,6 +130,7 @@ layout: page
 </div>
 
 <h2>Alumni</h2>
+<div class="separator"></div>
 <div class="profile-image-container">
   {% if page.profiles %}
     {% for profile in page.profiles %}
@@ -172,4 +171,3 @@ layout: page
     {% endfor %}
   {% endif %}
 </div>
-

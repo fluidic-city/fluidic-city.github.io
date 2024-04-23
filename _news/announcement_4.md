@@ -3,11 +3,7 @@ layout: post
 title: Postdoc position available
 description: Our lab is looking for a young and talented postdoc to join our team.
 date: 2018-10-22
-# This is a post without image
-#img: assets/img/12.jpg
 importance: 1 
-# Posts can be redirected to external URLs
-#redirect: https://unsplash.com
 inline: false
 related_posts: false
 ---

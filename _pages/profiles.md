@@ -10,7 +10,7 @@ profiles:
   - align: center
     name: Weizi Li
     image: people/Weizi.jpg
-    role: Principal Investigator
+    role: Lab Director
     image_circular: true 
     links: 
       - label: Website
@@ -19,14 +19,14 @@ profiles:
   - align: center
     name: Iftekhar Islam
     image: people/Iftekhar.jpg
-    role: PhD Student
+    role: Ph.D. Student
     image_circular: true 
     links: 
       
   - align: center
     name: Bibek Poudel
     image: people/Bibek.jpg
-    role: PhD Student
+    role: Ph.D. Student
     image_circular: true 
     links:
       - label: Website
@@ -35,7 +35,7 @@ profiles:
   - align: center
     name: Supriya Sarker
     image: people/Supriya.jpg
-    role: PhD Student
+    role: Ph.D. Student
     image_circular: true 
     links:
       - label: Google Scholar
@@ -44,7 +44,7 @@ profiles:
   - align: center
     name: Songyang Liu
     image: people/Songyang.jpg
-    role: PhD Student
+    role: Ph.D. Student
     image_circular: true 
     links:
       
@@ -53,7 +53,7 @@ profiles:
     image: people/Albert_color.jpg
     image_circular: true
     alumni: true 
-    role: MS Student
+    role: M.S. Student
     links:
       - label: Website
         url: https://albert-chen.github.io/
@@ -63,7 +63,7 @@ profiles:
     image: people/Albert_color.jpg
     image_circular: true
     alumni: true 
-    role: MS Student
+    role: M.S. Student
     links:
       - label: Website
         url: https://albert-chen.github.io/
