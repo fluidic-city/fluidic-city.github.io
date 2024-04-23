@@ -2,7 +2,7 @@
 layout: post
 title: News about a project
 description: A project with lots of images and code snippets. A project that was accepted at a conference. A project that was published in a journal. A project that was funded by a grant.
-date: 2016-01-01
+date: 2020-01-01
 img: assets/img/4.jpg
 importance: 1 
 inline: false
