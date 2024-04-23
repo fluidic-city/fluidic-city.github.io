@@ -242,17 +242,27 @@ ul.task-list input[type="checkbox"] {
 }
 
 // about
+
+//.news-list li { display: flex; align-items: left;}
+//.news-list .date {margin-left: 0px;margin-right: 10px;font-size: 1.0 em;color: #888;}
+
+.news-list {
+  padding-left: 10px;
+}
+
 .news-list li {
   display: flex;
-  align-items: left;
+  align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .news-list .date {
-  margin-left: 10px;
   margin-right: 10px;
-  font-size: 1.0 em;
+  font-size: 1.0em;
   color: #888;
+  min-width: 60px;
 }
+
 
 // Navbar customization
 
