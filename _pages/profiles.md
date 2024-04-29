@@ -20,7 +20,7 @@ profiles:
 
   - align: center
     name: Iftekhar Islam
-    image: people/Iftekhar.jpg
+    image: people/Iftekhar.jpeg
     role: Ph.D. Student
     image_circular: true 
     links: 

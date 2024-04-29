@@ -7,13 +7,14 @@ nav: true
 nav_order: 5
 pagination:
   enabled: true
+  permalink: /news/:path/
   collection: news
-  permalink: '/news/:num/'
-  title: 'News'
-  limit: 5
-  sort_field: 'date'
+  per_page: 8
+  sort_field: date
   sort_reverse: true
-  
+  trail:
+    before: 1 # The number of links before the current page
+    after: 3  # The number of links after the current page
 
 # News item does not write individual pages (the md files themselves do..) news_item writes the news page.
 ---
