@@ -3,12 +3,12 @@
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
-    setThemeSetting("light");
-  } else if (themeSetting == "light") {
+  // if (themeSetting == "system") {
+  //   setThemeSetting("light");
+  if (themeSetting == "light") {
     setThemeSetting("dark");
   } else {
-    setThemeSetting("system");
+    setThemeSetting("dark");
   }
 };
 
@@ -209,7 +209,7 @@ let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
     const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
+    if (userPref && (userPref('(prefers-color-scheme: dark)').matches || userPref('(max-width: 768px)').matches)) {
       return "dark";
     } else {
       return "light";
@@ -238,3 +238,5 @@ let initTheme = () => {
     applyTheme();
   });
 };
+
+if (userPref && (userPref('(prefers-color-scheme: dark)').matches || userPref('(max-width: 768px)').matches || true)) {
