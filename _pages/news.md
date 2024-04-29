@@ -7,9 +7,9 @@ nav: true
 nav_order: 5
 pagination:
   enabled: true
-  permalink: /news/:path/
+  permalink: /news/:num/
   collection: news
-  per_page: 8
+  per_page: 12
   sort_field: date
   sort_reverse: true
   trail:
@@ -20,7 +20,9 @@ pagination:
 <div class="news">
   <div class="grid">
     {% for item in paginator.posts %}
-      {% include news_item.liquid %}
+      <a href="{{ item.url | relative_url }}">
+        {% include news_item.liquid %}
+      </a>
     {% endfor %}
   </div>
 </div>
@@ -31,26 +33,25 @@ pagination:
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
     {% else %}
-      <span>&laquo; Prev</span>
+      <span class="disabled">&laquo; Prev</span>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <em>{{ page }}</em>
-      {% elsif page == 1 %}
-        <a href="{{ paginator.first_page_path | relative_url }}">{{ page }}</a>
+        <span class="current-page">{{ page }}</span>
       {% else %}
-        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+        <a href="{{ site.baseurl }}/news/{{ page }}/">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
     {% else %}
-      <span>Next &raquo;</span>
+      <span class="disabled">Next &raquo;</span>
     {% endif %}
   </div>
 {% endif %}
+
 
 <style>
 .pagination-links {
@@ -60,11 +61,10 @@ pagination:
 }
 
 .pagination-links a,
-.pagination-links span,
-.pagination-links em {
-  padding: 10px 15px;
-  margin: 0 5px;
-  font-size: 18px;
+.pagination-links span {
+  padding: 5px 10px;
+  margin: 0 3px;
+  font-size: 16px;
   text-decoration: none;
   color: #333;
   background-color: #f5f5f5;
@@ -75,13 +75,18 @@ pagination:
   background-color: #e0e0e0;
 }
 
-.pagination-links em {
+.pagination-links .current-page {
   font-weight: bold;
   background-color: #333;
   color: #fff;
 }
 
+.pagination-links .disabled {
+  color: #999;
+  pointer-events: none;
+}
 </style>
+
 
 
 
