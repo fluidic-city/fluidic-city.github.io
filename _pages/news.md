@@ -27,7 +27,7 @@ pagination:
 
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
-  <div class="pagination">
+  <div class="pagination-links">
     {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
     {% else %}
@@ -51,6 +51,37 @@ pagination:
     {% endif %}
   </div>
 {% endif %}
+
+<style>
+.pagination-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-links a,
+.pagination-links span,
+.pagination-links em {
+  padding: 10px 15px;
+  margin: 0 5px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.pagination-links a:hover {
+  background-color: #e0e0e0;
+}
+
+.pagination-links em {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+}
+
+</style>
 
 
 
