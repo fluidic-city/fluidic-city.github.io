@@ -7,6 +7,7 @@ nav: true
 nav_order: 5
 pagination:
   enabled: true
+  permalink: /news/:path/
   collection: news
   per_page: 8
   sort_field: date
@@ -19,12 +20,7 @@ pagination:
 <div class="news">
   <div class="grid">
     {% for item in paginator.posts %}
-      <div class="news-item">
-        <h2><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h2>
-        <p class="post-meta">{{ item.date | date: "%B %-d, %Y" }}</p>
-        <p>{{ item.description }}</p>
-        <a href="{{ item.url | relative_url }}" class="read-more">Read more</a>
-      </div>
+      {% include news_item.liquid %}
     {% endfor %}
   </div>
 </div>
@@ -57,6 +53,7 @@ pagination:
 {% endif %}
 
 
+
 <!-- ---
 layout: page
 title: News
@@ -85,7 +82,7 @@ pagination:
       {% include news_item.liquid %}
     {% endfor %}
   </div>
-</div> -->
-  
+</div> 
+   -->
 
 
