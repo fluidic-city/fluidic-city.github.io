@@ -7,7 +7,14 @@ nav: true
 nav_order: 5
 pagination:
   enabled: true
+  collection: news
+  permalink: '/news/:num/'
+  title: 'News'
+  limit: 5
+  sort_field: 'date'
+  sort_reverse: true
   
+
 # News item does not write individual pages (the md files themselves do..) news_item writes the news page.
 ---
 
