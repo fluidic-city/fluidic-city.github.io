@@ -15,6 +15,8 @@ pagination:
   trail:
     before: 1
     after: 3
+  paginate_path: /news/:num/
+
 ---
 
 <div class="news">
@@ -38,9 +40,9 @@ pagination:
 
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
-        <span class="current-page">{{ page }}</span>
+        <span class="current">{{ page }}</span>
       {% else %}
-        <a href="{{ site.baseurl }}/news/{{ page }}/">{{ page }}</a>
+        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
