@@ -6,7 +6,6 @@ title: Publications
 nav: true
 nav_order: 4
 ---
-
 *indicates equal contribution.
 
 <!-- _pages/publications.md -->
