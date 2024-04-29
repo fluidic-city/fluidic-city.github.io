@@ -2,7 +2,7 @@
 layout: post
 title: A long announcement with details
 description: This announcement is a long one, with lots of details and information. It is a great example of how you can use the announcement feature to create a full blog post.
-date: 2017-11-07
+date: 2018-11-07
 img: assets/img/1.jpg
 importance: 1 
 inline: false

@@ -2,7 +2,7 @@
 layout: post
 title: 2 papers accepted in NeurIPS
 description: Our lab is excited to announce that two papers have been accepted in NeurIPS 2025.
-date: 2019-01-15
+date: 2017-01-15
 img: assets/img/7.jpg
 importance: 1 
 inline: false
