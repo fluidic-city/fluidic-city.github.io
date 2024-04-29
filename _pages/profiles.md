@@ -16,7 +16,7 @@ profiles:
       - label: Website
         url: https://weizi-li.github.io/
       - label: Email
-        url: mailto: weizili.cs@gmail.com
+        url: weizili.cs@gmail.com
 
   - align: center
     name: Iftekhar Islam
