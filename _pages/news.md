@@ -4,7 +4,7 @@ title: News
 permalink: /news/
 description: A collection of news and announcements.
 nav: true
-nav_order: 4
+nav_order: 5
 # News item does not write individual pages (the md files themselves do..) news_item writes the news page.
 ---
 

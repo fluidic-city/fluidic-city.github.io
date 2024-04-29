@@ -3,7 +3,7 @@ layout: page
 title: Research
 nav: true
 permalink: /research/
-nav_order: 5
+nav_order: 3
 ---
 
 <div class="row">
