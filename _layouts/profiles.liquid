@@ -112,22 +112,32 @@ layout: page
           {% if profile.links %}
             <div class="profile-links">
               {% for link in profile.links %}
+                
                 {% if link.label == 'Website' %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-globe"></i>
                   </a>
+
                 {% elsif link.label == 'LinkedIn' %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-linkedin"></i>
                   </a>
+
                 {% elsif link.label == 'Google Scholar' %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                     <i class="fas fa-graduation-cap"></i>
                   </a>
+
                 {% elsif link.label == 'GitHub' %}
                   <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-github"></i>
                   </a>
+
+                {% elsif link.label == 'Email' %}
+                  <a href="mailto:{{ link.url }}" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-envelope"></i>
+                  </a>
+
                 {% endif %}
               {% endfor %}
             </div>
