@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Min Kao Building - Department of Electrical Engineering & Computer Science<br>1520 Middle Drive, Knoxville, TN
+subtitle: 
 
 # profile:
 #   align: right
