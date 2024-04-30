@@ -5,8 +5,13 @@ title: Internal
 permalink: /internal/
 nav: false
 ---
-
 {% raw %}
+<style>
+  section {
+    padding-top: 80px;
+    margin-top: -80px;
+  }
+</style>
 <div class="frame">
     <h2 id="contents">Contents</h2>
     <ul>
@@ -24,6 +29,8 @@ nav: false
     <br />
     <section id="research">
         <h2 id="research">Research</h2>
+        <p><br /></p>
+        <p><a href="#">Top</a></p>
         <p><strong>Become a good researcher</strong></p>
         <ul>
         <li>Most importantly: read many papers and excel at math and programming.</li>
@@ -86,6 +93,8 @@ nav: false
     <br />
     <section id="literature-review">
         <h2 id="literature-review">Literature review</h2>
+        <p><br /></p>
+        <p><a href="#">Top</a></p>
         <p>The goal of literature review is two-fold. First, it solidifies the novelty and significance of your project. Second, when you write, it shows that you know your area. Both elements are essential for a good paper.</p>
         <p><strong>Specific guidelines</strong></p>
         <ul>
@@ -111,6 +120,8 @@ nav: false
     <br />
     <section id="publishing-venues">
         <h2 id="publishing-venues">Publishing venues</h2>
+        <p><br /></p>
+        <p><a href="#">Top</a></p>
         <p>The following list consists of our targeting publishing venues along with their h-index and submission deadlines. Machine Learning and Robotics are our main focus.</p>
         <p>The h-index is taken from <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en">Google Scholar</a> as of July, 2022. Our department considers 40 and above as "high". However, don't take the numbers too seriously. H-index is calculated based on citations, which usually correlate with a venue's size. A small and high-quality conference could have a much lower h-index than a large but mediocre conference.</p>
         <p>The submission deadline is just a rough estimate. Please refer to each year's conference website for accurate dates.</p>
@@ -171,6 +182,8 @@ nav: false
     <br />
     <section id="writing">
         <h2 id="writing">Writing</h2>
+        <p><br /></p>
+        <p><a href="#">Top</a></p>
         <p>Writing is as important as solving the research problem: your paper is the only product that the reviewers will be looking at. You need to use the template provided on the conference website and follow the submission instructions EXACTLY. Otherwise, your paper can be returned without review.</p>
         <p><strong>General guidelines</strong></p>
         <ul>
@@ -202,8 +215,8 @@ nav: false
         <li>Write measure in LaTeX as "10~m" or "10\,m", i.e., create an unbreakable space between the number and unit.</li>
         <li>Use "~" in front of every "\cite" and "\ref" in LaTeX. Don't leave another space between "~" and its preceding word.
             <ul>
-            <li>Correct: "Figure~\ref{}", "Previous study A~\cite{}"</li>
-            <li>Wrong: "Figure ~\ref{}", "Previous study A ~\cite{}"</li>
+            <li>Correct: `"Figure~\ref{}"`, "Previous study A~\cite{}"</li>
+            <li>Wrong: `"Figure ~\ref{}"`, "Previous study A ~\cite{}"</li>
             </ul>
         </li>
         <li>Round every number to one decimal place at the most, e.g., 79.82% → 79.8% or 79%.</li>
@@ -221,6 +234,8 @@ nav: false
     <br />
     <section id="after-a-paper-gets-accepted">
         <h2 id="after-a-paper-gets-accepted">After a paper gets accepted</h2>
+        <p><br /></p>
+        <p><a href="#">Top</a></p>
         <p>Congratulations on your paper acceptance! You've done the heavy lifting. Here are the next steps.</p>
         <p><strong>Prepare the final (camera-ready) version</strong></p>
         <ul>
@@ -264,6 +279,8 @@ nav: false
     <br />
     <section id="slides-and-presentations">
         <h2 id="slides-and-presentations">Slides and presentations</h2>
+        <p><br /></p>
+        <p><a href="#">Top</a></p>
         <p>You will have various opportunities to present your work. Here are some guidelines and suggestions for preparing your slides and talk.</p>
         <p><strong>Treat your talk seriously</strong></p>
         <ul>
@@ -315,6 +332,8 @@ nav: false
     <br />
     <section id="attending-a-conference">
         <h2 id="attending-a-conference">Attending a conference</h2>
+        <p><br /></p>
+        <p><a href="#">Top</a></p>
         <p>Travel is exciting. Travel with expenses covered is even better! Here are some items going to be covered for your conference travel:</p>
         <ul>
         <li>Conference registration and publication fees</li>
@@ -331,6 +350,8 @@ nav: false
     <br />
     <section id="fellowships">
         <h2 id="fellowships">Fellowships</h2>
+        <p><br /></p>
+        <p><a href="#">Top</a></p>
         <p>There exist many fellowship opportunities from various agencies and companies. Winning a fellowship not only grants you higher compensation (usually the case) but also makes you stand out among your peers (it's a great achievement). So, if you spot anything that fits you, definitely apply!</p>
         <ul>
         <li><a href="https://www.nvidia.com/en-us/research/graduate-fellowships/">Nvidia</a></li>
