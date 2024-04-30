@@ -6,10 +6,10 @@ description: A collection of news and announcements.
 nav: true
 nav_order: 5
 pagination:
-  collection: news
   enabled: true
+  collection: news
   permalink: /page/:num/
-  per_page: 9
+  per_page: 6
   sort_field: date
   sort_reverse: true
 ---
@@ -35,7 +35,11 @@ pagination:
       {% if page == paginator.page %}
         <em>{{ page }}</em>
       {% else %}
-        <a href="{{ site.baseurl }}/news/page/{{ page }}/">{{ page }}</a>
+        {% if page == 1 %}
+          <a href="{{ site.baseurl }}/news/index.html">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.baseurl }}/news/page/{{ page }}/">{{ page }}</a>
+        {% endif %}
       {% endif %}
     {% endfor %}
 

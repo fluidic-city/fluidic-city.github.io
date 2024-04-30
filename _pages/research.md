@@ -25,7 +25,6 @@ You describe how you toiled, sweated, _bled_ for your project, and then... you r
 </div>
 <br />
 <hr />
-<br />
 <h2 id="Sponsors">Sponsors</h2>
 We are grateful to our sponsors, without whom none of our exciting research would be possible.
 
