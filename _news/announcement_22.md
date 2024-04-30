@@ -1,5 +1,6 @@
 ---
 layout: post
+name: announcement_22
 title: A long announcement with details
 description: This announcement is a long one, with lots of details and information. It is a great example of how you can use the announcement feature to create a full blog post.
 date: 2024-11-07

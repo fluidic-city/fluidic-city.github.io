@@ -1,5 +1,6 @@
 ---
 layout: post
+name: announcement_21
 title: Postdoc position available
 description: Our lab is looking for a young and talented postdoc to join our team.
 date: 2024-10-22

@@ -8,13 +8,9 @@ nav_order: 5
 pagination:
   enabled: true
   permalink: /news/page/:num/
-  collection: news
-  per_page: 8
+  per_page: 9
   sort_field: date
   sort_reverse: true
-  trail:
-    before: 1
-    after: 3
 ---
 
 <div class="news">
@@ -41,6 +37,7 @@ pagination:
         <a href="{{ site.baseurl }}/news/page/{{ page }}/">{{ page }}</a>
       {% endif %}
     {% endfor %}
+
 
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>

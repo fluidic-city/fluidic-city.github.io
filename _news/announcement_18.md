@@ -1,5 +1,6 @@
 ---
 layout: post
+name: announcement_18
 title: News about a project
 description: Another project, this time with a different image. A project that was accepted at a conference. A project that was published in a journal. A project that was funded by a grant. Longer description of the project.
 date: 2024-05-01

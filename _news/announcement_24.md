@@ -1,5 +1,6 @@
 ---
 layout: post
+name: announcement_24
 title: News about a project
 description: A project with lots of images and code snippets. A project that was accepted at a conference. A project that was published in a journal. A project that was funded by a grant.
 date: 2025-01-01
