@@ -1,4 +1,3 @@
-{% raw %}
 <div class="row">
 
   <div class="col-sm-3 {% if entry.preview %}preview{% else %}abbr{% endif %}">
@@ -250,15 +249,4 @@
     {% endif %}
 
   </div>
-
-  <!-- Add this condition at the end of the template -->
-  {% if site.scholar.group_by == 'none' and site.scholar.bibliography_template == bib %}
-    {% comment %}
-      Prevent duplicate entries when using custom grouping and the bib template
-    {% endcomment %}
-  {% else %}
-    {% include {{page.scholar.bibliography_template}} entry=entry %}
-  {% endif %}
-  
 </div>
-{% endraw %}
