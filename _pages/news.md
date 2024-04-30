@@ -68,22 +68,39 @@ pagination:
   margin: 0 5px;
   font-size: 18px;
   text-decoration: none;
-  color: #333;
+  color: #fff;
   transition: color 0.3s;
 }
 
 .pagination-links a:hover {
-  color: #007bff;
+  color: #00ffff;
 }
 
 .pagination-links em {
   font-weight: bold;
-  color: #007bff;
+  color: #00ffff;
 }
 
 .pagination-links .prev,
 .pagination-links .next {
   font-weight: bold;
 }
+
+@media (prefers-color-scheme: dark) {
+  .pagination-links a,
+  .pagination-links span,
+  .pagination-links em {
+    color: #ccc;
+  }
+
+  .pagination-links a:hover {
+    color: #00ffff;
+  }
+
+  .pagination-links em {
+    color: #00ffff;
+  }
+}
 </style>
+
 
