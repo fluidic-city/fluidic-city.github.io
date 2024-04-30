@@ -7,7 +7,7 @@ nav: true
 nav_order: 5
 pagination:
   enabled: true
-  permalink: /news/:path/
+  permalink: /news/page/:num/
   collection: news
   per_page: 8
   sort_field: date
@@ -37,10 +37,8 @@ pagination:
     {% for page in (1..paginator.total_pages) %}
       {% if page == paginator.page %}
         <em>{{ page }}</em>
-      {% elsif page == 1 %}
-        <a href="{{ paginator.first_page_path | relative_url }}">{{ page }}</a>
       {% else %}
-        <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+        <a href="{{ site.baseurl }}/news/page/{{ page }}/">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
@@ -51,6 +49,7 @@ pagination:
     {% endif %}
   </div>
 {% endif %}
+
 
 <style>
 .pagination-links {
