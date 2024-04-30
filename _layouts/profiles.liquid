@@ -48,8 +48,6 @@ layout: page
   :root {
     --profile-link-color: #8cb3d9;
     --profile-link-hover-color: #33a5ff;
-    --separator-color: #b3b3b3;
-    --border-bottom: 1px solid var(--global-divider-color)
   }
 
   /* Dark mode styles */
@@ -57,8 +55,6 @@ layout: page
     :root {
       --profile-link-color: #666;
       --profile-link-hover-color: #33a5ff;
-      --separator-color: #444;
-      --border-bottom: 1px solid var(--global-divider-color)
     }
   }
 
@@ -72,11 +68,12 @@ layout: page
 
   .separator {
     width: 100%;
-    height: var(--separator-height);
-    background-color: var(--separator-color);
+    border-bottom: 1px solid var(--global-divider-color)
     margin: 0px 0px;
     margin-bottom: 20px;
   }
+
+  
 
   .section-title {
     text-align: center;
