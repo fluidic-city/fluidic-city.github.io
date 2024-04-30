@@ -68,7 +68,7 @@ pagination:
   margin: 0 5px;
   font-size: 18px;
   text-decoration: none;
-  color: #fff;
+  color: #333;
   transition: color 0.3s;
 }
 
@@ -102,5 +102,6 @@ pagination:
   }
 }
 </style>
+
 
 
