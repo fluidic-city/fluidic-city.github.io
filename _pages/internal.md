@@ -29,8 +29,6 @@ nav: false
     <br />
     <section id="research">
         <h2 id="research">Research</h2>
-        <p><br /></p>
-        <p><a href="#">Top</a></p>
         <p><strong>Become a good researcher</strong></p>
         <ul>
         <li>Most importantly: read many papers and excel at math and programming.</li>
@@ -87,14 +85,13 @@ nav: false
         <li>Explain your approach to your friend is the best way to organize your thoughts.</li>
         <li>Discuss the next steps with your friend always results in better solutions.</li>
         </ul>
+        <p>(<a href="#">Top</a>)</p>
     </section>
     <br />
     <hr />
     <br />
     <section id="literature-review">
         <h2 id="literature-review">Literature review</h2>
-        <p><br /></p>
-        <p><a href="#">Top</a></p>
         <p>The goal of literature review is two-fold. First, it solidifies the novelty and significance of your project. Second, when you write, it shows that you know your area. Both elements are essential for a good paper.</p>
         <p><strong>Specific guidelines</strong></p>
         <ul>
@@ -120,8 +117,6 @@ nav: false
     <br />
     <section id="publishing-venues">
         <h2 id="publishing-venues">Publishing venues</h2>
-        <p><br /></p>
-        <p><a href="#">Top</a></p>
         <p>The following list consists of our targeting publishing venues along with their h-index and submission deadlines. Machine Learning and Robotics are our main focus.</p>
         <p>The h-index is taken from <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en">Google Scholar</a> as of July, 2022. Our department considers 40 and above as "high". However, don't take the numbers too seriously. H-index is calculated based on citations, which usually correlate with a venue's size. A small and high-quality conference could have a much lower h-index than a large but mediocre conference.</p>
         <p>The submission deadline is just a rough estimate. Please refer to each year's conference website for accurate dates.</p>
@@ -176,14 +171,13 @@ nav: false
             </ul>
         </li>
         </ul>
+        <p>(<a href="#">Top</a>)</p>
     </section>
     <br />
     <hr />
     <br />
     <section id="writing">
         <h2 id="writing">Writing</h2>
-        <p><br /></p>
-        <p><a href="#">Top</a></p>
         <p>Writing is as important as solving the research problem: your paper is the only product that the reviewers will be looking at. You need to use the template provided on the conference website and follow the submission instructions EXACTLY. Otherwise, your paper can be returned without review.</p>
         <p><strong>General guidelines</strong></p>
         <ul>
@@ -228,14 +222,13 @@ nav: false
         <li>Don't claim something out of your personal opinions; back everything up with evidence.</li>
         <li>Conduct "pattern matching" throughout your paper.</li>
         </ul>
+        <p>(<a href="#">Top</a>)</p>
     </section>
     <br />
     <hr />
     <br />
     <section id="after-a-paper-gets-accepted">
         <h2 id="after-a-paper-gets-accepted">After a paper gets accepted</h2>
-        <p><br /></p>
-        <p><a href="#">Top</a></p>
         <p>Congratulations on your paper acceptance! You've done the heavy lifting. Here are the next steps.</p>
         <p><strong>Prepare the final (camera-ready) version</strong></p>
         <ul>
@@ -273,14 +266,13 @@ nav: false
             </ul>
         </li>
         </ul>
+        <p>(<a href="#">Top</a>)</p>
     </section>
     <br />
     <hr />
     <br />
     <section id="slides-and-presentations">
         <h2 id="slides-and-presentations">Slides and presentations</h2>
-        <p><br /></p>
-        <p><a href="#">Top</a></p>
         <p>You will have various opportunities to present your work. Here are some guidelines and suggestions for preparing your slides and talk.</p>
         <p><strong>Treat your talk seriously</strong></p>
         <ul>
@@ -326,14 +318,13 @@ nav: false
         <li>The audience will "shut down" when your time is up. Continuing is VERY counterproductive. Simply truncate and conclude. Never ask "would you like me to go on".</li>
         <li>Questions are not an issue but a GOLDEN opportunity for you to connect with the audience. So, pause briefly now and then to encourage questions. If you don't know the answers, just admit it, and ask for pointers afterward.</li>
         </ul>
+        <p>(<a href="#">Top</a>)</p>
     </section>
     <br />
     <hr />
     <br />
     <section id="attending-a-conference">
         <h2 id="attending-a-conference">Attending a conference</h2>
-        <p><br /></p>
-        <p><a href="#">Top</a></p>
         <p>Travel is exciting. Travel with expenses covered is even better! Here are some items going to be covered for your conference travel:</p>
         <ul>
         <li>Conference registration and publication fees</li>
@@ -344,14 +335,13 @@ nav: false
         <p>The hotel and meals will be covered at the most from one day prior to the conference to one day after the conference (department rules). The meals will be reimbursed at predetermined rates (so you don't need to keep the receipts). Other costs such as getting a visa and traveling to nearby attractions are at your own expense. The department understands that our students can't afford to pay for the costs first and get reimbursed later. So, we will try to book many things for you. Meals may be the only thing that requires reimbursement after your travel.</p>
         <p>Conference is more about networking than research. Go talk to people and make friends! Conference is also a good opportunity to connect with the industry. Many companies will advertise their openings at a conference.</p>
         <p>CS conferences are usually laid-back. You can wear comfortably, although you may want to dress a bit more formally for your talk (no need to go beyond business casual).</p>
+        <p>(<a href="#">Top</a>)</p>
     </section>
     <br />
     <hr />
     <br />
     <section id="fellowships">
         <h2 id="fellowships">Fellowships</h2>
-        <p><br /></p>
-        <p><a href="#">Top</a></p>
         <p>There exist many fellowship opportunities from various agencies and companies. Winning a fellowship not only grants you higher compensation (usually the case) but also makes you stand out among your peers (it's a great achievement). So, if you spot anything that fits you, definitely apply!</p>
         <ul>
         <li><a href="https://www.nvidia.com/en-us/research/graduate-fellowships/">Nvidia</a></li>
@@ -363,6 +353,7 @@ nav: false
         <li><a href="https://www.nsfgrfp.org/home-2/">NSF GRFP</a> (requires citizenship or green card)</li>
         <li>[Free free to suggest more opportunities to this list]</li>
         </ul>
+        <p>(<a href="#">Top</a>)</p>
     </section>
 
 </div>
