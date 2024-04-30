@@ -68,17 +68,17 @@ pagination:
   margin: 0 5px;
   font-size: 18px;
   text-decoration: none;
-  color: #333;
+  color: #000;
   transition: color 0.3s;
 }
 
 .pagination-links a:hover {
-  color: #00ffff;
+  color: #2698ba;
 }
 
 .pagination-links em {
   font-weight: bold;
-  color: #00ffff;
+  color: #2698ba;
 }
 
 .pagination-links .prev,
@@ -94,14 +94,15 @@ pagination:
   }
 
   .pagination-links a:hover {
-    color: #00ffff;
+    color: #2698ba;
   }
 
   .pagination-links em {
-    color: #00ffff;
+    color: #2698ba;
   }
 }
 </style>
+
 
 
 
