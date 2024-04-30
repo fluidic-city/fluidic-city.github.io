@@ -15,9 +15,5 @@ nav_order: 4
 {% endfor %}
 </div>
 
-<!-- _pages/publications.md -->
 
-<!-- <div class="publications">
-{% bibliography %}
-</div> -->
 
