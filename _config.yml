@@ -305,6 +305,7 @@ scholar:
   join_strings: true
 
   details_dir: bibliography
+  details_layout: bib.liquid
   details_link: Details
 
   query: "@*"
