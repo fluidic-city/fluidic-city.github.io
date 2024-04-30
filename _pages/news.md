@@ -57,28 +57,33 @@ pagination:
 .pagination-links {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
 .pagination-links a,
 .pagination-links span,
 .pagination-links em {
-  padding: 10px 15px;
+  padding: 5px 10px;
   margin: 0 5px;
   font-size: 18px;
   text-decoration: none;
   color: #333;
-  background-color: #f5f5f5;
-  border-radius: 4px;
+  transition: color 0.3s;
 }
 
 .pagination-links a:hover {
-  background-color: #e0e0e0;
+  color: #007bff;
 }
 
 .pagination-links em {
   font-weight: bold;
-  background-color: #333;
-  color: #fff;
+  color: #007bff;
+}
+
+.pagination-links .prev,
+.pagination-links .next {
+  font-weight: bold;
 }
 </style>
+
