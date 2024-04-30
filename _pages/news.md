@@ -68,7 +68,7 @@ pagination:
   margin: 0 5px;
   font-size: 18px;
   text-decoration: none;
-  color: #000;
+  color: #000000;
   transition: color 0.3s;
 }
 
@@ -84,6 +84,14 @@ pagination:
 .pagination-links .prev,
 .pagination-links .next {
   font-weight: bold;
+}
+
+@media (prefers-color-scheme: light) {
+  .pagination-links a,
+  .pagination-links span,
+  .pagination-links em {
+    color: #000000 !important;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -102,6 +110,7 @@ pagination:
   }
 }
 </style>
+
 
 
 
