@@ -209,8 +209,8 @@ nav: false
         <li>Write measure in LaTeX as "10~m" or "10\,m", i.e., create an unbreakable space between the number and unit.</li>
         <li>Use "~" in front of every "\cite" and "\ref" in LaTeX. Don't leave another space between "~" and its preceding word.
             <ul>
-            <li>Correct: `"Figure~\ref{}"`, "Previous study A~\cite{}"</li>
-            <li>Wrong: `"Figure ~\ref{}"`, "Previous study A ~\cite{}"</li>
+            <li>Correct: "Figure~\ref{}", "Previous study A~\cite{}"</li>
+            <li>Wrong: "Figure ~\ref{}", "Previous study A ~\cite{}"</li>
             </ul>
         </li>
         <li>Round every number to one decimal place at the most, e.g., 79.82% → 79.8% or 79%.</li>
