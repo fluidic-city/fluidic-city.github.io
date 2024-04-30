@@ -6,8 +6,9 @@ description: A collection of news and announcements.
 nav: true
 nav_order: 5
 pagination:
+  collection: news
   enabled: true
-  permalink: /news/page/:num/
+  permalink: /page/:num/
   per_page: 9
   sort_field: date
   sort_reverse: true
