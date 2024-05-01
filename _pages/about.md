@@ -16,7 +16,7 @@ social: false # includes social icons at the bottom of the page
 pagination:
   enabled: true
   collection: news
-  permalink: /
+  permalink: /about/:num/
   per_page: 9
   sort_field: date
   sort_reverse: true
@@ -54,9 +54,9 @@ about:
         <em>{{ page }}</em>
       {% else %}
         {% if page == 1 %}
-          <a href="{{ site.baseurl }}/">{{ page }}</a>
+          <a href="{{ site.baseurl }}/about/">{{ page }}</a>
         {% else %}
-          <a href="{{ site.baseurl }}/{{ page }}/">{{ page }}</a>
+          <a href="{{ site.baseurl }}/about/{{ page }}/">{{ page }}</a>
         {% endif %}
       {% endif %}
     {% endfor %}
