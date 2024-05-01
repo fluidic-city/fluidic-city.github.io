@@ -29,6 +29,7 @@ Lorem ipsum dolor sit amet, consectetur `highlight`, sed do eiusmod tempor incid
 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui [another link](/al-folio/publications/).
 
 <br />
+<br />
 <hr />
 <h3>Latest News</h3>
 
@@ -54,13 +55,12 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
         <em>{{ page }}</em>
       {% else %}
         {% if page == 1 %}
-          <a href="{{ site.baseurl }}/news/index.html">{{ page }}</a>
+          <a href="{{ site.baseurl }}/">{{ page }}</a>
         {% else %}
-          <a href="{{ site.baseurl }}/news/page/{{ page }}/">{{ page }}</a>
+          <a href="{{ site.baseurl }}/{{ page }}/">{{ page }}</a>
         {% endif %}
       {% endif %}
     {% endfor %}
-
 
     {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
