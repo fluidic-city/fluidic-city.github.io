@@ -1,25 +1,25 @@
 ---
-layout: about
-title: About
-permalink: /
-subtitle: 
+#layout: about
+#title: About
+#permalink: /
+#subtitle: 
 
-profile:
-  align: right
-  image: hero_pic.jpg
-  image_circular: false 
-#   more_info: >
-#     <p>555 your office number</p>
-news: false # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
-pagination:
-  enabled: false
-  collection: news
-  permalink: /:num/
-  per_page: 9
-  sort_field: date
-  sort_reverse: true
+# profile:
+#   align: right
+#   image: hero_pic.jpg
+#   image_circular: false 
+# #   more_info: >
+# #     <p>555 your office number</p>
+# news: false # includes a list of news items
+# selected_papers: false # includes a list of papers marked as "selected={true}"
+# social: false # includes social icons at the bottom of the page
+# pagination:
+#   enabled: false
+#   collection: news
+#   permalink: /:num/
+#   per_page: 9
+#   sort_field: date
+#   sort_reverse: true
 
 ---
 
