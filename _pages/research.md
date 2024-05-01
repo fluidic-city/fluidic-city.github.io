@@ -29,20 +29,27 @@ You describe how you toiled, sweated, _bled_ for your project, and then... you r
 We are grateful to our sponsors, without whom none of our exciting research would be possible.
 
 <div class="row">
-    <div class="col-sm mt-2 mt-md-0 z-depth-1">
+    <div class="col-sm mt-3 mt-md-0 z-depth-1">
         {% include figure.liquid loading="eager" path="assets/img/sponsors/nsf_logo.png" title="example image" class="img-fluid rounded" %}
     </div>
-    <div class="col-sm mt-2 mt-md-0 z-depth-1">
+    <div class="col-sm mt-3 mt-md-0 z-depth-1">
         {% include figure.liquid loading="eager" path="assets/img/sponsors/nvidia_logo.png" title="example image" class="img-fluid rounded" %}
     </div>
-    <div class="col-sm mt-2 mt-md-0 z-depth-1">
+    <div class="col-sm mt-3 mt-md-0 z-depth-1">
         {% include figure.liquid loading="eager" path="assets/img/sponsors/nsf_logo.png" title="example image" class="img-fluid rounded" %}
     </div>
-    <div class="col-sm mt-2 mt-md-0 z-depth-1">
-        {% include figure.liquid loading="eager" path="assets/img/sponsors/nsf_logo.png" title="example image" class="img-fluid rounded" %}
-    </div>
-    <div class="col-sm mt-2 mt-md-0 z-depth-1">
+    <div class="col-sm mt-3 mt-md-0 z-depth-1">
         {% include figure.liquid loading="eager" path="assets/img/sponsors/nsf_logo.png" title="example image" class="img-fluid rounded" %}
     </div>
 </div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0 z-depth-1">
+        {% include figure.liquid loading="eager" path="assets/img/sponsors/nsf_logo.png" title="example image" class="img-fluid rounded" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0 z-depth-1">
+        {% include figure.liquid loading="eager" path="assets/img/sponsors/nvidia_logo.png" title="example image" class="img-fluid rounded" %}
+    </div>
+</div>
+
 <br />
