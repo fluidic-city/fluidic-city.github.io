@@ -33,7 +33,6 @@ pagination:
 <br />
 <br />
 <hr />
-<br />
 <h3 class="utk-gray-changing">Latest News</h3>
 
 <div class="news">
