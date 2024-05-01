@@ -16,7 +16,7 @@ social: false # includes social icons at the bottom of the page
 pagination:
   enabled: true
   collection: news
-  permalink: /:num/
+  permalink: /
   per_page: 9
   sort_field: date
   sort_reverse: true
