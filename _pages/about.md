@@ -31,7 +31,8 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <br />
 <br />
 <hr />
-<h3>Latest News</h3>
+<br />
+<h3 class="utk-gray">Latest News</h3>
 
 <div class="news">
   <div class="grid">
@@ -57,7 +58,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
         {% if page == 1 %}
           <a href="{{ site.baseurl }}/">{{ page }}</a>
         {% else %}
-          <a href="{{ site.baseurl }}/{{ page }}/">{{ page }}</a>
+          <a href="{{ site.baseurl }}/page/{{ page }}/">{{ page }}</a>
         {% endif %}
       {% endif %}
     {% endfor %}
