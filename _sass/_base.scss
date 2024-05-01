@@ -147,6 +147,14 @@ blockquote {
   color: #4B4B4B;
 }
 
+.utk-gray-changing {
+  color: #4B4B4B;
+
+  [data-theme="dark"] & {
+    color: white;
+  }
+}
+
 // Checklist
 
 ul.task-list {
