@@ -25,7 +25,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <h3 class="utk-gray-changing">Latest News</h3>
 
 {% assign news_items = site.news | sort: 'date' | reverse %}
-{% assign items_per_page = 6 %}
+{% assign items_per_page = 9 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
 
 <div class="news">
@@ -59,6 +59,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
       <span>Next &raquo;</span>
     {% endif %}
   </div>
+{% endif %}
 
 
 <style>
