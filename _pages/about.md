@@ -28,55 +28,57 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 {% assign items_per_page = 5 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
 
+{% assign current_page = 1 %}
+{% if page.url contains '?page=' %}
+  {% assign url_parts = page.url | split: '?page=' %}
+  {% assign current_page = url_parts[1] | plus: 0 %}
+{% endif %}
+<h1> {{ page.url }} </h1>
+<h1> {{ url_parts }} </h1>
+<h1> {{ current_page }} </h1>
+<h1> {{ total_pages }} </h1>
+
 <div class="news">
   <div class="grid">
-    {% for item in news_items limit: items_per_page offset: 0 %}
+    {% for item in news_items limit: items_per_page offset: (current_page | minus: 1) * items_per_page %}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
 </div>
 
+
 <!-- Pagination links -->
 {% if total_pages > 1 %}
   <div class="pagination-links">
-    <a href="#" onclick="goToPage(getCurrentPage() - 1); return false;">&laquo; Prev</a>
+    {% if current_page > 1 %}
+      <a href="#" onclick="goToPage({{ current_page | minus: 1 }}); return false;">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
     {% for page in (1..total_pages) %}
-      <a href="#" onclick="goToPage({{ page }}); return false;">{{ page }}</a>
+      {% if page == current_page %}
+        <em>{{ page }}</em>
+      {% else %}
+        <a href="#" onclick="goToPage({{ page }}); return false;">{{ page }}</a>
+      {% endif %}
     {% endfor %}
-    <a href="#" onclick="goToPage(getCurrentPage() + 1); return false;">Next &raquo;</a>
+    {% if current_page < total_pages %}
+      <a href="#" onclick="goToPage({{ current_page | plus: 1 }}); return false;">Next &raquo;</a>
+    {% else %}
+      <span>Next &raquo;</span>
+    {% endif %}
   </div>
 {% endif %}
 
 <script>
-  var currentPage = parseInt(localStorage.getItem('currentPage')) || 1;
+  var currentPage = parseInt(localStorage.getItem('currentPage')) || {{ current_page }};
   localStorage.setItem('currentPage', currentPage);
 
-  function getCurrentPage() {
-    return parseInt(localStorage.getItem('currentPage')) || 1;
-  }
-
   function goToPage(page) {
-    if (page >= 1 && page <= {{ total_pages }}) {
-      currentPage = page;
-      localStorage.setItem('currentPage', currentPage);
-      document.getElementById('current-page').textContent = currentPage;
-      updateNewsItems();
-    }
+    currentPage = page;
+    localStorage.setItem('currentPage', currentPage);
+    window.location.href = window.location.pathname + '?page=' + currentPage;
   }
-
-  function updateNewsItems() {
-    var newsGrid = document.querySelector('.news .grid');
-    var startIndex = (getCurrentPage() - 1) * {{ items_per_page }};
-    var endIndex = startIndex + {{ items_per_page }};
-    var newsItems = {{ news_items | jsonify }};
-    var visibleItems = newsItems.slice(startIndex, endIndex);
-    newsGrid.innerHTML = visibleItems.map(function(item) {
-      return `{% capture item_html %}{% include news_item.liquid %}{% endcapture %}${item_html}`;
-    }).join('');
-  }
-
-  document.getElementById('current-page').textContent = getCurrentPage();
-  updateNewsItems();
 </script>
 
 <style>
