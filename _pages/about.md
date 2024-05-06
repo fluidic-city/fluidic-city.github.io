@@ -40,7 +40,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 {% if total_pages > 1 %}
   <div class="pagination-links">
     {% if page > 1 %}
-      <a href="{{ site.baseurl }}/{% if page == 2 %}{% else %}{{ page | minus: 1 }}/{% endif %}">&laquo; Prev</a>
+      <a href="{{ site.baseurl }}/{% if page == 2 %}{% else %}page{{ page | minus: 1 }}/{% endif %}">&laquo; Prev</a>
     {% else %}
       <span>&laquo; Prev</span>
     {% endif %}
@@ -49,12 +49,12 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
       {% if page == 1 %}
         <a href="{{ site.baseurl }}/">{{ page }}</a>
       {% else %}
-        <a href="{{ site.baseurl }}/{{ page }}/">{{ page }}</a>
+        <a href="{{ site.baseurl }}/page{{ page }}/">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
     {% if page < total_pages %}
-      <a href="{{ site.baseurl }}/{{ page | plus: 1 }}/">Next &raquo;</a>
+      <a href="{{ site.baseurl }}/page{{ page | plus: 1 }}/">Next &raquo;</a>
     {% else %}
       <span>Next &raquo;</span>
     {% endif %}
