@@ -27,7 +27,10 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 {% assign news_items = site.news | sort: 'date' | reverse %}
 {% assign items_per_page = 9 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
-{% assign current_page = 1 %}
+{% assign current_page = page.url | split: '/' | last | plus: 0 %}
+{% if current_page == 0 %}
+  {% assign current_page = 1 %}
+{% endif %}
 
 <div class="news">
   <div class="grid">
@@ -62,16 +65,15 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 {% endif %}
 
 <script>
-  var currentPage = localStorage.getItem('currentPage') || {{ current_page }};
+  var currentPage = parseInt(localStorage.getItem('currentPage')) || {{ current_page }};
   localStorage.setItem('currentPage', currentPage);
 
   function goToPage(page) {
     currentPage = page;
     localStorage.setItem('currentPage', currentPage);
-    location.reload();
+    window.location.href = window.location.pathname + '?page=' + currentPage;
   }
 </script>
-
 
 <style>
 .pagination-links {
