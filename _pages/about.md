@@ -17,7 +17,7 @@ social: false # includes social icons at the bottom of the page
 
 Lorem ipsum dolor sit amet, consectetur `highlight`, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea [link](/al-folio/publications/) consequat. Duis aute irure `another highlight` in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
 
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui [another link](/al-folio/publications/).
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui [another link](/al-folio/publications/).
 
 <br />
 <br />
@@ -27,12 +27,10 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 {% assign news_items = site.news | sort: 'date' | reverse %}
 {% assign items_per_page = 9 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
-{% assign current_page = page.page | default: 1 | plus: 0 %}
-{% assign offset = (current_page | minus: 1) * items_per_page %}
 
 <div class="news">
   <div class="grid">
-    {% for item in news_items offset: offset limit: items_per_page %}
+    {% for item in news_items limit: items_per_page %}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
@@ -41,44 +39,27 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 <!-- Pagination links -->
 {% if total_pages > 1 %}
   <div class="pagination-links">
-    {% if current_page > 1 %}
-      <a href="{{ site.baseurl }}/?page={{ current_page | minus: 1 }}">&laquo; Prev</a>
+    {% if page > 1 %}
+      <a href="{{ site.baseurl }}/{% if page == 2 %}{% else %}{{ page | minus: 1 }}/{% endif %}">&laquo; Prev</a>
     {% else %}
       <span>&laquo; Prev</span>
     {% endif %}
 
     {% for page in (1..total_pages) %}
-      {% if page == current_page %}
-        <em>{{ page }}</em>
+      {% if page == 1 %}
+        <a href="{{ site.baseurl }}/">{{ page }}</a>
       {% else %}
-        <a href="{{ site.baseurl }}/?page={{ page }}">{{ page }}</a>
+        <a href="{{ site.baseurl }}/{{ page }}/">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
-    {% if current_page < total_pages %}
-      <a href="{{ site.baseurl }}/?page={{ current_page | plus: 1 }}">Next &raquo;</a>
+    {% if page < total_pages %}
+      <a href="{{ site.baseurl }}/{{ page | plus: 1 }}/">Next &raquo;</a>
     {% else %}
       <span>Next &raquo;</span>
     {% endif %}
   </div>
 {% endif %}
-
-<script>
-function showNewsItem(url) {
-  // Make an AJAX request to fetch the content of the selected news item
-  fetch('{{ site.baseurl }}' + url)
-    .then(response => response.text())
-    .then(data => {
-      // Display the news item content in a modal or a designated area on the page
-      // You can use a library like Bootstrap or create your own modal implementation
-      // Example using a simple alert:
-      alert(data);
-    });
-}
-</script>
-
-<!-- Rest of the styles and content -->
-
 
 
 <style>
