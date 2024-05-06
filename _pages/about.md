@@ -24,15 +24,15 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 <hr />
 <h3 class="utk-gray-changing">Latest News</h3>
 
-
 {% assign news_items = site.news | sort: 'date' | reverse %}
 {% assign items_per_page = 9 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
-{% assign current_page = page.url | remove: '/page' | remove: '/' | plus: 1 | default: 1 %}
+{% assign current_page = page.page | default: 1 | plus: 0 %}
+{% assign offset = (current_page | minus: 1) * items_per_page %}
 
 <div class="news">
   <div class="grid">
-    {% for item in news_items limit: items_per_page offset: (current_page | minus: 1) * items_per_page %}
+    {% for item in news_items offset: offset limit: items_per_page %}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
@@ -64,11 +64,6 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 {% endif %}
 
 <script>
-function goToPage(pageNumber) {
-  // Redirect to the about page with the selected page number
-  window.location.href = "{{ site.baseurl }}/?page=" + pageNumber;
-}
-
 function showNewsItem(url) {
   // Make an AJAX request to fetch the content of the selected news item
   fetch('{{ site.baseurl }}' + url)
@@ -80,8 +75,10 @@ function showNewsItem(url) {
       alert(data);
     });
 }
-
 </script>
+
+<!-- Rest of the styles and content -->
+
 
 
 <style>
