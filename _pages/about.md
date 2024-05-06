@@ -27,25 +27,22 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 {% assign news_items = site.news | sort: 'date' | reverse %}
 {% assign items_per_page = 9 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
-{% assign current_page = page.url | remove: '/page' | remove: '/' | plus: 1 | default: 1 %}
-
-<h1>{{ total_pages }}</h1>
-<h1>{{ current_page }}</h1>
+{% assign current_page = 1 %}
 
 <div class="news">
   <div class="grid">
     {% for item in news_items limit: items_per_page offset: (current_page | minus: 1) * items_per_page %}
       {% assign item_index = forloop.index | plus: (current_page | minus: 1) * items_per_page %}
-      <p>Item {{ item_index }}</p>
       {% include news_item.liquid %}
     {% endfor %}
   </div>
+</div>
 
 <!-- Pagination links -->
 {% if total_pages > 1 %}
   <div class="pagination-links">
     {% if current_page > 1 %}
-      <a href="{{ site.baseurl }}/{% if current_page == 2 %}{% else %}page{{ current_page | minus: 1 }}/{% endif %}">&laquo; Prev</a>
+      <a href="#" onclick="goToPage({{ current_page | minus: 1 }}); return false;">&laquo; Prev</a>
     {% else %}
       <span>&laquo; Prev</span>
     {% endif %}
@@ -53,16 +50,28 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
       {% if page == current_page %}
         <em>{{ page }}</em>
       {% else %}
-        <a href="{{ site.baseurl }}/{% if page == 1 %}{% else %}page{{ page }}/{% endif %}">{{ page }}</a>
+        <a href="#" onclick="goToPage({{ page }}); return false;">{{ page }}</a>
       {% endif %}
     {% endfor %}
     {% if current_page < total_pages %}
-      <a href="{{ site.baseurl }}/page{{ current_page | plus: 1 }}/">Next &raquo;</a>
+      <a href="#" onclick="goToPage({{ current_page | plus: 1 }}); return false;">Next &raquo;</a>
     {% else %}
       <span>Next &raquo;</span>
     {% endif %}
   </div>
 {% endif %}
+
+<script>
+  var currentPage = localStorage.getItem('currentPage') || {{ current_page }};
+  localStorage.setItem('currentPage', currentPage);
+
+  function goToPage(page) {
+    currentPage = page;
+    localStorage.setItem('currentPage', currentPage);
+    location.reload();
+  }
+</script>
+
 
 <style>
 .pagination-links {
