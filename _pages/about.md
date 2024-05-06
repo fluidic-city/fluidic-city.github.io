@@ -32,10 +32,11 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <h1>{{ total_pages }}</h1>
 <h1>{{ current_page }}</h1>
 
-
 <div class="news">
   <div class="grid">
     {% for item in news_items limit: items_per_page offset: (current_page | minus: 1) * items_per_page %}
+      {% assign item_index = forloop.index | plus: (current_page | minus: 1) * items_per_page %}
+      <p>Item {{ item_index }}</p>
       {% include news_item.liquid %}
     {% endfor %}
   </div>
