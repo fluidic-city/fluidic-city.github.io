@@ -25,7 +25,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <h3 class="utk-gray-changing">Latest News</h3>
 
 {% assign news_items = site.news | sort: 'date' | reverse %}
-{% assign items_per_page = 9 %}
+{% assign items_per_page = 5 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
 {% assign current_page = page.url | split: '/' | last | plus: 0 %}
 {% if current_page == 0 %}
