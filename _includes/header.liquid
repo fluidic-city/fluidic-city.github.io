@@ -47,10 +47,10 @@
           {% endfor %}
 
           <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' or page.url contains '/page' %}active{% endif %}">
+          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
               {{- about_title }}
-              {% if page.permalink == '/' or page.url contains '/page' %}
+              {% if page.permalink == '/' %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>

@@ -42,7 +42,7 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 {% if total_pages > 1 %}
   <div class="pagination-links">
     {% if current_page > 1 %}
-      <a href="{{ site.baseurl }}/{% if current_page == 2 %}{% else %}page{{ current_page | minus: 1 }}/{% endif %}">&laquo; Prev</a>
+      <a href="javascript:void(0);" onclick="goToPage({{ current_page | minus: 1 }})">&laquo; Prev</a>
     {% else %}
       <span>&laquo; Prev</span>
     {% endif %}
@@ -51,17 +51,33 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
       {% if page == current_page %}
         <em>{{ page }}</em>
       {% else %}
-        <a href="{{ site.baseurl }}/{% if page == 1 %}{% else %}page{{ page }}/{% endif %}">{{ page }}</a>
+        <a href="javascript:void(0);" onclick="goToPage({{ page }})">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
     {% if current_page < total_pages %}
-      <a href="{{ site.baseurl }}/page{{ current_page | plus: 1 }}/">Next &raquo;</a>
+      <a href="javascript:void(0);" onclick="goToPage({{ current_page | plus: 1 }})">Next &raquo;</a>
     {% else %}
       <span>Next &raquo;</span>
     {% endif %}
   </div>
 {% endif %}
+
+<script>
+function goToPage(pageNumber) {
+  // Calculate the offset based on the page number
+  var itemsPerPage = {{ items_per_page }};
+  var offset = (pageNumber - 1) * itemsPerPage;
+
+  // Make an AJAX request to fetch the news items for the selected page
+  fetch('{{ site.baseurl }}/news-items?offset=' + offset + '&limit=' + itemsPerPage)
+    .then(response => response.text())
+    .then(data => {
+      // Update the news items container with the fetched data
+      document.querySelector('.news .grid').innerHTML = data;
+    });
+}
+</script>
 
 
 <style>
