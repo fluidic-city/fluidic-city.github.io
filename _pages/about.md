@@ -32,7 +32,8 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
   {% assign current_page = 1 %}
 {% endif %}
 
-<h1>{{ current_page }} of {{ total_pages }}</h1>
+<h1>{{ current_page }} </h1>
+<h1> {{ total_pages }} </h1>
 
 <div class="news">
   <div class="grid">
