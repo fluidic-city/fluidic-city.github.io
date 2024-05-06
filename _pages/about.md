@@ -24,13 +24,15 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <hr />
 <h3 class="utk-gray-changing">Latest News</h3>
 
+
 {% assign news_items = site.news | sort: 'date' | reverse %}
 {% assign items_per_page = 9 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
+{% assign current_page = page.url | remove: '/page' | remove: '/' | plus: 1 | default: 1 %}
 
 <div class="news">
   <div class="grid">
-    {% for item in news_items limit: items_per_page %}
+    {% for item in news_items limit: items_per_page offset: (current_page | minus: 1) * items_per_page %}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
@@ -39,22 +41,22 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <!-- Pagination links -->
 {% if total_pages > 1 %}
   <div class="pagination-links">
-    {% if page > 1 %}
-      <a href="{{ site.baseurl }}/{% if page == 2 %}{% else %}page{{ page | minus: 1 }}/{% endif %}">&laquo; Prev</a>
+    {% if current_page > 1 %}
+      <a href="{{ site.baseurl }}/{% if current_page == 2 %}{% else %}page{{ current_page | minus: 1 }}/{% endif %}">&laquo; Prev</a>
     {% else %}
       <span>&laquo; Prev</span>
     {% endif %}
 
     {% for page in (1..total_pages) %}
-      {% if page == 1 %}
-        <a href="{{ site.baseurl }}/">{{ page }}</a>
+      {% if page == current_page %}
+        <em>{{ page }}</em>
       {% else %}
-        <a href="{{ site.baseurl }}/page{{ page }}/">{{ page }}</a>
+        <a href="{{ site.baseurl }}/{% if page == 1 %}{% else %}page{{ page }}/{% endif %}">{{ page }}</a>
       {% endif %}
     {% endfor %}
 
-    {% if page < total_pages %}
-      <a href="{{ site.baseurl }}/page{{ page | plus: 1 }}/">Next &raquo;</a>
+    {% if current_page < total_pages %}
+      <a href="{{ site.baseurl }}/page{{ current_page | plus: 1 }}/">Next &raquo;</a>
     {% else %}
       <span>Next &raquo;</span>
     {% endif %}
