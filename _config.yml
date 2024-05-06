@@ -171,9 +171,12 @@ collections:
   news:
     output: true
     permalink: /news/:name/
-  projects:
+  paginated_pages:
     output: true
-    permalink: /projects/:path/
+    permalink: /page:num/
+  # projects:
+  #   output: true
+  #   permalink: /projects/:path/
 
 announcements:
   enabled: true
