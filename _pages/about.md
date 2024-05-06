@@ -27,8 +27,10 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 {% assign news_items = site.news | sort: 'date' | reverse %}
 {% assign items_per_page = 5 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
-{% assign current_page = page.url | split: '/' | last | plus: 0 %}
-{% if current_page == 0 %}
+{% if page.url contains '?page=' %}
+  {% assign url_parts = page.url | split: '?page=' %}
+  {% assign current_page = url_parts[1] | plus: 0 %}
+{% else %}
   {% assign current_page = 1 %}
 {% endif %}
 
