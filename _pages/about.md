@@ -77,6 +77,18 @@ function goToPage(pageNumber) {
       document.querySelector('.news .grid').innerHTML = data;
     });
 }
+
+function showNewsItem(url) {
+  // Make an AJAX request to fetch the content of the selected news item
+  fetch('{{ site.baseurl }}' + url)
+    .then(response => response.text())
+    .then(data => {
+      // Display the news item content in a modal or a designated area on the page
+      // You can use a library like Bootstrap or create your own modal implementation
+      // Example using a simple alert:
+      alert(data);
+    });
+}
 </script>
 
 
