@@ -40,8 +40,6 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <div class="news">
   <div class="grid">
     {% for item in news_items limit: items_per_page offset: (current_page | minus: 1) * items_per_page %}
-      {% assign item_index = forloop.index | plus: (current_page | minus: 1) * items_per_page %}
-      <h1> {{ item_index }} </h1>
       {% include news_item.liquid %}
     {% endfor %}
   </div>
