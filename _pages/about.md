@@ -32,14 +32,14 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
   {% assign current_page = 1 %}
 {% endif %}
 
-<h1>{{ current_page }} </h1>
+<h1> {{ current_page }} </h1>
 <h1> {{ total_pages }} </h1>
 
 <div class="news">
   <div class="grid">
     {% for item in news_items limit: items_per_page offset: (current_page | minus: 1) * items_per_page %}
       {% assign item_index = forloop.index | plus: (current_page | minus: 1) * items_per_page %}
-      <h1>{{ item_index }}</h1>
+      <h1> {{ item_index }} </h1>
       {% include news_item.liquid %}
     {% endfor %}
   </div>
