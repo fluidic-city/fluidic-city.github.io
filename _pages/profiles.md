@@ -42,6 +42,8 @@ profiles:
     role: Ph.D. Student
     image_circular: true 
     links: 
+      - label: linkedin
+        url: https://www.linkedin.com/in/md-iftekharul-islam-cs/
 
   - align: center
     name: Songyang Liu
