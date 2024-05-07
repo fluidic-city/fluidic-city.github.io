@@ -37,17 +37,23 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
   function getFullURL() {
     return window.location.href; // This will return the full URL including query parameters
   }
+
+  function getPageNumberFromURL() {
+    var urlParams = new URLSearchParams(window.location.search);
+    return parseInt(urlParams.get('page')) || 1;
+  }
+
+  // Assign current page based on getPageNumberFromURL function
+  var current_page = getPageNumberFromURL();
 </script>
 
-{% assign current_page = 1 %}
 {% if page.url contains '?page=' %}
   {% assign current_page = page.url | split: '?page=' | last | plus: 0 %}
 {% endif %}
 
 <h1>Full URL: {{ getFullURL() }}</h1>
-<h1> URL {{ page.url }} </h1>
-<h1> {{ current_page }} </h1>
-<h1> {{ total_pages }} </h1>
+<h1>Page Number: {{ current_page }}</h1>
+
 
 <div class="news">
   <div class="grid">
