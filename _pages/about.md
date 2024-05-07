@@ -13,6 +13,13 @@ profile:
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
+pagination:
+  enabled: false
+  collection: news
+  permalink: /:num/
+  per_page: 9
+  sort_field: date
+  sort_reverse: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur `highlight`, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea [link](/al-folio/publications/) consequat. Duis aute irure `another highlight` in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
@@ -24,80 +31,42 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <hr />
 <h3 class="utk-gray-changing">Latest News</h3>
 
-{% assign news_items = site.news | sort: 'date' | reverse %}
-{% assign items_per_page = 5 %}
-{% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
-
-<script>
-
-  function getFullURL() {
-    return window.location.href;  // Returns the full URL including query parameters
-  }
-
-  function getPageNumberFromURL() {
-    var urlParams = new URLSearchParams(window.location.search);
-    return parseInt(urlParams.get('page')) || 1;
-  }
-
-  function goToPage(page) {
-    window.location.href = window.location.pathname + '?page=' + page;
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var current_page = getPageNumberFromURL();
-    var full_url = getFullURL();
-
-    // Update the elements on the page with the current page and URL
-    document.getElementById('current-page-display').textContent = 'Current Page: ' + current_page;
-    document.getElementById('full-url-display').textContent = 'Full URL: ' + full_url;
-
-    updatePaginationLinks(current_page, {{ total_pages }});
-  });
-
-  function updatePaginationLinks(currentPage, totalPages) {
-    var container = document.getElementById('pagination-links');
-    container.innerHTML = '';
-
-    // Previous link
-    if (currentPage > 1) {
-      container.innerHTML += `<a href="#" onclick="goToPage(${currentPage - 1}); return false;">&laquo; Prev</a>`;
-    } else {
-      container.innerHTML += `<span>&laquo; Prev</span>`;
-    }
-
-    // Page numbers
-    for (let page = 1; page <= totalPages; page++) {
-      if (page === currentPage) {
-        container.innerHTML += `<em>${page}</em> `;
-      } else {
-        container.innerHTML += `<a href="#" onclick="goToPage(${page}); return false;">${page}</a> `;
-      }
-    }
-
-    // Next link
-    if (currentPage < totalPages) {
-      container.innerHTML += `<a href="#" onclick="goToPage(${currentPage + 1}); return false;">Next &raquo;</a>`;
-    } else {
-      container.innerHTML += `<span>Next &raquo;</span>`;
-    }
-  }
-</script>
-
-<!-- Elements for displaying current page and full URL -->
-<div id="current-page-display" style="margin-bottom: 10px;"></div>
-<div id="full-url-display" style="margin-bottom: 20px;"></div>
-
 <div class="news">
   <div class="grid">
-    {% for item in news_items limit: items_per_page offset: ((getPageNumberFromURL() | minus: 1) * items_per_page) %}
+    {% for item in paginator.posts %}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
 </div>
 
 <!-- Pagination links -->
-<div id="pagination-links" class="pagination-links"></div>
+{% if paginator.total_pages > 1 %}
+  <div class="pagination-links">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
 
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <em>{{ page }}</em>
+      {% else %}
+        {% if page == 1 %}
+          <a href="{{ site.baseurl }}/">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.baseurl }}/{{ page }}/">{{ page }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    {% else %}
+      <span>Next &raquo;</span>
+    {% endif %}
+  </div>
+{% endif %}
 
 <style>
 .pagination-links {
