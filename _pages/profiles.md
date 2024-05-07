@@ -42,7 +42,7 @@ profiles:
     role: Ph.D. Student
     image_circular: true 
     links: 
-      - label: linkedin
+      - label: linkedIn
         url: https://www.linkedin.com/in/md-iftekharul-islam-cs/
 
   - align: center
@@ -80,3 +80,10 @@ profiles:
   #       url: https://albert-chen.github.io/ -->
 
 ---
+
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/fun_jungle.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div
