@@ -50,10 +50,8 @@ profiles:
     more: (Co-advising with S. Li)
     image_circular: true 
     links:
-      
----
 
-  <!-- # - align: center
+  # - align: center
   #   name: Albert Einstein
   #   image: people/Albert_color.jpg
   #   image_circular: true
@@ -78,3 +76,5 @@ profiles:
   #       url: https://albert-chen.github.io/
   #     - label: GitHub
   #       url: https://albert-chen.github.io/ -->
+
+---
