@@ -33,13 +33,18 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
   var currentPage = parseInt(urlParams.get('page')) || 1;
   localStorage.setItem('currentPage', currentPage);
   window.currentPageLiquid = currentPage;
+
+  function getFullURL() {
+    return window.location.href; // This will return the full URL including query parameters
+  }
 </script>
 
 {% assign current_page = 1 %}
 {% if page.url contains '?page=' %}
   {% assign current_page = page.url | split: '?page=' | last | plus: 0 %}
 {% endif %}
-<h1>Full URL: {{ site.url }}{{ site.baseurl }}{{ page.url }}</h1>
+
+<h1>Full URL: {{ getFullURL() }}</h1>
 <h1> URL {{ page.url }} </h1>
 <h1> {{ current_page }} </h1>
 <h1> {{ total_pages }} </h1>
