@@ -35,6 +35,8 @@ profiles:
     links:
       - label: Google Scholar
         url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
+      - label: LinkedIn
+        url: https://www.linkedin.com/in/supriya-sarker-184982206/
 
   - align: center
     name: Iftekhar Islam
