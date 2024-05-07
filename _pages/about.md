@@ -46,12 +46,8 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
   }
 
   var current_page = getPageNumberFromURL();
-  
-</script>
 
-{% if page.url contains '?page=' %}
-  {% assign current_page = page.url | split: '?page=' | last | plus: 0 %}
-{% endif %}
+</script>
 
 <h1>Full URL: {{ getFullURL() }}</h1>
 <h1>Page Number: {{ current_page }}</h1>
