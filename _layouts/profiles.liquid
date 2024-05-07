@@ -109,6 +109,9 @@ layout: page
           {% endif %}
           <div class="profile-name">{{ profile.name }}</div>
           <div class="profile-role">{{ profile.role }}</div>
+          {% if profile.more %}
+            <div class="profile-role">{{ profile.more }}</div>
+          {% endif %}
 
           {% if profile.links %}
             <div class="profile-links">
@@ -148,7 +151,10 @@ layout: page
           {% endif %}
           <div class="profile-name">{{ profile.name }}</div>
           <div class="profile-role">{{ profile.role }}</div>
-
+          {% if profile.more %}
+            <div class="profile-role">{{ profile.more }}</div>
+          {% endif %}
+          
           {% if profile.links %}
             <div class="profile-links">
               {% for link in profile.links %}
