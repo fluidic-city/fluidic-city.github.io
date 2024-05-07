@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: People
-description: Great science requires a great team.
+description: 
 nav: true
 nav_order: 2
 

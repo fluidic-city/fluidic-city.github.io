@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-description: Something about research
+description: 
 nav: true
 permalink: /research/
 nav_order: 3
