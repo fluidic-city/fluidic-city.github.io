@@ -19,13 +19,6 @@ profiles:
         url: weizili.cs@gmail.com
 
   - align: center
-    name: Iftekhar Islam
-    image: people/Iftekhar.jpeg
-    role: Ph.D. Student
-    image_circular: true 
-    links: 
-      
-  - align: center
     name: Bibek Poudel
     image: people/Bibek.jpg
     role: Ph.D. Student
@@ -37,11 +30,18 @@ profiles:
   - align: center
     name: Supriya Sarker
     image: people/Supriya.jpg
-    role: M.S. Student
+    role: Ph.D. Student
     image_circular: true 
     links:
       - label: Google Scholar
         url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
+
+  - align: center
+    name: Iftekhar Islam
+    image: people/Iftekhar.jpeg
+    role: Ph.D. Student
+    image_circular: true 
+    links: 
 
   - align: center
     name: Songyang Liu
@@ -50,31 +50,30 @@ profiles:
     image_circular: true 
     links:
       
-  - align: center
-    name: Albert Einstein
-    image: people/Albert_color.jpg
-    image_circular: true
-    alumni: true 
-    role: M.S. Student
-    links:
-      - label: Website
-        url: https://albert-chen.github.io/
-
-  - align: center
-    name: Albert Einstein
-    image: people/Albert_color.jpg
-    image_circular: true
-    alumni: true 
-    role: M.S. Student
-    links:
-      - label: Website
-        url: https://albert-chen.github.io/
-      - label: LinkedIn
-        url: https://albert-chen.github.io/
-      - label: Google Scholar
-        url: https://albert-chen.github.io/
-      - label: GitHub
-        url: https://albert-chen.github.io/
-
 ---
 
+  <!-- # - align: center
+  #   name: Albert Einstein
+  #   image: people/Albert_color.jpg
+  #   image_circular: true
+  #   alumni: true 
+  #   role: M.S. Student
+  #   links:
+  #     - label: Website
+  #       url: https://albert-chen.github.io/
+
+  # - align: center
+  #   name: Albert Einstein
+  #   image: people/Albert_color.jpg
+  #   image_circular: true
+  #   alumni: true 
+  #   role: M.S. Student
+  #   links:
+  #     - label: Website
+  #       url: https://albert-chen.github.io/
+  #     - label: LinkedIn
+  #       url: https://albert-chen.github.io/
+  #     - label: Google Scholar
+  #       url: https://albert-chen.github.io/
+  #     - label: GitHub
+  #       url: https://albert-chen.github.io/ -->
