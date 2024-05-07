@@ -34,8 +34,8 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
   {% assign url_parts = page.url | split: '?page=' %}
   {% assign current_page = url_parts[1] | plus: 0 %}
 {% endif %}
-<h1> {{ page.url }} </h1>
-<h1> {{ url_parts }} </h1>
+<h1> URL {{ page.url }} </h1>
+<h1> PARTS {{ url_parts[1] }} </h1>
 <h1> {{ current_page }} </h1>
 <h1> {{ total_pages }} </h1>
 
