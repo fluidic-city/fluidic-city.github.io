@@ -46,12 +46,14 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
   }
 
   var current_page = getPageNumberFromURL();
+  var full_url = getFullURL();
 
+  document.getElementById('current-page').value = current_page;
+  document.getElementById('full-url').value = full_url;
 </script>
 
-<h1>Full URL: {{ getFullURL() }}</h1>
-<h1>Page Number: {{ current_page }}</h1>
-
+<h1>Full URL: {{ page.full_url }}</h1>
+<h1>Page Number: {{ page.current_page }}</h1>
 
 <div class="news">
   <div class="grid">
