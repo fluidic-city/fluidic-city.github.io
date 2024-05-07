@@ -28,15 +28,19 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 {% assign items_per_page = 5 %}
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
 
+<script>
+  var urlParams = new URLSearchParams(window.location.search);
+  var currentPage = parseInt(urlParams.get('page')) || 1;
+  localStorage.setItem('currentPage', currentPage);
+  window.currentPageLiquid = currentPage;
+</script>
+
 {% assign current_page = 1 %}
 {% if page.url contains '?page=' %}
-  <h1>Yes</h1>
-  {% assign url_parts = page.url | split: '?page=' %}
-  {% assign current_page = url_parts[1] | plus: 0 %}
+  {% assign current_page = page.url | split: '?page=' | last | plus: 0 %}
 {% endif %}
 <h1>Full URL: {{ site.url }}{{ site.baseurl }}{{ page.url }}</h1>
 <h1> URL {{ page.url }} </h1>
-<h1> PARTS {{ url_parts[1] }} </h1>
 <h1> {{ current_page }} </h1>
 <h1> {{ total_pages }} </h1>
 
@@ -47,7 +51,6 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
     {% endfor %}
   </div>
 </div>
-
 
 <!-- Pagination links -->
 {% if total_pages > 1 %}
@@ -73,13 +76,9 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 {% endif %}
 
 <script>
-  var currentPage = parseInt(localStorage.getItem('currentPage')) || {{ current_page }};
-  localStorage.setItem('currentPage', currentPage);
-
   function goToPage(page) {
-    currentPage = page;
-    localStorage.setItem('currentPage', currentPage);
-    window.location.href = window.location.pathname + '?page=' + currentPage;
+    localStorage.setItem('currentPage', page);
+    window.location.href = window.location.pathname + '?page=' + page;
   }
 </script>
 
