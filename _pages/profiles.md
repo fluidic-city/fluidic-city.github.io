@@ -42,7 +42,7 @@ profiles:
     role: Ph.D. Student
     image_circular: true 
     links: 
-      - label: linkedIn
+      - label: LinkedIn
         url: https://www.linkedin.com/in/md-iftekharul-islam-cs/
 
   - align: center
