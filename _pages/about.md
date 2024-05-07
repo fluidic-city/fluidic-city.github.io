@@ -30,21 +30,23 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 <script>
   var urlParams = new URLSearchParams(window.location.search);
-  var currentPage = parseInt(urlParams.get('page')) || 1;
-  localStorage.setItem('currentPage', currentPage);
-  window.currentPageLiquid = currentPage;
 
   function getFullURL() {
-    return window.location.href; // This will return the full URL including query parameters
+    return window.location.origin + window.location.pathname + window.location.search;
   }
 
   function getPageNumberFromURL() {
-    var urlParams = new URLSearchParams(window.location.search);
+    var fullURL = getFullURL();
+    var urlParams = new URLSearchParams(fullURL);
     return parseInt(urlParams.get('page')) || 1;
   }
 
-  // Assign current page based on getPageNumberFromURL function
+  function goToPage(page) {
+    window.location.href = window.location.pathname + '?page=' + page;
+  }
+
   var current_page = getPageNumberFromURL();
+  
 </script>
 
 {% if page.url contains '?page=' %}
@@ -85,13 +87,6 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
     {% endif %}
   </div>
 {% endif %}
-
-<script>
-  function goToPage(page) {
-    localStorage.setItem('currentPage', page);
-    window.location.href = window.location.pathname + '?page=' + page;
-  }
-</script>
 
 <style>
 .pagination-links {
