@@ -13,13 +13,13 @@ profile:
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
-pagination:
-  enabled: false
-  collection: news
-  permalink: /:num/
-  per_page: 9
-  sort_field: date
-  sort_reverse: true
+# pagination:
+#   enabled: false
+#   collection: news
+#   permalink: /:num/
+#   per_page: 9
+#   sort_field: date
+#   sort_reverse: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur `highlight`, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea [link](/al-folio/publications/) consequat. Duis aute irure `another highlight` in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum 
@@ -31,42 +31,15 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 <hr />
 <h3 class="utk-gray-changing">Latest News</h3>
 
+{% assign news_items = site.news | sort: 'date' | reverse %}
 <div class="news">
   <div class="grid">
-    {% for item in paginator.posts %}
+    {% for item in news_items %}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
 </div>
 
-<!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
-  <div class="pagination-links">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
-
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <em>{{ page }}</em>
-      {% else %}
-        {% if page == 1 %}
-          <a href="{{ site.baseurl }}/">{{ page }}</a>
-        {% else %}
-          <a href="{{ site.baseurl }}/{{ page }}/">{{ page }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
-  </div>
-{% endif %}
 
 <style>
 .pagination-links {
