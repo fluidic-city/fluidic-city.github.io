@@ -46,7 +46,7 @@ profiles:
   - align: center
     name: Songyang Liu
     image: people/Songyang.jpg
-    role: Ph.D. Student
+    role: Ph.D. Student (Co-advising w/ S. Li)
     image_circular: true 
     links:
       
