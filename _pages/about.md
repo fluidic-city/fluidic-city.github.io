@@ -29,15 +29,13 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 {% assign total_pages = news_items.size | divided_by: items_per_page | plus: 1 %}
 
 <script>
-  var urlParams = new URLSearchParams(window.location.search);
 
   function getFullURL() {
-    return window.location.origin + window.location.pathname + window.location.search;
+    return window.location.href;  // Returns the full URL including query parameters
   }
 
   function getPageNumberFromURL() {
-    var fullURL = getFullURL();
-    var urlParams = new URLSearchParams(fullURL);
+    var urlParams = new URLSearchParams(window.location.search);
     return parseInt(urlParams.get('page')) || 1;
   }
 
@@ -45,46 +43,61 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
     window.location.href = window.location.pathname + '?page=' + page;
   }
 
-  var current_page = getPageNumberFromURL();
-  var full_url = getFullURL();
+  document.addEventListener('DOMContentLoaded', function() {
+    var current_page = getPageNumberFromURL();
+    var full_url = getFullURL();
 
-  document.getElementById('current-page').value = current_page;
-  document.getElementById('full-url').value = full_url;
+    // Update the elements on the page with the current page and URL
+    document.getElementById('current-page-display').textContent = 'Current Page: ' + current_page;
+    document.getElementById('full-url-display').textContent = 'Full URL: ' + full_url;
+
+    updatePaginationLinks(current_page, {{ total_pages }});
+  });
+
+  function updatePaginationLinks(currentPage, totalPages) {
+    var container = document.getElementById('pagination-links');
+    container.innerHTML = '';
+
+    // Previous link
+    if (currentPage > 1) {
+      container.innerHTML += `<a href="#" onclick="goToPage(${currentPage - 1}); return false;">&laquo; Prev</a>`;
+    } else {
+      container.innerHTML += `<span>&laquo; Prev</span>`;
+    }
+
+    // Page numbers
+    for (let page = 1; page <= totalPages; page++) {
+      if (page === currentPage) {
+        container.innerHTML += `<em>${page}</em> `;
+      } else {
+        container.innerHTML += `<a href="#" onclick="goToPage(${page}); return false;">${page}</a> `;
+      }
+    }
+
+    // Next link
+    if (currentPage < totalPages) {
+      container.innerHTML += `<a href="#" onclick="goToPage(${currentPage + 1}); return false;">Next &raquo;</a>`;
+    } else {
+      container.innerHTML += `<span>Next &raquo;</span>`;
+    }
+  }
 </script>
 
-<h1>Full URL: {{ page.full_url }}</h1>
-<h1>Page Number: {{ page.current_page }}</h1>
+<!-- Elements for displaying current page and full URL -->
+<div id="current-page-display" style="margin-bottom: 10px;"></div>
+<div id="full-url-display" style="margin-bottom: 20px;"></div>
 
 <div class="news">
   <div class="grid">
-    {% for item in news_items limit: items_per_page offset: (current_page | minus: 1) * items_per_page %}
+    {% for item in news_items limit: items_per_page offset: ((getPageNumberFromURL() | minus: 1) * items_per_page) %}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
 </div>
 
 <!-- Pagination links -->
-{% if total_pages > 1 %}
-  <div class="pagination-links">
-    {% if current_page > 1 %}
-      <a href="#" onclick="goToPage({{ current_page | minus: 1 }}); return false;">&laquo; Prev</a>
-    {% else %}
-      <span>&laquo; Prev</span>
-    {% endif %}
-    {% for page in (1..total_pages) %}
-      {% if page == current_page %}
-        <em>{{ page }}</em>
-      {% else %}
-        <a href="#" onclick="goToPage({{ page }}); return false;">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
-    {% if current_page < total_pages %}
-      <a href="#" onclick="goToPage({{ current_page | plus: 1 }}); return false;">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
-  </div>
-{% endif %}
+<div id="pagination-links" class="pagination-links"></div>
+
 
 <style>
 .pagination-links {
