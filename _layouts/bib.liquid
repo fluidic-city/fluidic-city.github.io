@@ -3,7 +3,7 @@
   <div class="col-sm-3 {% if entry.preview %}preview{% else %}abbr{% endif %}">
     {% if entry.preview %}
       {% if entry.preview contains '://' %}
-        <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" style="margin-top: 20px;">
+        <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" style="margin-top: 20px !important;">
       {% else %}
         {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
           {%
@@ -14,7 +14,7 @@
             class="preview z-depth-1 rounded"
             zoomable=false
             alt=entry.preview
-            style="margin-top: 20px;"
+            style="margin-top: 20px !important;"
           %}
       {% endif %}
     {% elsif entry.abbr %}
