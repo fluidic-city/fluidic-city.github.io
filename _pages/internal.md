@@ -22,7 +22,7 @@ nav: false
         <li><a href="#slides-and-presentations">Slides and presentations</a></li>
         <li><a href="#attending-a-conference">Attending a conference</a></li>
         <li><a href="#fellowships">Fellowships</a></li>
-        <li><a hred="https://www.dropbox.com/scl/fi/wyx0pm6otuy1su2brze26/Updating-the-Lab-Website.paper?rlkey=atj2duxu7xt5970wjonfl9qg6&dl=0">Updating the Lab Website</a></li>
+        <li><a href="https://www.dropbox.com/scl/fi/wyx0pm6otuy1su2brze26/Updating-the-Lab-Website.paper?rlkey=atj2duxu7xt5970wjonfl9qg6&dl=0">Updating the Lab Website</a></li>
     </ul>
     <br />
     <hr />
