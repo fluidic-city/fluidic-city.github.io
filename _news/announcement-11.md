@@ -4,7 +4,6 @@ name: announcement-11
 title: Postdoc position available
 description: Our lab is looking for a young and talented postdoc to join our team.
 date: 2019-10-22
-importance: 1 
 inline: false
 related_posts: false
 ---
