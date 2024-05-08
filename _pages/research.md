@@ -42,6 +42,9 @@ We are grateful to our sponsors, without whom none of our exciting research woul
         {% include figure.liquid loading="eager" path="assets/img/sponsors/ut_ori_logo.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-md-3 col-sm-6 my-1">
+        {% include figure.liquid loading="eager" path="assets/img/sponsors/utk_ctr_logo.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-md-3 col-sm-6 my-1">
         {% include figure.liquid loading="eager" path="assets/img/sponsors/fit_logo.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-md-3 col-sm-6 my-1">
