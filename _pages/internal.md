@@ -19,10 +19,10 @@ nav: false
         <li><a href="#literature-review">Literature review</a></li>
         <li><a href="#publishing-venues">Publishing venues</a></li>
         <li><a href="#writing">Writing</a></li>
-        <li><a href="#after-a-paper-gets-accepted">After a paper gets accepted</a></li>
         <li><a href="#slides-and-presentations">Slides and presentations</a></li>
         <li><a href="#attending-a-conference">Attending a conference</a></li>
         <li><a href="#fellowships">Fellowships</a></li>
+        <li><a hred="https://www.dropbox.com/scl/fi/wyx0pm6otuy1su2brze26/Updating-the-Lab-Website.paper?rlkey=atj2duxu7xt5970wjonfl9qg6&dl=0">Updating the Lab Website</a></li>
     </ul>
     <br />
     <hr />
@@ -222,50 +222,6 @@ nav: false
         <ul>
         <li>Don't claim something out of your personal opinions; back everything up with evidence.</li>
         <li>Conduct "pattern matching" throughout your paper.</li>
-        </ul>
-        <p>(<a href="#">Top</a>)</p>
-    </section>
-    <br />
-    <hr />
-    <br />
-    <section id="after-a-paper-gets-accepted">
-        <h2 id="after-a-paper-gets-accepted">After a paper gets accepted</h2>
-        <p>Congratulations on your paper acceptance! You've done the heavy lifting. Here are the next steps.</p>
-        <p><strong>Prepare the final (camera-ready) version</strong></p>
-        <ul>
-        <li>Address all comments of the reviewers by highlighting (color-coding) the changes. If you have questions, let's discuss. Once you are done, let me know and I'll do a pass of the paper.</li>
-        <li>[optional but highly recommended] Acknowledge people who kindly share the code and/or data with you, and consider cite their papers as a good gesture.</li>
-        </ul>
-        <p><strong>Watch for deadlines</strong></p>
-        <ul>
-        <li>Make sure to submit all required files (final paper, final video, etc.) by their deadlines.</li>
-        <li>Update arXiv if your paper is posted there.</li>
-        <li>Keep a track of other deadlines such as the conference registration. We want to register the conference as early as possible, which is usually cheaper.</li>
-        <li>Travel itinerary can be decided later but not too late. Three months prior to the conference is a good time to start booking the travel (see <a href="#attending-a-conference">Attending a conference</a>).</li>
-        </ul>
-        <p><strong>Release code and data</strong></p>
-        <ul>
-        <li>Update Github to release the code and data. The easier people can access your code, the bigger impact your project will generate.</li>
-        <li>Releasing the code and data also ensures a fair comparison. You don't want an inferior performance of your approach get reported due to insufficient materials for reproducing your experiments.</li>
-        </ul>
-        <p><strong>Update lab website</strong></p>
-        <ul>
-        <li>Design a name for your project using the format "last name+year+one or two keywords", e.g., "Li2020Simulation" or "Li2020TrafficSimulation". This name will be used both as the BibTeX key for your paper and to update the lab website.</li>
-        <li>A project website will be created for you. This is the place for you to market your work: try to include materials that can't be found in your paper but useful for those who follow your work, e.g., demos, tutorials, documentation, and FAQ.</li>
-        <li>Images
-            <ul>
-            <li>Select a figure from your paper as the teaser for the project website</li>
-            <li>Create a 168 x 120 thumbnail for the publication item using figures in your paper</li>
-            <li>Create a 168 x 120 thumbnail for the news item using the conference logo</li>
-            </ul>
-        </li>
-        <li>Send Weizi the following information for updating the lab website
-            <ul>
-            <li>Your project name</li>
-            <li>The three images: one teaser, two thumbnails</li>
-            <li>Information or links you want to show on the project website other than the paper title, venue, authors, abstract, citation, contact, and acknowledgements (the common information will be filled for you)</li>
-            </ul>
-        </li>
         </ul>
         <p>(<a href="#">Top</a>)</p>
     </section>
