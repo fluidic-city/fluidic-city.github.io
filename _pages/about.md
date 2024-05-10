@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: hero_pic.jpg
+  image: mk.jpg
   image_circular: false 
 #   more_info: >
 #     <p>555 your office number</p>
