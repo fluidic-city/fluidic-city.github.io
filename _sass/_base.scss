@@ -209,6 +209,12 @@ ul.task-list input[type="checkbox"] {
       align-items: center;
     }
   }
+
+  .card-date {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
 }
 
 // Citation
