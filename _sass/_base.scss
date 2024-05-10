@@ -157,12 +157,10 @@ blockquote {
 
 utk-gray-changing-people {
   color: #4B4B4B;
-
+  text-align: center;
   [data-theme="dark"] & {
     color: white;
   }
-
-  text-align: center;
 }
 
 // Checklist
