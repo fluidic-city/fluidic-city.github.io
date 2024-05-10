@@ -61,7 +61,7 @@ profiles:
     image_circular: true
     alumni: true 
     role: Research Assistant
-    more: `21–`24
+    more: '`21--`24'
 
 
   # - align: center
