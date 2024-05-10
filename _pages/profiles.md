@@ -61,10 +61,8 @@ profiles:
     image_circular: true
     alumni: true 
     role: Research Assistant
-    more: 21`–24`
-    links:
-      - label: Website
-        url: https://tmvllrrl.github.io/
+    more: `21–`24
+
 
   # - align: center
   #   name: Albert Einstein
