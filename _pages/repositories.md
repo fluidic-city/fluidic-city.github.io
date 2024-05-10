@@ -47,7 +47,6 @@ nav_order: 6
 ## Datasets
  - [Beacon: A Naturalistic Driving Dataset During Blackouts for Traffic Reconstruction and Control Benchmarking](https://drive.google.com/drive/) -->
 
-<br />
 <hr />
 ## GitHub Repositories
 
