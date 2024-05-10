@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /code_and_data/
-title: Code & Data
-description: Datasets released from the lab and Repositories related to publications.
+title: Code # & Data
+description: Code repositories related to publications # Datasets released from the lab and Repositories related to publications.
 nav: true
 nav_order: 6
 ---
@@ -36,9 +36,12 @@ nav_order: 6
 {% endif %}
 {% endif %}
 
-<hr />
+<!-- Image -->
+
+
+<!-- <hr />
 ## Datasets
- - [Beacon: A Naturalistic Driving Dataset During Blackouts for Traffic Reconstruction and Control Benchmarking](https://drive.google.com/drive/)
+ - [Beacon: A Naturalistic Driving Dataset During Blackouts for Traffic Reconstruction and Control Benchmarking](https://drive.google.com/drive/) -->
 
 <br />
 <hr />
