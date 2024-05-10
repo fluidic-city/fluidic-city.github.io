@@ -55,15 +55,16 @@ profiles:
     image_circular: true 
     links:
 
-  # - align: center
-  #   name: Albert Einstein
-  #   image: people/Albert_color.jpg
-  #   image_circular: true
-  #   alumni: true 
-  #   role: M.S. Student
-  #   links:
-  #     - label: Website
-  #       url: https://albert-chen.github.io/
+  - align: center
+    name: Michael Villarreal
+    image: people/Michael.png
+    image_circular: true
+    alumni: true 
+    role: Research Assistant
+    more: 21`–24`
+    links:
+      - label: Website
+        url: https://tmvllrrl.github.io/
 
   # - align: center
   #   name: Albert Einstein
