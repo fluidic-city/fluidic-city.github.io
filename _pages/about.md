@@ -32,14 +32,15 @@ Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed 
 <h3 class="utk-gray-changing">Latest News</h3>
 
 {% assign news_items = site.news | sort: 'date' | reverse %}
-<div class="news">
-  <div class="grid">
-    {% for item in news_items %}
-      {% include news_item.liquid %}
-    {% endfor %}
+<div class="news-container">
+  <div class="news">
+    <div class="grid">
+      {% for item in news_items %}
+        {% include news_item.liquid %}
+      {% endfor %}
+    </div>
   </div>
 </div>
-
 
 <style>
 .pagination-links {
