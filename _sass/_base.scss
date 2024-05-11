@@ -198,7 +198,6 @@ ul.task-list input[type="checkbox"] {
 // Card
 
 .card {
-  font-size: 1.4em;
   background-color: var(--global-card-bg-color);
 
   img {
@@ -304,6 +303,7 @@ ul.task-list input[type="checkbox"] {
 //.news-list .date {margin-left: 0px;margin-right: 10px;font-size: 1.0 em;color: #888;}
 
 .news-list {
+  font-size: 1.4em !important;
   padding-left: 10px;
 }
 
