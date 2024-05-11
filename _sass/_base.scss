@@ -775,6 +775,12 @@ footer.sticky-bottom {
 
   .card-title {
     font-size: 1.4em !important;
+    font-weight: 300;
+  }
+
+  .card-text {
+    font-size: 0.875rem !important;
+    font-weight: 300;
   }
 
   .card-item {
@@ -785,10 +791,6 @@ footer.sticky-bottom {
       display: flex;
       align-items: center;
     }
-  }
-
-  .card-text {
-    font-size: 1.0em !important;
   }
 
   .news-list {
