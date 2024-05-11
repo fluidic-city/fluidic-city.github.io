@@ -758,7 +758,6 @@ footer.sticky-bottom {
 
 .news {
   width: 100%;
-  display: flex;
 
   a {
     text-decoration: none;
@@ -916,6 +915,8 @@ footer.sticky-bottom {
       }
 
       .author {
+        font-size: 1.3em;
+
         a {
           border-bottom: 1px dashed var(--global-theme-color);
 
