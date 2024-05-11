@@ -62,23 +62,5 @@ profiles:
     alumni: true 
     role: Research Assistant
     more: '`21–`24'
-
-
-  # - align: center
-  #   name: Albert Einstein
-  #   image: people/Albert_color.jpg
-  #   image_circular: true
-  #   alumni: true 
-  #   role: M.S. Student
-  #   links:
-  #     - label: Website
-  #       url: https://albert-chen.github.io/
-  #     - label: LinkedIn
-  #       url: https://albert-chen.github.io/
-  #     - label: Google Scholar
-  #       url: https://albert-chen.github.io/
-  #     - label: GitHub
-  #       url: https://albert-chen.github.io/ -->
-
 ---
 
