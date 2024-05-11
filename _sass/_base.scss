@@ -776,12 +776,13 @@ footer.sticky-bottom {
   }
 
   .card-title {
-    font-size: 1.2em !important;
+    margin-top: 0.5rem;
+    font-size: 1.1em !important;
     font-weight: 300;
   }
 
   .card-text {
-    font-size: 1.0 !important;
+    font-size: 1.2 !important;
     font-weight: 300 !important;
   }
 
@@ -806,6 +807,7 @@ footer.sticky-bottom {
   }
   
   .news-list .date {
+    margin-top: 0.5rem;
     margin-right: 10px;
     font-size: 0.875rem !important;
     color: #888;
