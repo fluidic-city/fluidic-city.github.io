@@ -911,11 +911,12 @@ footer.sticky-bottom {
       }
 
       .title {
+        font-size: 1.2em !important;
         font-weight: bolder;
       }
 
       .author {
-        font-size: 1.3em;
+        font-size: 1.1em !important;
 
         a {
           border-bottom: 1px dashed var(--global-theme-color);
@@ -944,7 +945,7 @@ footer.sticky-bottom {
       }
 
       .periodical{
-        font-size: 1.3em;
+        font-size: 1.1em !important;
       }
 
       .links {
