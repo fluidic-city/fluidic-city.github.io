@@ -759,7 +759,6 @@ footer.sticky-bottom {
 .news {
   width: 100%;
   display: flex;
-  align-items: center;
 
   a {
     text-decoration: none;
@@ -783,7 +782,7 @@ footer.sticky-bottom {
   }
 
   .card-text {
-    font-size: 1.0 rem !important;
+    font-size: 1.0em !important;
     font-weight: 300;
   }
 
