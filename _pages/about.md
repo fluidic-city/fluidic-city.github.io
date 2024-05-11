@@ -29,15 +29,15 @@ Lorem ipsum dolor sit amet, consectetur `highlight`, sed do eiusmod tempor incid
 <h3 class="utk-gray-changing">Latest News</h3>
 
 {% assign news_items = site.news | sort: 'date' | reverse %}
-<div class="news-container">
-  <div class="news">
-    <div class="grid">
-      {% for item in news_items %}
-        {% include news_item.liquid %}
-      {% endfor %}
-    </div>
+
+<div class="news">
+  <div class="grid">
+    {% for item in news_items %}
+      {% include news_item.liquid %}
+    {% endfor %}
   </div>
 </div>
+
 
 <style>
 .pagination-links {
