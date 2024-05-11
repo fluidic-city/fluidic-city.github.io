@@ -776,13 +776,13 @@ footer.sticky-bottom {
   }
 
   .card-title {
-    margin-top: 0.5rem;
+    margin-top: -10px;
     font-size: 1.1em !important;
     font-weight: 300;
   }
 
   .card-text {
-    font-size: 1.2 !important;
+    font-size: 1.5 !important;
     font-weight: 300 !important;
   }
 
@@ -807,7 +807,7 @@ footer.sticky-bottom {
   }
   
   .news-list .date {
-    margin-top: 0.5rem;
+    margin-top: -5px;
     margin-right: 10px;
     font-size: 0.875rem !important;
     color: #888;
@@ -918,7 +918,7 @@ footer.sticky-bottom {
       }
 
       .author {
-        font-size: 0.875em !important;
+        font-size: 20px;
 
         a {
           border-bottom: 1px dashed var(--global-theme-color);
@@ -947,7 +947,7 @@ footer.sticky-bottom {
       }
 
       .venue{
-        font-size: 0.875 !important;
+        font-size: 20px;
       }
 
       .links {
