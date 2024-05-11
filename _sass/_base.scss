@@ -303,7 +303,6 @@ ul.task-list input[type="checkbox"] {
 //.news-list .date {margin-left: 0px;margin-right: 10px;font-size: 1.0 em;color: #888;}
 
 .news-list {
-  font-size: 1.4em !important;
   padding-left: 10px;
 }
 
@@ -320,6 +319,13 @@ ul.task-list input[type="checkbox"] {
   min-width: 60px;
 }
 
+.card-title {
+  font-size: 1.4em;
+}
+
+.card-text {
+  font-size: 1.0em;
+}
 
 // Navbar customization
 
