@@ -299,33 +299,8 @@ ul.task-list input[type="checkbox"] {
 
 // about
 
-//.news-list li { display: flex; align-items: left;}
-//.news-list .date {margin-left: 0px;margin-right: 10px;font-size: 1.0 em;color: #888;}
 
-.news-list {
-  padding-left: 10px;
-}
 
-.news-list li {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 10px;
-}
-
-.news-list .date {
-  margin-right: 10px;
-  font-size: 1.0em;
-  color: #888;
-  min-width: 60px;
-}
-
-.card-title {
-  font-size: 1.4em !important;
-}
-
-.card-text {
-  font-size: 1.0em !important;
-}
 
 // Navbar customization
 
@@ -798,6 +773,10 @@ footer.sticky-bottom {
     }
   }
 
+  .card-title {
+    font-size: 1.4em !important;
+  }
+
   .card-item {
     width: auto;
     margin-bottom: 10px;
@@ -808,6 +787,27 @@ footer.sticky-bottom {
     }
   }
 
+  .card-text {
+    font-size: 1.0em !important;
+  }
+
+  .news-list {
+    padding-left: 10px;
+  }
+  
+  .news-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  
+  .news-list .date {
+    margin-right: 10px;
+    font-size: 1.0em;
+    color: #888;
+    min-width: 60px;
+  }
+  
   .grid-sizer,
   .grid-item {
     width: 250px;
@@ -823,6 +823,7 @@ footer.sticky-bottom {
     text-align: right;
   }
 }
+
 
 // Publications
 
