@@ -776,13 +776,13 @@ footer.sticky-bottom {
   }
 
   .card-title {
-    font-size: 1.4em !important;
+    font-size: 1.3em !important;
     font-weight: 300;
   }
 
   .card-text {
-    font-size: 1.0em !important;
-    font-weight: 300;
+    font-size: 0.875rem !important;
+    font-weight: 300 !important;
   }
 
   .card-item {
@@ -807,7 +807,7 @@ footer.sticky-bottom {
   
   .news-list .date {
     margin-right: 10px;
-    font-size: 1.0em;
+    font-size: 0.875rem !important;
     color: #888;
     min-width: 60px;
   }
@@ -941,6 +941,10 @@ footer.sticky-bottom {
             border-bottom: 1px dashed var(--global-text-color);
           }
         }
+      }
+
+      .periodical{
+        font-size: 1.3em;
       }
 
       .links {
