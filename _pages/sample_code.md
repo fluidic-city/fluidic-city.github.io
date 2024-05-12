@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Image Layout Samples
-permalink: /sample_image/
+title: Code Layout Samples
+permalink: /sample_code/
 nav: false
 ---
 
