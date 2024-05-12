@@ -294,7 +294,13 @@ nav: false
         <li>Make sure to submit all required files (final paper, final video, etc.) by their deadlines.</li>
         <li>Update arXiv if your paper is posted there.</li>
         <li>Keep track of other deadlines such as the conference registration. We want to register the conference as early as possible, which is usually cheaper.</li>
-        <li>Travel itinerary can be decided later but not too late. Three months prior to the conference is a good time to start booking the travel. See   `Attending a conference` section.</li>
+        <li>Travel itinerary can be decided later but not too late. Three months prior to the conference is a good time to start booking the travel. See Attending a conference section.</li>
+    </ul>
+    <p><strong>Releasing the code</strong></p>
+    <ul>
+        <li>The easier people can access your code, the bigger impact your project will generate.</li>
+        <li>Releasing the code and data also ensures a fair comparison.</li>
+        <li>You don't want an inferior performance of your approach get reported due to insufficient materials for reproducing your experiments.</li>
     </ul>
     <br />
     <p>For more information on how to <strong>Release code and data</strong> and <strong>Add a paper to the website</strong>, see <a href="https://www.dropbox.com/scl/fi/wyx0pm6otuy1su2brze26/Updating-the-Lab-Website.paper?rlkey=atj2duxu7xt5970wjonfl9qg6&dl=0">Updating the Lab Website</a>.</p>
