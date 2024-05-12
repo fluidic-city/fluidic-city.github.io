@@ -297,7 +297,7 @@ nav: false
         <li>Travel itinerary can be decided later but not too late. Three months prior to the conference is a good time to start booking the travel. See   `Attending a conference` section.</li>
     </ul>
     <br />
-    <p>For more information on how to `Release code and data` and `Add a paper to the website`, see <a href="https://www.dropbox.com/scl/fi/wyx0pm6otuy1su2brze26/Updating-the-Lab-Website.paper?rlkey=atj2duxu7xt5970wjonfl9qg6&dl=0">Updating the Lab Website</a>.</p>
+    <p>For more information on how to <strong>Release code and data</strong> and <strong>Add a paper to the website</strong>, see <a href="https://www.dropbox.com/scl/fi/wyx0pm6otuy1su2brze26/Updating-the-Lab-Website.paper?rlkey=atj2duxu7xt5970wjonfl9qg6&dl=0">Updating the Lab Website</a>.</p>
     <p>(<a href="#">Top</a>)</p>
     </section>
     <br />
