@@ -7,7 +7,7 @@
 body {
   font-family: $font-family-base;
   font-weight: $font-weight-light;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 
@@ -626,6 +626,13 @@ footer.sticky-bottom {
 }
 
 .post-title {
+  
+  color: #4B4B4B;
+
+  [data-theme="dark"] & {
+    color: white;
+  }
+
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
