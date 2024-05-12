@@ -5,6 +5,7 @@ title: A long announcement with details
 description: This announcement is a long one, with lots of details and information. It is a great example of how you can use the announcement feature to create a full blog post.
 date: 2018-11-07
 img: assets/img/news/1.jpg
+related_posts: false
 ---
 
 Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.

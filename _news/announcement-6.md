@@ -5,6 +5,7 @@ title: News about a project
 description: A project with lots of images and code snippets. A project that was accepted at a conference. A project that was published in a journal. A project that was funded by a grant.
 date: 2017-02-01
 img: assets/img/news/4.jpg
+related_posts: false
 ---
 
 <div class="row">
