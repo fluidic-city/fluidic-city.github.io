@@ -20,6 +20,7 @@ nav: false
         <li><a href="#publishing-venues">Publishing venues</a></li>
         <li><a href="#writing">Writing</a></li>
         <li><a href="#slides-and-presentations">Slides and presentations</a></li>
+        <li><a href="#after-a-paper-gets-accepted">After a paper gets accepted</a></li>
         <li><a href="#attending-a-conference">Attending a conference</a></li>
         <li><a href="#fellowships">Fellowships</a></li>
         <li><a href="https://www.dropbox.com/scl/fi/wyx0pm6otuy1su2brze26/Updating-the-Lab-Website.paper?rlkey=atj2duxu7xt5970wjonfl9qg6&dl=0">Updating the Lab Website</a></li>
@@ -276,6 +277,28 @@ nav: false
         <li>Questions are not an issue but a GOLDEN opportunity for you to connect with the audience. So, pause briefly now and then to encourage questions. If you don't know the answers, just admit it, and ask for pointers afterward.</li>
         </ul>
         <p>(<a href="#">Top</a>)</p>
+    </section>
+    <br />
+    <hr />
+    <br />
+    <section id="after-a-paper-gets-accepted">
+    <h2 id="after-a-paper-gets-accepted">After a paper gets accepted</h2>
+    <p>Congratulations on your paper acceptance! You've done the heavy lifting. Here are the next steps.</p>
+    <p><strong>Prepare the final (camera-ready) version</strong></p>
+    <ul>
+        <li>Address all comments of the reviewers by highlighting (color-coding) the changes. If you have questions, let's discuss. Once you are done, let me know and I'll do a pass of the paper.</li>
+        <li>[optional but highly recommended] Acknowledge people who kindly shared the code and/or data with you, and consider citing their papers as a good gesture.</li>
+    </ul>
+    <p><strong>Watch for deadlines</strong></p>
+    <ul>
+        <li>Make sure to submit all required files (final paper, final video, etc.) by their deadlines.</li>
+        <li>Update arXiv if your paper is posted there.</li>
+        <li>Keep track of other deadlines such as the conference registration. We want to register the conference as early as possible, which is usually cheaper.</li>
+        <li>Travel itinerary can be decided later but not too late. Three months prior to the conference is a good time to start booking the travel. See   `Attending a conference` section.</li>
+    </ul>
+    <br />
+    <p>For more information on how to `Release code and data` and `Add a paper to the website`, see <a href="https://www.dropbox.com/scl/fi/wyx0pm6otuy1su2brze26/Updating-the-Lab-Website.paper?rlkey=atj2duxu7xt5970wjonfl9qg6&dl=0">Updating the Lab Website</a>.</p>
+    <p>(<a href="#">Top</a>)</p>
     </section>
     <br />
     <hr />
