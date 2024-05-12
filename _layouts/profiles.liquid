@@ -70,6 +70,19 @@ layout: page
     color: var(--profile-link-hover-color);
   }
 
+  /* Profile picture sizes*/
+  @media (max-width: 768px) {
+    .profile-item {
+      width: calc(50% - 40px);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .profile-item {
+      width: calc(100% - 40px);
+    }
+  }
+
   .separator {
     width: 100%;
     height: var(--separator-height);

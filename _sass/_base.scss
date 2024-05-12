@@ -262,20 +262,6 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
-
-  /* Profile picture sizes*/
-@media (max-width: 768px) {
-  .profile-item {
-    width: calc(50% - 40px);
-  }
-}
-
-@media (max-width: 576px) {
-  .profile-item {
-    width: calc(100% - 40px);
-  }
-}
-
 @media (min-width: 576px) {
   .profile {
     width: 25%;
@@ -787,7 +773,7 @@ footer.sticky-bottom {
   }
 
   .card-text {
-    font-size: 16px !important;
+    font-size: 20px !important;
     font-weight: 300 !important;
   }
 
@@ -814,7 +800,7 @@ footer.sticky-bottom {
   .news-list .date {
     margin-top: -5px;
     margin-right: 10px;
-    font-size: 0.875rem !important;
+    font-size: 20px !important;
     color: #888;
     min-width: 60px;
   }
