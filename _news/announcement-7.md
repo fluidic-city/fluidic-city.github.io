@@ -4,9 +4,7 @@ name: announcement-7
 title: News about a project
 description: Another project, this time with a different image. A project that was accepted at a conference. A project that was published in a journal. A project that was funded by a grant. Longer description of the project.
 date: 2017-03-01
-img: assets/img/8.jpg
-inline: false
-related_posts: false
+img: assets/news/img/8.jpg
 ---
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:

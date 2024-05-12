@@ -4,9 +4,7 @@ name: announcement-5
 title: 2 papers accepted in NeurIPS
 description: Our lab is excited to announce that two papers have been accepted in NeurIPS 2025.
 date: 2017-01-15
-img: assets/img/7.jpg
-inline: false
-related_posts: false
+img: assets/news/img/7.jpg
 ---
 
 Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
