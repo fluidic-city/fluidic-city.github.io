@@ -38,9 +38,15 @@ nav_order: 6
 
 <!-- Image -->
 <div class="row">
-  <div class="col-sm mt-3 mt-md-0">
+  <!-- Empty column on the left -->
+  <div class="col-1"></div>
+
+  <div class="col-10 mt-3 mt-md-0">
     {% include figure.liquid loading="eager" path="assets/img/comics/experiments.png" title="example image" class="img-fluid rounded z-depth-1" style="width: 500px !important;"%}
   </div>
+
+  <!-- Empty column on the right -->
+  <div class="col-1"></div>
 </div>
 
 <!-- <hr />
