@@ -56,11 +56,19 @@ profiles:
     links:
 
   - align: center
+  name: Xiaopei Tan
+  image: people/Xiaopei.png
+  role: Undergraduate Student
+  image_circular: true
+  links:
+
+  - align: center
     name: Michael Villarreal
     image: people/Michael.png
     image_circular: true
     alumni: true 
     role: Research Assistant
     more: "'21–'24"
+
 ---
 
