@@ -251,19 +251,21 @@ ul.task-list input[type="checkbox"] {
   width: 100%;
 
   .more-info {
+    
     margin-bottom: 5px;
     margin-top: 3px;
     font-size: 1.3em;
+
     p {
       display: inline-block;
       margin: 0;
       align-items: center;
-    }
+      color: #4B4B4B;
 
-    color: #4B4B4B;
-    [data-theme="dark"] & {
-      color: white;
-    }
+      [data-theme="dark"] & {
+        color: white;
+      }
+    }    
 
   }
 }
