@@ -63,6 +63,13 @@ profiles:
     links:
 
   - align: center
+    name: Adithya V. Sastry
+    image: people/Adithya.png
+    role: High School Intern
+    image_circular: true
+    links:
+
+  - align: center
     name: Michael Villarreal
     image: people/Michael.png
     image_circular: true
