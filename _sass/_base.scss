@@ -246,7 +246,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 // Profile This is the profile of the About page
-
+// The gray below is different from UTK gray
 .profile {
   width: 100%;
 
@@ -257,11 +257,10 @@ ul.task-list input[type="checkbox"] {
 
     font-size: 20px !important;
     font-weight: 300 !important;
-
-    display: flex;
+    
     align-items: center;
 
-    color: #4B4B4B;
+    color: #747373 !important;
 
     [data-theme="dark"] & {
       color: white;
@@ -802,6 +801,7 @@ footer.sticky-bottom {
     font-weight: 300 !important;
   }
 
+  // This is for the home page news card
   .card-date {
     font-size: 20px !important;
     font-weight: 300 !important;
@@ -1097,7 +1097,7 @@ html.transition *:after {
     color: var(--global-text-color-light);
     font-size: 1.2rem;
     margin-bottom: 0;
-    margin-top: 5px;
+    margin-top: 10px !important;
   }
 
   .post-tags {
