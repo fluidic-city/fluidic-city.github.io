@@ -56,11 +56,11 @@ profiles:
     links:
 
   - align: center
-  name: Xiaopei Tan
-  image: people/Xiaopei.png
-  role: Undergraduate Student
-  image_circular: true
-  links:
+    name: Xiaopei Tan
+    image: people/Xiaopei.png
+    role: Undergraduate Student
+    image_circular: true
+    links:
 
   - align: center
     name: Michael Villarreal
