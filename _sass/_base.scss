@@ -254,18 +254,19 @@ ul.task-list input[type="checkbox"] {
     
     margin-bottom: 5px;
     margin-top: 3px;
-    font-size: 1.3em;
 
-    p {
-      display: inline-block;
-      margin: 0;
-      align-items: center;
-      color: #4B4B4B;
+    font-size: 20px !important;
+    font-weight: 300 !important;
 
-      [data-theme="dark"] & {
-        color: white;
-      }
-    }    
+    display: flex;
+    align-items: center;
+
+    color: #4B4B4B;
+
+    [data-theme="dark"] & {
+      color: white;
+    }
+      
 
   }
 }
@@ -669,7 +670,7 @@ footer.sticky-bottom {
       color: var(--global-text-color-light);
       font-size: 1.2rem;
       margin-bottom: 0;
-      margin-top: 5;
+      margin-top: 5px;
     }
 
     .post-tags {
@@ -797,6 +798,11 @@ footer.sticky-bottom {
   }
 
   .card-text {
+    font-size: 20px !important;
+    font-weight: 300 !important;
+  }
+
+  .card-date {
     font-size: 20px !important;
     font-weight: 300 !important;
   }
@@ -1089,8 +1095,9 @@ html.transition *:after {
 .post {
   .post-meta {
     color: var(--global-text-color-light);
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     margin-bottom: 0;
+    margin-top: 5px;
   }
 
   .post-tags {
