@@ -6,6 +6,7 @@ description: Another project, this time with a different image. A project that w
 date: 2017-03-01
 img: assets/img/news/8.jpg
 related_posts: false
+read_more: true
 ---
 
 To give your project a background in the portfolio page, just add the img tag to the front matter like so:

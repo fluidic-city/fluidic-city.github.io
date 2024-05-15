@@ -6,6 +6,7 @@ description: A project with lots of images and code snippets. A project that was
 date: 2017-02-01
 img: assets/img/news/4.jpg
 related_posts: false
+read_more: true
 ---
 
 <div class="row">

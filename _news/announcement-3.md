@@ -6,6 +6,7 @@ description: This announcement is a long one, with lots of details and informati
 date: 2015-11-07
 img: assets/img/news/1.jpg
 related_posts: false
+read_more: true
 ---
 
 Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
