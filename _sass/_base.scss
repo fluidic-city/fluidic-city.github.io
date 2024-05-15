@@ -257,16 +257,19 @@ ul.task-list input[type="checkbox"] {
 // The gray below is different from UTK gray
 .profile {
   width: 100%;
+}
+
+.more-info {
   text-align: center;
+  margin-bottom: 5px;
+  margin-top: 3px;
+  font-size: 20px !important;
+  font-weight: 300 !important;
+}
 
-  .more-info {
-    
-    margin-bottom: 5px;
-    margin-top: 3px;
-
-    font-size: 20px !important;
-    font-weight: 300 !important;
-  }
+/* Apply the dark theme color change */
+[data-theme="dark"] .more-info {
+  color: white;
 }
 
 .profile.float-right {
@@ -668,7 +671,7 @@ footer.sticky-bottom {
       color: var(--global-text-color-light);
       font-size: 1.2rem;
       margin-bottom: 0;
-      margin-top: 10px !important;
+      margin-top: 15px !important;
     }
 
     .post-tags {

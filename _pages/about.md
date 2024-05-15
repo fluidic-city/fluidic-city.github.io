@@ -9,7 +9,7 @@ profile:
   image: mk.jpg
   image_circular: false 
   more_info: >
-    <p>Min Kao Building</p>
+    <p>Min H. Kao Building</p>
     
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
