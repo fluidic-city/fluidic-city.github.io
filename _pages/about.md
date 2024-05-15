@@ -8,8 +8,7 @@ profile:
   align: right
   image: mk.jpg
   image_circular: false 
-  more_info: >
-    <p>Min H. Kao Building</p>
+  more_info: Min H. Kao Building
     
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
