@@ -9,7 +9,9 @@ profile:
   image: mk.jpg
   image_circular: false 
   more_info: Min H. Kao Building
-    
+  more_info_address: 1520 Middle Drive
+  more_info_city: Knoxville, TN 37996, USA
+
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
