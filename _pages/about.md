@@ -26,7 +26,6 @@ social: false # includes social icons at the bottom of the page
 
 Welcome to the Fluidic City Lab within the [Min H. Kao Department of Electrical Engineering and Computer Science](https://www.eecs.utk.edu/) at the [University of Tennessee, Knoxville](https://www.utk.edu/)! We are a highly interdisciplinary team passionate about shaping future urban environments through the advancement of human mobility. Our current focus lies in the integration of increasing autonomy into the mobility system and its impact on the built environment and urban inhabitants. We draw research methods and tools from machine learning/reinforcement learning, robotics, multi-agent systems, visual computing, human-computer interaction, and transportation engineering.
 
-<br> 
 <hr />
 <h3 class="utk-gray-changing">News</h3>
 
