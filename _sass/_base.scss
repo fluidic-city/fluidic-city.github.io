@@ -266,6 +266,11 @@ ul.task-list input[type="checkbox"] {
   margin-top: 3px;
   font-size: 20px !important;
   font-weight: 300 !important;
+
+  [data-theme="dark"] & {
+    color: white !important;
+  }
+
 }
 
 .more-info-more{
@@ -275,11 +280,6 @@ ul.task-list input[type="checkbox"] {
   margin-top: 0px;
   font-size: 18px !important;
   font-weight: 300 !important;
-}
-
-/* Apply the dark theme color change */
-[data-theme="dark"] .more-info {
-  color: white;
 }
 
 .profile.float-right {
