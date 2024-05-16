@@ -13,7 +13,9 @@
       <p class="card-title">{{ item.title }}</p>
       <p class="card-date">{{ item.date | date: '%b %d, %Y' }}</p>
       <p class="card-text">{{ item.description }}</p>
-      <a href="{% if item.read_more %}{{ item.url | relative_url }}{% endif %}">Read More</a>
+      {% if item.read_more %}
+        <a href="{{ item.url | relative_url }}">Read More</a>
+      {% endif %}
     </div>
   </div>
 </div>
