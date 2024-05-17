@@ -1,10 +1,10 @@
 ---
 layout: post
-name: announcement-9
-title: Invitation from Oak Ridge National Laboratory
-description: Weizi is invited to attend the workshop "Paving the Road to Future Automotive Research Datasets: Challenges and Opportunities" hosted by the Oak Ridge National Laboratory.
-date: 2021-11-18
-img: assets/img/news/ornl.jpg
+name: announcement-8
+title: One Paper Accepted to NeurlPS 2021
+description: Our paper <a href="https://gamma.umd.edu/researchdirections/autonomousdriving/visionrobustlearning/"> Gradient-Free Adversarial Training Against Image Corruption for Learning-based Steering </a> has been accepted to NeurlPS, a top-tier machine learning conference. Congratulations to all the authors!
+date: 2021-09-28
+img: assets/img/news/neurIPS.jpg
 related_posts: false
 read_more: false
 ---
