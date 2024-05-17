@@ -1,4 +1,3 @@
-
 ---
 layout: post
 name: announcement-11
