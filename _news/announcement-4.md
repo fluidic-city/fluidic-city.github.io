@@ -1,10 +1,10 @@
 ---
 layout: post
 name: announcement-4
-title: Postdoc position available
-description: Our lab is looking for a young and talented postdoc to join our team. We are looking for a new postdoc to join our lab!
-date: 2016-10-22
+title: One Paper Accepted by Scientific Reports
+description: Our paper <a href="https://www.nature.com/articles/s41598-021-91392-z">Assessing inequality, irregularity, and severity regarding road traffic safety during COVID-19</a> has been accepted by Scientific Reports. Congratulations to all the authors!
+date: 2021-05-31
+img: assets/img/news/nsr.jpg
 related_posts: false
 read_more: false
 ---
-
