@@ -1,12 +1,10 @@
 ---
 layout: post
 name: announcement-1
-title: Lab alumni wins Turing Award!!
-description: Our lab alumni, Lann YeCunn, wins the Turing Award for his groundbreaking work in computer science. He was a PhD student in our lab from 2000-2005. He is currently a professor at MIT. He is the first person of Asian descent to win the award. He is also the first person to win the award for work in computer vision. He is the 3rd person to win the award from our lab.
-date: 2015-01-15
-img: assets/img/news/3.jpg
+title: Bibek Poudel Joins Fluidic City Lab
+description: Bibek is from Parbat, Nepal, around the foothills of the 7th highest mountain in the world—Dhaulagiri. He received his B.E. in Electronics and Communications from Kathmandu Engineering College, Tribhuvan University. He is a jack of many trades including swimming and playing guitar.
+date: 2020-08-17
+img: assets/img/news/bibek.png
 related_posts: false
 read_more: false
 ---
-
-
