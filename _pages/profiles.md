@@ -63,6 +63,13 @@ profiles:
     links:
 
   - align: center
+    name: Jonathan Clark
+    image: people/Jonathan.png
+    role: Undergraduate Student
+    image_circular: true
+    links:
+
+  - align: center
     name: Adithya V. Sastry
     image: people/Adithya.png
     role: High School Intern
