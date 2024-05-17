@@ -6,4 +6,5 @@ description: Bibek is from Parbat, Nepal, around the foothills of the 7th highes
 date: 2020-08-17
 img: assets/img/news/bibek.png
 related_posts: false
+read_more: false
 ---
