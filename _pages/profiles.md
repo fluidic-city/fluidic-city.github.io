@@ -70,6 +70,13 @@ profiles:
     links:
 
   - align: center
+    name: Brent Maples
+    image: people/Brent.png
+    role: Undergraduate Student
+    image_circular: true
+    links:
+
+  - align: center
     name: Adithya V. Sastry
     image: people/Adithya.png
     role: High School Intern
