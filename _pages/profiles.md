@@ -77,7 +77,7 @@ profiles:
     links:
 
   - align: center
-    name: Adithya V. Sastry
+    name: Adithya Sastry
     image: people/Adithya.png
     role: High School Intern
     image_circular: true
