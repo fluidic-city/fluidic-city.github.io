@@ -9,7 +9,7 @@ nav_order: 3
 
 <hr />
 <h2 class='utk-gray-changing'>Topics</h2> 
-We have a wide range of research interests, including the following topics.
+We have a wide range of research interests. Our current topics include the following.
 <ul>
     <li>Mixed traffic control and coordination</li>
     <li>Multi-agent reinforcement learning and data-driven control</li>
