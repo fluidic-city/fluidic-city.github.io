@@ -148,7 +148,7 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% endcapture %}
+    {% capture periodical %}{{ entrytype, entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
