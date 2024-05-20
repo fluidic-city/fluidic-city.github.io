@@ -77,12 +77,19 @@ profiles:
     links:
 
   - align: center
+    name: Ethan Head
+    image: people/Ethan.png
+    role: Undergraduate Student
+    image_circular: true
+    links:
+
+  - align: center
     name: Adithya Sastry
     image: people/Adithya.png
     role: High School Intern
     image_circular: true
     links:
-
+  
   - align: center
     name: Michael Villarreal
     image: people/Michael.png
