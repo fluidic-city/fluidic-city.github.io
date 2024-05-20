@@ -25,7 +25,7 @@ nav_order: 4
   {% endfor %}
 
   {% if key %}
-    <h2 class="year">{{ key }}</h2>
+    <h2 class="category">{{ key }}</h2>
     {% bibliography -f papers -q @*[category={{key}}]* %}
   {% endif %}
 {% endfor %}
