@@ -134,6 +134,9 @@
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
+    {% if entry.year %}
+      {% capture entryyear %}{{ " " }}<em class = "venue">, {{entry.year}}</> {% endcapture %}
+    {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{entrytype}}{{ " " }}{{entry.location}}{% endcapture %}
     {% endif -%}
