@@ -66,7 +66,7 @@
         {%- if forloop.last and author_array_limit == author_array_size %} and {% endif -%}
       {%- elsif forloop.length > 2 %}
           {% if forloop.first == false %}&#8203;, {% endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %} &#8203;and&#8203; {% endif -%}
+          {%- if forloop.last and author_array_limit == author_array_size %}&#8203;and&#8203; {% endif -%}
       {% endif %}
 
       {%- if author_is_self -%}
