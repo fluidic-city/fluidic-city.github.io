@@ -18,7 +18,7 @@ nav_order: 4
 <hr /> 
 {% for key, category in page.category_map %}
   <h2 class="category">{{ key }}</h2>
-  {% bibliography -f papers -q @*[category={{key}}]* %}
+  
 {% endfor %}
 </div>
 
