@@ -61,11 +61,10 @@
         {% endfor %}
       {%- endif -%}
 
-      {%- if forloop.length > 1 -%}
-        {%- if forloop.length == 2 -%}
-          {% if forloop.first == false %}{% endif %}
-          {%- if forloop.last and author_array_limit == author_array_size %} and {% endif -%}
-        {%- else -%}
+      {%- if forloop.length == 2 -%}
+        {% if forloop.first == false %}{% endif %}
+        {%- if forloop.last and author_array_limit == author_array_size %} and {% endif -%}
+      {%- elsif forloop.length > 2 %}
           {% if forloop.first == false %}&#8203;, {% endif %}
           {%- if forloop.last and author_array_limit == author_array_size %} &#8203;and&#8203; {% endif -%}
       {% endif %}
