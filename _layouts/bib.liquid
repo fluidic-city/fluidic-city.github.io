@@ -62,7 +62,6 @@
       {%- endif -%}
 
       {%- if forloop.length == 2 -%}
-        {% if forloop.first == false %}{% endif %}
         {%- if forloop.last and author_array_limit == author_array_size %} and {% endif -%}
       {%- elsif forloop.length > 2 %}
           {% if forloop.first == false %}&#8203;, {% endif %}
@@ -100,7 +99,6 @@
           {% assign more_authors_show = more_authors_show | append: ', ' %}
         {% endunless %}
       {%- endfor -%}
-      &nbsp;
       <span
         class="more-authors"
         title="click to view {{more_authors_hide}}"
@@ -165,7 +163,6 @@
       {% capture periodical %}{{ entrytype }}{% endcapture %}
     {% endif %}
 
-    
     <div class="periodical">
       {{ periodical | strip }}
     </div>
