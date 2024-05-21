@@ -161,7 +161,7 @@
     {% assign entrytype_text = entrytype | strip_html | strip %}
 
     {% if entrytype_text != "Preprint" and entryyear != "" %}
-      {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}{% endif %} &#8203;, {{ entrymonth }}{{ entryyear }}{% endcapture %} 
+      {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}{% endif %}&#8203;, {{ entrymonth }}{{ entryyear }}{% endcapture %} 
     {% else %}
       {% capture periodical %}{{ entrytype }}{% endcapture %}
     {% endif %}
