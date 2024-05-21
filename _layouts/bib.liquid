@@ -128,11 +128,11 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
-      {% capture entrytype %}<em class = "venue">{{entry.journal}}&#8203;,</em>{% endcapture %}
+      {% capture entrytype %}<em class = "venue">{{entry.journal}}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em class = "venue">{{entry.booktitle}}&#8203;,</em>{% endcapture %}
+      {% capture entrytype %}<em class = "venue">{{entry.booktitle}}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
-      {% capture entrytype %}<em class = "venue">{{entry.school}}&#8203;,</em>{% endcapture %}
+      {% capture entrytype %}<em class = "venue">{{entry.school}}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
@@ -161,7 +161,7 @@
     {% assign entrytype_text = entrytype | strip_html | strip %}
 
     {% if entrytype_text != "Preprint" and entryyear != "" %}
-      {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}{% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %} 
+      {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}{% endif %} &#8203;, {{ entrymonth }}{{ entryyear }}{% endcapture %} 
     {% else %}
       {% capture periodical %}{{ entrytype }}{% endcapture %}
     {% endif %}
