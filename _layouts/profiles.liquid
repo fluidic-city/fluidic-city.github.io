@@ -156,7 +156,7 @@ layout: page
   {% if page.profiles %}
     {% for profile in page.profiles %}
       {% if profile.alumni == true %}
-        <div class="profile-item">
+        <div class="profile-item-alumni">
           {% if profile.image %}
             {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
             {% include figure.liquid loading="eager" path=profile_image_path class="profile-image z-depth-1" alt=profile.image %}
