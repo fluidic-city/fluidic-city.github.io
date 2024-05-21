@@ -61,11 +61,9 @@
         {% endfor %}
       {%- endif -%}
 
-      {%- if forloop.length == 2 -%}
-        {%- if forloop.last and author_array_limit == author_array_size %} and {% endif -%}
-      {%- elsif forloop.length > 2 %}
+      {%- if forloop.length > 1 -%}
         {% if forloop.first == false %}&#8203;, {% endif %}
-        {%- if forloop.last and author_array_limit == author_array_size %}&#8203;and&#8203; {% endif -%}
+        {%- if forloop.last and author_array_limit == author_array_size %} &#8203;and&#8203; {% endif -%}
       {% endif %}
 
       {%- if author_is_self -%}
@@ -99,7 +97,7 @@
           {% assign more_authors_show = more_authors_show | append: ', ' %}
         {% endunless %}
       {%- endfor -%}
-      &#8203;
+      and
       <span
         class="more-authors"
         title="click to view {{more_authors_hide}}"
