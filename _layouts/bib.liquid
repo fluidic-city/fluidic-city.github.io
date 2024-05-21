@@ -71,17 +71,17 @@
       {%- if author_is_self -%}
         <em>
           {{- author.first }}
-          {{ author.last -}}
+          {{ author.last-}}
         </em>
       {%- else -%}
         {%- if coauthor_url -%}
           <a href="{{coauthor_url}}">
             {{- author.first }}
-            {{ author.last -}}
+            {{ author.last-}}
           </a>
         {%- else -%}
           {{ author.first }}
-          {{ author.last -}}
+          {{ author.last-}}
         {% endif %}
       {%- endif -%}
     {% endfor %}
