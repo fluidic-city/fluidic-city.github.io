@@ -886,16 +886,22 @@ footer.sticky-bottom {
     }
   }
 
-  h2.category {
+  .category_div {
     color: var(--global-divider-color);
     border-top: 1px solid var(--global-divider-color);
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .category_name{
+    color: #FF8300;
+    font-size: 24px;
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: 20px;
     text-align: right;
     font-weight: $font-weight-light; 
   }
-  
 
   // h2.bibliography {
   //   color: var(--global-divider-color);
