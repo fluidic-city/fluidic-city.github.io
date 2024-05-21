@@ -886,26 +886,26 @@ footer.sticky-bottom {
     }
   }
 
-  h2.category {
-    color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
-    text-align: right;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
-  
   .category_name{
     color: #FF8300 !important;
     font-size: 24px !important;
     padding-top: 0px;
-    margin-top: -15ßpx;
+    margin-top: 0px;
     margin-bottom: 20px;
     text-align: right;
     font-weight: $font-weight-light; 
   }
 
+  // h2.category {
+  //   color: var(--global-divider-color);
+  //   border-top: 1px solid var(--global-divider-color);
+  //   padding-top: 1rem;
+  //   margin-top: 2rem;
+  //   text-align: right;
+  //   padding-bottom: 0px;
+  //   margin-bottom: 0px;
+  // }
+  
   // h2.bibliography {
   //   color: var(--global-divider-color);
   //   border-top: 1px solid var(--global-divider-color);
