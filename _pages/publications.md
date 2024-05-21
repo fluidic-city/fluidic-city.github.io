@@ -13,7 +13,7 @@ nav_order: 4
 {% for category in page.categories %}
   {% assign key = page.category_map[forloop.index0] %}
   <h2 class="category"></h2>
-  <span class="category_div">{{ key }}</span>
+  <p class="category_div">{{ key }}</p>
   
   {% bibliography -f papers -q @*[category={{ category }}]* %}
 {% endfor %}

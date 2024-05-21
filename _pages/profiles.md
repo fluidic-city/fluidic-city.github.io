@@ -97,30 +97,6 @@ profiles:
     alumni: true 
     role: Research Assistant
     more: "'21–'24"
-  
-  - align: center
-    name: Michael Villarreal
-    image: people/Michael.png
-    image_circular: true
-    alumni: true 
-    role: Research Assistant
-    more: "'21–'24"
 
-  - align: center
-    name: Michael Villarreal
-    image: people/Michael.png
-    image_circular: true
-    alumni: true 
-    role: Research Assistant
-    more: "'21–'24"
-
-  - align: center
-    name: Michael Villarreal
-    image: people/Michael.png
-    image_circular: true
-    alumni: true 
-    role: Research Assistant
-    more: "'21–'24"
-    
 ---
 

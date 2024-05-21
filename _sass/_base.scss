@@ -892,11 +892,13 @@ footer.sticky-bottom {
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
   
   .category_name{
-    color: #FF8300;
-    font-size: 24px;
+    color: #FF8300 !important;
+    font-size: 24px !important;
     padding-top: 1rem;
     margin-top: 2rem;
     margin-bottom: 20px;
