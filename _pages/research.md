@@ -19,6 +19,7 @@ We have a wide range of research interests, including the following topics.
     <li>Urban design and planning</li>
     <li>Smart and sustainable cities</li>
 </ul>
+<br>
 <hr />
 <h2 class='utk-gray-changing'>Sponsors</h2>
 We are grateful to our sponsors, without whom none of our exciting research would be possible.
