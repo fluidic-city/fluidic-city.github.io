@@ -16,7 +16,10 @@ nav_order: 4
   <p class="category_name">{{ key }}</p>
   
   {% bibliography -f papers -q @*[category={{ category }}]* %}
-  <br>
+
+  {% unless forloop.last %}
+    <br>
+  {% endunless %}
 {% endfor %}
 </div>
 
