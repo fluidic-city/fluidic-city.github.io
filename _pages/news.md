@@ -3,7 +3,7 @@ layout: page
 title: News
 permalink: /news/
 description: A collection of news and announcements.
-nav: false
+nav: true
 nav_order: 5
 pagination:
   enabled: true
