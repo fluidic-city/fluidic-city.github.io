@@ -36,7 +36,7 @@ pagination:
 </div>
 
 
-{% include pagination_style.html %}
+{% include pagination_style.liquid %}
 
 
 
