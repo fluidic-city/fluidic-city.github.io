@@ -5,7 +5,7 @@ layout: default
 <div class="news">
   <div class="grid">
     {% assign current_year = page.url | split: '/' | last | remove: '/' %}
-    {% assign year_news = site.news | where_exp: "item", "item.date | date: '%Y' == 'current_year'"%}
+    {% assign year_news = site.news | where_exp: "item", "item.date | date: '%Y' == current_year" %}
     {% for item in year_news %}
       {% include news_item.liquid %}
     {% endfor %}
