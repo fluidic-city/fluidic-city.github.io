@@ -27,12 +27,9 @@ pagination:
 
 <div class="news">
   <div class="grid">
-    {% assign current_year = page.url | split: '/' | last | remove: '/' %}
-    {% if current_year == 'news' %}
-      {% assign current_year = news_by_year.first.name %}
-    {% endif %}
+    {% assign current_year = news_by_year.first.name %}
     {% assign year_news = news_by_year | where: "name", current_year %}
-    {% for item in year_news.first.items %}
+    {% for item in year_news.first.items%}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
