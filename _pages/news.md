@@ -17,6 +17,7 @@ pagination:
 <hr />
 
 {% assign news_by_year = site.news | sort: 'date' | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{{ news_by_year }}
 
 <!-- Pagination links -->
 <div class="pagination-links">
