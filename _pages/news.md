@@ -8,7 +8,7 @@ nav_order: 5
 pagination:
   enabled: true
   collection: news
-  permalink: /page/:num/
+  permalink: /news/page/:num/
   per_page: 6
   sort_field: date
   sort_reverse: true
@@ -37,7 +37,6 @@ pagination:
     {% endfor %}
   </div>
 </div>
-
 
 
 <style>
