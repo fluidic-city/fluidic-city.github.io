@@ -32,11 +32,14 @@ Welcome to the Fluidic City Lab within the [Min H. Kao Department of Electrical 
 <h3 class="utk-gray-changing">News</h3>
 
 {% assign news_items = site.news | sort: 'date' | reverse %}
+{% assign one_year_ago = "now" | date: "%s" | minus: 31536000 | date: "%Y-%m-%d" %}
 
 <div class="news">
   <div class="grid">
     {% for item in news_items %}
-      {% include news_item.liquid %}
+      {% if item.date >= one_year_ago %}
+        {% include news_item.liquid %}
+      {% endif %}
     {% endfor %}
   </div>
 </div>
