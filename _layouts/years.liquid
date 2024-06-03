@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="news">
   <div class="grid">
     {% assign current_year = page.url | split: '/' | last | remove: '/' %}
@@ -11,3 +10,5 @@ layout: default
     {% endfor %}
   </div>
 </div>
+
+{% include pagination_style.html %}
