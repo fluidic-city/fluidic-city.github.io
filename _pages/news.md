@@ -6,7 +6,7 @@ description:
 nav: true
 nav_order: 5
 pagination:
-  enabled: true
+  enabled: false
   collection: news
   permalink: /news/page/:num/
   per_page: 6
@@ -18,15 +18,25 @@ pagination:
 
 {% assign news_by_year = site.news | sort: 'date' | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-<!-- Year links -->
-<div class="year-links">
+<!-- Pagination links -->
+<div class="pagination-links">
   {% for year in news_by_year %}
-    <a href="{{ site.baseurl }}/news/year/{{ year.name }}">{{ year.name }}</a>
+    <a href="{{ site.baseurl }}">{{ year.name }}</a>
   {% endfor %}
 </div>
 
-{% for item in paginator.posts %}
-  {% include news_item.liquid %}
+{% for year in news_by_year %}
+  <h2 id="{{ year.name }}">{{ year.name }}</h2>
+
+  <div class="news">
+    <div class="grid">
+      {% for item in year.items %}
+        {% include news_item.liquid %}
+      {% endfor %}
+    </div>
+  </div>
 {% endfor %}
+
+
 
 {% include pagination_style.liquid %}
