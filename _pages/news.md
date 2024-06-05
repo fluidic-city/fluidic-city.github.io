@@ -9,7 +9,7 @@ pagination:
   enabled: true
   collection: news
   permalink: /page/:num/
-  per_page: 6
+  per_page: 9
   sort_field: date
   sort_reverse: true
 ---
