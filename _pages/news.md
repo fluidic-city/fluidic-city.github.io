@@ -8,7 +8,7 @@ nav_order: 5
 pagination:
   enabled: true
   collection: news
-  permalink: /page/:num/
+  permalink: /:num/
   per_page: 9
   sort_field: date
   sort_reverse: true
@@ -31,7 +31,7 @@ pagination:
         {% if page == 1 %}
           <a href="{{ site.baseurl }}/news/index.html">{{ page }}</a>
         {% else %}
-          <a href="{{ site.baseurl }}/news/page/{{ page }}/">{{ page }}</a>
+          <a href="{{ site.baseurl }}/news/{{ page }}/">{{ page }}</a>
         {% endif %}
       {% endif %}
     {% endfor %}
