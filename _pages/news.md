@@ -6,37 +6,51 @@ description:
 nav: true
 nav_order: 5
 pagination:
-  enabled: false
+  enabled: true
   collection: news
-  permalink: /news/page/:num/
+  permalink: /page/:num/
   per_page: 6
   sort_field: date
   sort_reverse: true
 ---
 
-<hr />
-
-{% assign news_by_year = site.news | sort: 'date' | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
-
-<!-- Pagination links -->
-<div class="pagination-links">
-  {% for year in news_by_year %}
-    <a href="{{ site.baseurl }}">{{ year.name }}</a>
-  {% endfor %}
+<div class="news">
+  <div class="grid">
+    {% for item in paginator.posts %}
+      {% include news_item.liquid %}
+    {% endfor %}
+  </div>
 </div>
 
-{% for year in news_by_year %}
-  <h2 id="{{ year.name }}">{{ year.name }}</h2>
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+  <div class="pagination-links">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
 
-  <div class="news">
-    <div class="grid">
-      {% for item in year.items %}
-        {% include news_item.liquid %}
-      {% endfor %}
-    </div>
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <em>{{ page }}</em>
+      {% else %}
+        {% if page == 1 %}
+          <a href="{{ site.baseurl }}/news/index.html">{{ page }}</a>
+        {% else %}
+          <a href="{{ site.baseurl }}/news/page/{{ page }}/">{{ page }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
+    {% else %}
+      <span>Next &raquo;</span>
+    {% endif %}
   </div>
-{% endfor %}
-
+{% endif %}
 
 
 {% include pagination_style.liquid %}

@@ -170,7 +170,8 @@ external_sources:
 collections:
   news:
     output: true
-    permalink: /news/:year/:name/
+    permalink: /news/:name/
+
   projects:
     output: true
     permalink: /projects/:path/
