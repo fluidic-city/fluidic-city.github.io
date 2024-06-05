@@ -18,25 +18,15 @@ pagination:
 
 {% assign news_by_year = site.news | sort: 'date' | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
 
-<!-- Pagination links -->
-<div class="pagination-links">
+<!-- Year links -->
+<div class="year-links">
   {% for year in news_by_year %}
-    <a href="{{ site.baseurl }}">{{ year.name }}</a>
+    <a href="{{ site.baseurl }}/news/year/{{ year.name }}">{{ year.name }}</a>
   {% endfor %}
 </div>
 
-{% for year in news_by_year %}
-  <h2 id="{{ year.name }}">{{ year.name }}</h2>
-
-  <div class="news">
-    <div class="grid">
-      {% for item in year.items %}
-        {% include news_item.liquid %}
-      {% endfor %}
-    </div>
-  </div>
+{% for item in paginator.posts %}
+  {% include news_item.liquid %}
 {% endfor %}
-
-
 
 {% include pagination_style.liquid %}
