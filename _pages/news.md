@@ -14,6 +14,7 @@ pagination:
   sort_reverse: true
 ---
 
+<hr />
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
   <div class="pagination-links">
