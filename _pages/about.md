@@ -29,7 +29,7 @@ Welcome to the Fluidic City Lab within the [Min H. Kao Department of Electrical 
 <br>
 
 <hr />
-<h3 class="utk-gray-changing">News</h3>
+<h3 class="utk-gray-changing">Latest News</h3>
 
 {% assign news_items = site.news | sort: 'date' | reverse %}
 {% assign one_year_ago = "now" | date: "%s" | minus: 31536000 | date: "%Y-%m-%d" %}
