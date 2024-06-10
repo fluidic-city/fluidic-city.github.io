@@ -15,6 +15,7 @@ pagination:
 ---
 
 <hr />
+<br>
 
 <div class="news">
   <div class="grid">
