@@ -16,6 +16,8 @@ pagination:
 
 <hr />
 
+<br>
+
 <div class="news">
   <div class="grid">
     {% for item in paginator.posts %}
