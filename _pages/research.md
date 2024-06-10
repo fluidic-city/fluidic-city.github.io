@@ -4,7 +4,7 @@ title: Research
 description: 
 nav: true
 permalink: /research/
-nav_order: 3
+nav_order: 4
 ---
 
 <hr />
