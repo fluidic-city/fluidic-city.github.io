@@ -4,7 +4,7 @@ title: News
 permalink: /news/
 description: 
 nav: true
-nav_order: 5
+nav_order: 2
 pagination:
   enabled: true
   collection: news
