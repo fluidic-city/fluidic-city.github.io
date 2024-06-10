@@ -15,6 +15,15 @@ pagination:
 ---
 
 <hr />
+
+<div class="news">
+  <div class="grid">
+    {% for item in paginator.posts %}
+      {% include news_item.liquid %}
+    {% endfor %}
+  </div>
+</div>
+
 <!-- Pagination links -->
 {% if paginator.total_pages > 1 %}
   <div class="pagination-links">
@@ -44,14 +53,5 @@ pagination:
     {% endif %}
   </div>
 {% endif %}
-
-<div class="news">
-  <div class="grid">
-    {% for item in paginator.posts %}
-      {% include news_item.liquid %}
-    {% endfor %}
-  </div>
-</div>
-
 
 {% include pagination_style.liquid %}
