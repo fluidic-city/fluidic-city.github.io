@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="news">
+  <div class="grid">
+    {% for item in page.posts %}
+      {% include news_item.liquid %}
+    {% endfor %}
+  </div>
+  <!-- Link to the new pagination stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/pagination.css' | relative_url }}">
+</div>
+
+<!-- Pagination links -->
+<div class="pagination-links">
+  {% assign years = site.news | map: 'year' | uniq | sort %}
+  {% for year in years %}
+    {% if year == page.year %}
+      <em>{{ year }}</em>
+    {% else %}
+      <a href="{{ site.baseurl }}/news/{{ year }}/">{{ year }}</a>
+    {% endif %}
+  {% endfor %}
+  <link rel="stylesheet" href="{{ '/assets/css/pagination.css' | relative_url }}">
+
+</div>

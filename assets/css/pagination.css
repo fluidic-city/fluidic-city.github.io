@@ -1,0 +1,26 @@
+.pagination-links {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .pagination-links a,
+  .pagination-links span,
+  .pagination-links em {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .pagination-links a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .pagination-links em {
+    font-weight: bold;
+    color: #555;
+    border: 1px solid #333;
+  }
+  

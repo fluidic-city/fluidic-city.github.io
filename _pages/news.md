@@ -5,13 +5,6 @@ permalink: /news/
 description: 
 nav: true
 nav_order: 2
-pagination:
-  enabled: true
-  collection: news
-  permalink: /:num/
-  per_page: 9
-  sort_field: date
-  sort_reverse: true
 ---
 
 <hr />
@@ -20,40 +13,45 @@ pagination:
 
 <div class="news">
   <div class="grid">
-    {% for item in paginator.posts %}
+    {% assign years = site.news | map: 'year' | uniq | sort %}
+    {% assign current_year = years | last %}
+    {% if page.url contains '/news/' and page.url != '/news/' %}
+      {% assign current_year = page.url | split: '/' | last | remove: '/' %}
+    {% endif %}
+
+    {% assign posts = site.news | where: "year", current_year %}
+    {% assign sorted_posts = posts | sort: 'date' | reverse %}
+    {% for item in sorted_posts %}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
 </div>
 
 <!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
-  <div class="pagination-links">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+<div class="pagination-links">
+  {% assign current_index = years | index_of: current_year %}
+  {% assign previous_year = years[current_index | minus: 1] %}
+  {% assign next_year = years[current_index | plus: 1] %}
+
+  {% if previous_year %}
+    <a href="{{ site.baseurl }}/news/{{ previous_year }}/">&laquo; {{ previous_year }}</a>
+  {% else %}
+    <span>&laquo; Previous</span>
+  {% endif %}
+
+  {% for year in years reversed %}
+    {% if year == current_year %}
+      <em>{{ year }}</em>
     {% else %}
-      <span>&laquo; Prev</span>
+      <a href="{{ site.baseurl }}/news/{{ year }}/">{{ year }}</a>
     {% endif %}
+  {% endfor %}
 
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <em>{{ page }}</em>
-      {% else %}
-        {% if page == 1 %}
-          <a href="{{ site.baseurl }}/news/index.html">{{ page }}</a>
-        {% else %}
-          <a href="{{ site.baseurl }}/news/{{ page }}/">{{ page }}</a>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | relative_url }}">Next &raquo;</a>
-    {% else %}
-      <span>Next &raquo;</span>
-    {% endif %}
-  </div>
-{% endif %}
+  {% if next_year %}
+    <a href="{{ site.baseurl }}/news/{{ next_year }}/">{{ next_year }} &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
 
 {% include pagination_style.liquid %}
