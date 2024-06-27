@@ -6,7 +6,11 @@ layout: default
 
 <div class="news">
   <div class="grid">
-    {% for item in page.posts %}
+    {% assign default_year = site.news | map: 'year' | uniq | sort | first %}
+    {% assign current_year = page.year | default: default_year %}
+
+    {% assign posts = site.news | where: "year", current_year | sort: 'date' | reverse %}
+    {% for item in posts %}
       {% include news_item.liquid %}
     {% endfor %}
   </div>
@@ -18,12 +22,11 @@ layout: default
 <div class="pagination-links">
   {% assign years = site.news | map: 'year' | uniq | sort %}
   {% for year in years %}
-    {% if year == page.year %}
+    {% if year == current_year %}
       <em>{{ year }}</em>
     {% else %}
       <a href="{{ site.baseurl }}/news/{{ year }}/">{{ year }}</a>
     {% endif %}
   {% endfor %}
   <link rel="stylesheet" href="{{ '/assets/css/pagination.css' | relative_url }}">
-
 </div>
