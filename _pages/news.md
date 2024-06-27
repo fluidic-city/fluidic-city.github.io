@@ -26,12 +26,12 @@ nav_order: 2
     {% endfor %}
   </div>
 </div>
-
+<!-- 
 <!-- Pagination links -->
 <div class="pagination-links">
   {% assign current_index = years | index_of: current_year %}
-  {% assign previous_year = years[current_index | plus: 1] %}
-  {% assign next_year = years[current_index | minus: 1] %}
+  {% assign previous_year = years[current_index | minus: 1] %}
+  {% assign next_year = years[current_index | plus: 1] %}
 
   {% if previous_year %}
     <a href="{{ site.baseurl }}/news/{{ previous_year }}/">&laquo; {{ previous_year }}</a>
@@ -39,7 +39,7 @@ nav_order: 2
     <span>&laquo; Previous</span>
   {% endif %}
 
-  {% for year in years %}
+  {% for year in years reversed %}
     {% if year == current_year %}
       <em>{{ year }}</em>
     {% else %}
@@ -54,4 +54,4 @@ nav_order: 2
   {% endif %}
 </div>
 
-{% include pagination_style.liquid %}
+{% include pagination_style.liquid %} -->
