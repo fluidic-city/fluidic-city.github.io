@@ -16,14 +16,21 @@ layout: default
     {% for item in posts %}
       {% include news_item.liquid %}
     {% endfor %}
-  </div>
+  </div> 
   <!-- Link to the new pagination stylesheet -->
   <link rel="stylesheet" href="{{ '/assets/css/pagination.css' | relative_url }}">
 </div>
-
 <!-- Pagination links -->
 <div class="pagination-links">
+  {% assign current_year = page.year | date: "%Y" %}
   {% assign years = site.news | map: 'year' | uniq | sort | reverse %}
+  
+  <!-- Previous year button -->
+  {% assign current_index = years | index: current_year | plus: 0 %}
+  {% if current_index >= 0 %}
+    <a href="{{ site.baseurl }}/news/{{ years[current_index | minus: 1] }}/">&laquo; Previous</a>
+  {% endif %}
+
   {% for year in years %}
     {% if year == current_year %}
       <em>{{ year }}</em>
@@ -31,5 +38,11 @@ layout: default
       <a href="{{ site.baseurl }}/news/{{ year }}/">{{ year }}</a>
     {% endif %}
   {% endfor %}
+  
+  <!-- Next year button -->
+  {% if current_index < years.size | minus: 1 %}
+    <a href="{{ site.baseurl }}/news/{{ years[current_index | plus: 1] }}/">Next &raquo; </a>
+  {% endif %}
+  
   <link rel="stylesheet" href="{{ '/assets/css/pagination.css' | relative_url }}">
 </div>
