@@ -1,26 +1,37 @@
 .pagination-links {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  .pagination-links a,
-  .pagination-links span,
-  .pagination-links em {
-    display: inline-block;
-    margin: 0 5px;
-    padding: 5px 10px;
-    border: 1px solid #ddd;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .pagination-links a:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .pagination-links em {
-    font-weight: bold;
-    color: #555;
-    border: 1px solid #333;
-  }
-  
+  text-align: center;
+  margin: 20px 0;
+}
+
+.pagination-links a,
+.pagination-links span,
+.pagination-links em {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.pagination-links a:hover,
+.pagination-links a:focus {
+  background-color: #f0f0f0;
+  border-color: #bbb;
+  color: #000;
+  outline: none; /* Remove default focus outline */
+}
+
+.pagination-links em {
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.pagination-links a:focus {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Accessible focus style */
+}
