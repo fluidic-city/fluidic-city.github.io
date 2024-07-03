@@ -37,13 +37,9 @@ layout: default
   {% assign next_index = current_index | minus: 1 %}
   {% assign prev_index = current_index | plus: 1 %}
 
-  <!-- <h1>{{next_value}}</h1>
-  <h1>{{years.size}}</h1>
-
-  <h1>{{years[years.size]}}</h1> -->
-
-
-  <a href="{{ site.baseurl }}/news/{{years[next_index]}}/">&laquo; Previous</a>
+  {% if current_index > 0 %}
+    <a href="{{ site.baseurl }}/news/{{years[next_index]}}/">&laquo; Previous</a>
+  {% endif %}
 
   {% for year in years %}
     {% if year == current_year %}
@@ -54,7 +50,9 @@ layout: default
   {% endfor %}
   
   <!-- Next year button -->
-  <a href="{{ site.baseurl }}/news/{{years[prev_index]}}">Next &raquo; </a>
-  
+  {% assign last_year_index = years.size | minus: 1 %}
+  {% if current_index < last_year_index %}
+    <a href="{{ site.baseurl }}/news/{{years[prev_index]}}">Next &raquo; </a>
+  {% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/pagination.css' | relative_url }}">
 </div>
