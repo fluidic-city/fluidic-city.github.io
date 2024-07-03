@@ -1,3 +1,27 @@
+:root {
+  --pagination-bg: #fff;
+  --pagination-border: #ddd;
+  --pagination-text: #333;
+  --pagination-hover-bg: #f0f0f0;
+  --pagination-hover-border: #bbb;
+  --pagination-hover-text: #000;
+  --pagination-active-bg: #333;
+  --pagination-active-text: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pagination-bg: #000;
+    --pagination-border: #444;
+    --pagination-text: #fff;
+    --pagination-hover-bg: #222;
+    --pagination-hover-border: #666;
+    --pagination-hover-text: #fff;
+    --pagination-active-bg: #fff;
+    --pagination-active-text: #000;
+  }
+}
+
 .pagination-links {
   text-align: center;
   margin: 20px 0;
@@ -8,27 +32,28 @@
 .pagination-links em {
   display: inline-block;
   margin: 0 5px;
-  padding: 8px 16px;
-  border: 1px solid #ddd;
+  padding: 2px 6px; /* Further reduced padding */
+  border: 1px solid var(--pagination-border);
   border-radius: 4px;
   text-decoration: none;
-  color: #333;
+  color: var(--pagination-text);
+  background-color: var(--pagination-bg);
   transition: background-color 0.3s, border-color 0.3s, color 0.3s;
 }
 
 .pagination-links a:hover,
 .pagination-links a:focus {
-  background-color: #f0f0f0;
-  border-color: #bbb;
-  color: #000;
+  background-color: var(--pagination-hover-bg);
+  border-color: var(--pagination-hover-border);
+  color: var(--pagination-hover-text);
   outline: none; /* Remove default focus outline */
 }
 
 .pagination-links em {
   font-weight: bold;
-  color: #fff;
-  background-color: #333;
-  border: 1px solid #333;
+  color: var(--pagination-active-text);
+  background-color: var(--pagination-active-bg);
+  border: 1px solid var(--pagination-active-bg);
   border-radius: 4px;
 }
 
