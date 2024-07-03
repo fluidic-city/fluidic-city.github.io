@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="news">
+  <div class="grid">
+    {% assign default_year = site.news | map: 'year' | uniq | sort | last %} 
+    
+    {% comment %} can remove the | last filter to show all news in default news page {% endcomment %}
+    
+    {% assign current_year = page.year | default: default_year %}
+
+    {% assign posts = site.news | where: "year", current_year | sort: 'date' | reverse %}
+    {% for item in posts %}
+      {% include news_item.liquid %}
+    {% endfor %}
+  </div> 
+  <!-- Link to the new pagination stylesheet -->
+  <link rel="stylesheet" href="{{ '/assets/css/pagination.css' | relative_url }}">
+</div>
+<!-- Pagination links -->
+<div class="pagination-links">
+  {% assign years = site.news | map: 'year' | uniq | sort | reverse %}
+  
+  <!-- Previous year button -->
+  {% assign current_index = -1 %}
+  {% for i in (0..years.size) %}
+    {% if years[i] == current_year %}
+      {% assign current_index = i %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+
+
+  {% assign next_index = current_index | minus: 1 %}
+  {% assign prev_index = current_index | plus: 1 %}
+
+  <!-- <h1>{{next_value}}</h1>
+  <h1>{{years.size}}</h1>
+
+  <h1>{{years[years.size]}}</h1> -->
+
+
+  <a href="{{ site.baseurl }}/news/{{years[next_index]}}/">&laquo; Previous</a>
+
+  {% for year in years %}
+    {% if year == current_year %}
+      <em>{{ year }}</em>
+    {% else %}
+      <a href="{{ site.baseurl }}/news/{{ year }}/">{{ year }}</a>
+    {% endif %}
+  {% endfor %}
+  
+  <!-- Next year button -->
+  <a href="{{ site.baseurl }}/news/{{years[prev_index]}}">Next &raquo; </a>
+  
+  <link rel="stylesheet" href="{{ '/assets/css/pagination.css' | relative_url }}">
+</div>
