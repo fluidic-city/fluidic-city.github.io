@@ -23,7 +23,8 @@ module Jekyll
         self.process(@name)
         self.read_yaml(File.join(base, '_layouts'), 'news_year.liquid')
         self.data['year'] = year
-        self.data['title'] = "News for #{year}"
+        # self.data['title'] = "News for #{year}"
+        self.data['title'] = "News"
         self.data['posts'] = site.collections["news"].docs.select { |post| post.data["year"] == year }
       end
     end
