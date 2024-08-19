@@ -63,6 +63,14 @@ profiles:
     links:
 
   - align: center
+    name: Muyang Fan
+    image: people/Muyang.jpg
+    role: Ph.D. Student 
+    more: (Co-advising with C. Papadopoulos)
+    image_circular: true 
+    links:
+
+  - align: center
     name: Supriya Sarker
     image: people/Supriya.jpg
     role: M.S. Student
@@ -116,7 +124,6 @@ profiles:
     more: "Summer '24"
     image_circular: true
     alumni: true 
-    links:
     
 ---
 
