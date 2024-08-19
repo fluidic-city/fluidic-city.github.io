@@ -48,6 +48,24 @@ profiles:
         url: https://www.linkedin.com/in/md-iftekharul-islam-cs/
 
   - align: center
+    name: Chandra Raskoti
+    image: people/chandra.jpeg
+    role: Ph.D. Student
+    image_circular: true 
+    links: 
+      - label: LinkedIn
+        url: https://www.linkedin.com/in/cpraskoti/
+
+  - align: center
+    name: Md Alamgir Hossain 
+    image: people/aakash.jpeg
+    role: Ph.D. Student
+    image_circular: true 
+    links: 
+      - label: LinkedIn
+        url: https://www.linkedin.com/in/alamgirakash2000
+
+  - align: center
     name: Songyang Liu
     image: people/Songyang.jpg
     role: Ph.D. Student 
