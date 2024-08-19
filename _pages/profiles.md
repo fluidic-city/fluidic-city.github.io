@@ -28,17 +28,6 @@ profiles:
         url: https://poudel-bibek.github.io/
 
   - align: center
-    name: Supriya Sarker
-    image: people/Supriya.jpg
-    role: Ph.D. Student
-    image_circular: true 
-    links:
-      - label: Google Scholar
-        url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
-      - label: LinkedIn
-        url: https://www.linkedin.com/in/supriya-sarker-184982206/
-
-  - align: center
     name: Iftekhar Islam
     image: people/Iftekhar.jpeg
     role: Ph.D. Student
@@ -74,15 +63,19 @@ profiles:
     links:
 
   - align: center
-    name: Xiaopei Tan
-    image: people/Xiaopei.png
-    role: Undergraduate Student
-    image_circular: true
+    name: Supriya Sarker
+    image: people/Supriya.jpg
+    role: M.S. Student
+    image_circular: true 
     links:
+      - label: Google Scholar
+        url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
+      - label: LinkedIn
+        url: https://www.linkedin.com/in/supriya-sarker-184982206/
 
   - align: center
-    name: Jonathan Clark
-    image: people/Jonathan.png
+    name: Xiaopei Tan
+    image: people/Xiaopei.png
     role: Undergraduate Student
     image_circular: true
     links:
@@ -116,6 +109,14 @@ profiles:
     role: Research Assistant
     more: "'21–'24"
 
+  - align: center
+    name: Jonathan Clark
+    image: people/Jonathan.png
+    role: 'Research Assistant' 
+    more: "Summer '24"
+    image_circular: true
+    alumni: true 
+    links:
     
 ---
 
