@@ -82,6 +82,13 @@ profiles:
         url: https://www.linkedin.com/in/supriya-sarker-184982206/
 
   - align: center
+    name: Ethan Head
+    image: people/Ethan.png
+    role: Undergraduate Student
+    image_circular: true
+    links:
+
+  - align: center
     name: Xiaopei Tan
     image: people/Xiaopei.png
     role: Undergraduate Student
@@ -96,26 +103,11 @@ profiles:
     links:
 
   - align: center
-    name: Ethan Head
-    image: people/Ethan.png
-    role: Undergraduate Student
-    image_circular: true
-    links:
-
-  - align: center
     name: Adithya Sastry
     image: people/Adithya.png
     role: High School Intern
     image_circular: true
     links:
-  
-  - align: center
-    name: Michael Villarreal
-    image: people/Michael.png
-    image_circular: true
-    alumni: true 
-    role: Research Assistant
-    more: "'21–'24"
 
   - align: center
     name: Jonathan Clark
@@ -124,6 +116,14 @@ profiles:
     more: "Summer '24"
     image_circular: true
     alumni: true 
+
+  - align: center
+    name: Michael Villarreal
+    image: people/Michael.png
+    image_circular: true
+    alumni: true 
+    role: Research Assistant
+    more: "'21–'24"
     
 ---
 
