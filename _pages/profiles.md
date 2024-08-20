@@ -58,7 +58,7 @@ profiles:
     name: Songyang Liu
     image: people/Songyang.jpg
     role: Ph.D. Student 
-    more: (Co-advising with S. Li)
+    more: (Co-advising w/ S. Li)
     image_circular: true 
     links:
 
@@ -66,7 +66,7 @@ profiles:
     name: Muyang Fan
     image: people/Muyang.jpg
     role: Ph.D. Student 
-    more: (Co-advising with C. Papadopoulos)
+    more: (Co-advising w/ C. Papadopoulos)
     image_circular: true 
     links:
 
