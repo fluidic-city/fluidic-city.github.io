@@ -38,7 +38,7 @@ profiles:
 
   - align: center
     name: Chandra Raskoti
-    image: people/chandra.jpeg
+    image: people/Chandra_2.jpeg
     role: Ph.D. Student
     image_circular: true 
     links: 
@@ -47,7 +47,7 @@ profiles:
 
   - align: center
     name: Md Alamgir Hossain 
-    image: people/aakash.jpeg
+    image: people/Almagir_2.jpeg
     role: Ph.D. Student
     image_circular: true 
     links: 
@@ -64,7 +64,7 @@ profiles:
 
   - align: center
     name: Muyang Fan
-    image: people/Muyang.jpg
+    image: people/Muyang_3.jpg
     role: Ph.D. Student 
     more: (Co-advising w/ C. Papadopoulos)
     image_circular: true 
