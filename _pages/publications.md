@@ -3,8 +3,8 @@ layout: page
 permalink: /publications/
 title: Publications
 description: 
-categories: [one, two, three, four, five, six]
-category_map: ["Mixed Traffic Control and Coordination", "Traffic Simulation and Reconstruction", "Traffic Prediction, Estimation, and Analysis", "Autonomous Driving, Planning, and Control", "Air Mobility", "Reinforcement Learning Applications"]
+categories: [one, two, three, four, five]
+category_map: ["Mixed Traffic Control and Coordination", "Traffic Simulation and Reconstruction", "Traffic Prediction, Estimation, and Analysis", "Autonomous Driving, Planning, and Control", "Reinforcement Learning Applications"]
 nav: true
 nav_order: 5
 ---
