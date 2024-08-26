@@ -6,7 +6,7 @@ description:
 categories: [one, two, three, four, five, six]
 category_map: ["Mixed Traffic Control and Coordination", "Traffic Simulation and Reconstruction", "Traffic Prediction, Estimation, and Analysis", "Autonomous Driving, Planning, and Control", "Reinforcement Learning Applications"]
 nav: true
-nav_order: 5
+nav_order: 4
 ---
 
 <div class="publications">
