@@ -103,6 +103,13 @@ profiles:
     links:
 
   - align: center
+    name: Ahmed Ghazi
+    image: people/Ahmed.jpg
+    role: Undergraduate Student
+    image_circular: true
+    links:
+
+  - align: center
     name: Adithya Sastry
     image: people/Adithya.png
     role: High School Intern
