@@ -1,7 +1,7 @@
 ---
 layout: post
 name: announcement-26
-title: RSS review
+title: Program Committee of RSS
 description: TBD
 date: 2024-01-15
 year: 2024
