@@ -214,6 +214,9 @@
     {% if entry.code %}
       <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
     {% endif %}
+    {% if entry.demo %}
+      <a href="{{ entry.demo }}" class="btn btn-sm z-depth-0" role="button">DEMO</a>
+    {% endif %}
     {% if entry.video and site.enable_video_embedding %}
       <a class="abstract btn btn-sm z-depth-0" role="button">Presentation</a>
     {% elsif entry.video %}
