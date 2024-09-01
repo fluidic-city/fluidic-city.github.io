@@ -5,7 +5,7 @@ title: AUIN talk
 description: TBD
 date: 2023-12-15
 year: 2023
-img: assets/img/news/AUIN talk.jpeg
+img: assets/img/news/AUIN.jpg
 related_posts: false
 read_more: false 
 ---
