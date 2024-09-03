@@ -1,7 +1,7 @@
 ---
 layout: post
 name: announcement-27
-title: AUIN talk
+title: Li Gives An Invited Talk at AUIN Workshop
 description: TBD
 date: 2023-12-15
 year: 2023
