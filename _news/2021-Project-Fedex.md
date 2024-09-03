@@ -1,7 +1,7 @@
 ---
 layout: post
 name: announcement-2
-title: Project Funded Through FedEx Institute of Technology
+title: Project Through FedEx Institute of Technology
 description: The explorative project “Trailer Loading Optimization” is funded by <a href="https://www.memphis.edu/fedex/">FedEx Institute of Technology</a>.
 date: 2021-01-18
 year: 2021
