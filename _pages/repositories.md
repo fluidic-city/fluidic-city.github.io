@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 permalink: /code_and_data/
 title: Code # & Data
@@ -50,4 +50,4 @@ nav_order: 6
     {% include repository/repo.liquid repository=repo %}
   {% endfor %}
 </div>
-{% endif %}
+{% endif %} -->
