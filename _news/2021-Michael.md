@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 name: announcement-5
 title: Villarreal Joins Fluidic City Lab
@@ -8,4 +8,4 @@ year: 2021
 img: assets/img/news/Michael_v2.jpg
 related_posts: false
 read_more: false
----
+--- -->
