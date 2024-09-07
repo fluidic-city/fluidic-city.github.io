@@ -28,7 +28,7 @@ profiles:
         url: https://poudel-bibek.github.io/
 
   - align: center
-    name: Iftekhar Islam
+    name: Iftekharul Islam
     image: people/Iftekhar.jpeg
     role: Ph.D. Student
     image_circular: true 
