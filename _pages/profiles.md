@@ -117,6 +117,13 @@ profiles:
     links:
 
   - align: center
+    name: Charles Gannaway
+    image: people/Charles.jpg
+    role: Undergraduate Student
+    image_circular: true
+    links:
+
+  - align: center
     name: Adithya Sastry
     image: people/Adithya.png
     role: High School Intern
