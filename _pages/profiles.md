@@ -117,7 +117,7 @@ profiles:
     links:
 
   - align: center
-    name: Charles Gannaway
+    name: Connor Gannaway
     image: people/Charles.jpg
     role: Undergraduate Student
     image_circular: true
