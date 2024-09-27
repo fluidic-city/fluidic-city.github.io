@@ -46,7 +46,7 @@ profiles:
         url: https://www.linkedin.com/in/cpraskoti/
 
   - align: center
-    name: Md Alamgir Hossain 
+    name: Alamgir (Akash) Hossain 
     image: people/Almagir_2.jpeg
     role: Ph.D. Student
     image_circular: true 
