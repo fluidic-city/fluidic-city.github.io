@@ -82,6 +82,12 @@ profiles:
         url: https://www.linkedin.com/in/supriya-sarker-184982206/
 
   - align: center
+    name: Zach Sublett
+    image: people/Zach.jpg
+    role: M.S. Student
+    image_circular: true 
+
+  - align: center
     name: Ethan Head
     image: people/Ethan.png
     role: Undergraduate Student
