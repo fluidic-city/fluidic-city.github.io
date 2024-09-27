@@ -11,10 +11,11 @@ nav_order: 4
 <h2 class='utk-gray-changing'>Topics</h2> 
 We have a wide range of research interests, including the following topics. 
 <ul>
-    <li>Mixed traffic control and coordination</li>
-    <li>Multi-agent reinforcement learning and data-driven control</li>
-    <li>Human-AI teaming and human-robot interaction</li>
+    <li>Mixed traffic control and coordination</li> 
     <li>Citywide traffic simulation, reconstruction, estimation, and analysis</li>
+    <li>Multi-agent systems and simulation</li> 
+    <li>Reinforcement learning and data-driven control</li>
+    <li>Robotics and human-autonomy teaming</li>
     <li>Network science and complex systems</li>
     <li>Urban design and planning</li>
     <li>Smart and sustainable cities</li>
