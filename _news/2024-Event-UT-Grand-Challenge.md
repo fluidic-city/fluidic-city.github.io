@@ -1,7 +1,7 @@
 ---
 layout: post
 name: announcement-22
-title: Project Through Grand Challenge Funding 
+title: Project Through Grand Challenge Program  
 description: Dr. Weizi Li participates in the project “Feasibility of Implementing a Personalized eHealth Program through Fitness Wearables and Applications Among Rural Cancer Survivors” funded by the <a href='https://grandchallenges.tennessee.edu/2024-ut-grants/awarded-and-advancing/'>UT Grand Challenge program</a>.
 date: 2024-09-03
 year: 2024
