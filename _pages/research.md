@@ -13,7 +13,7 @@ We have a wide range of research interests, including the following topics.
 <ul>
     <li>Mixed traffic control and coordination</li> 
     <li>Citywide traffic simulation, reconstruction, estimation, and analysis</li>
-    <li>Multi-agent system / simulation</li> 
+    <li>Multi-agent system and simulation</li> 
     <li>Reinforcement learning and data-driven control</li>
     <li>Robotics and human-robot teaming</li>
     <li>Network science and complex systems</li>
