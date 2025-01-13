@@ -144,7 +144,7 @@ profiles:
   - align: center
     name: Supriya Sarker
     image: people/Supriya.jpg
-    role: M.S.
+    role: M.S., Fall '24
     image_circular: true 
     links:
       - label: Google Scholar
@@ -152,6 +152,6 @@ profiles:
       - label: LinkedIn
         url: https://www.linkedin.com/in/supriya-sarker-184982206/
     alumni: true
-    more: "Fall '24"
+    # more: "Fall '24"
 ---
 
