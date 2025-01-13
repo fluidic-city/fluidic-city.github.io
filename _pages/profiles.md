@@ -71,17 +71,6 @@ profiles:
     links:
 
   - align: center
-    name: Supriya Sarker
-    image: people/Supriya.jpg
-    role: M.S. Student
-    image_circular: true 
-    links:
-      - label: Google Scholar
-        url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
-      - label: LinkedIn
-        url: https://www.linkedin.com/in/supriya-sarker-184982206/
-
-  - align: center
     name: Zach Sublett
     image: people/Zach.jpg
     role: M.S. Student
@@ -136,21 +125,33 @@ profiles:
     image_circular: true
     links:
 
-  - align: center
-    name: Jonathan Clark
-    image: people/Jonathan.png
-    role: 'Research Assistant' 
-    more: "Summer '24"
-    image_circular: true
-    alumni: true 
+  # - align: center
+  #   name: Jonathan Clark
+  #   image: people/Jonathan.png
+  #   role: 'Research Assistant' 
+  #   more: "Summer '24"
+  #   image_circular: true
+  #   alumni: true 
 
+  # - align: center
+  #   name: Michael Villarreal
+  #   image: people/Michael.png
+  #   image_circular: true
+  #   alumni: true 
+  #   role: Research Assistant
+  #   more: "'21–'24"
+  
   - align: center
-    name: Michael Villarreal
-    image: people/Michael.png
-    image_circular: true
-    alumni: true 
-    role: Research Assistant
-    more: "'21–'24"
-    
+    name: Supriya Sarker
+    image: people/Supriya.jpg
+    role: M.S. Student
+    image_circular: true 
+    links:
+      - label: Google Scholar
+        url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
+      - label: LinkedIn
+        url: https://www.linkedin.com/in/supriya-sarker-184982206/
+    alumni: true
+    more: "Fall '24"
 ---
 
