@@ -38,7 +38,7 @@ profiles:
 
   - align: center
     name: Chandra Raskoti
-    image: people/Chandra_2.jpeg
+    image: people/Chandra_2.jpg
     role: Ph.D. Student
     image_circular: true 
     links: 
@@ -47,7 +47,7 @@ profiles:
 
   - align: center
     name: Alamgir (Akash) Hossain 
-    image: people/Almagir_2.jpeg
+    image: people/Almagir_2.jpg
     role: Ph.D. Student
     image_circular: true 
     links: 
@@ -56,7 +56,7 @@ profiles:
 
   - align: center
     name: Songyang Liu
-    image: people/Songyang.jpg
+    image: people/Songyang.png
     role: Ph.D. Student 
     more: (with S. Li)
     image_circular: true 
