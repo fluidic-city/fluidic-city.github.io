@@ -124,6 +124,8 @@ profiles:
     role: High School Intern
     image_circular: true
     links:
+      - label: Website
+        url: https://avs-origami.github.io/
 
   # - align: center
   #   name: Jonathan Clark
