@@ -73,8 +73,9 @@ profiles:
   - align: center
     name: Zach Sublett
     image: people/Zach.jpg
-    role: M.S. Student
-    image_circular: true 
+    role: M.S., Spring '25
+    image_circular: true
+    alumni: true
 
   - align: center
     name: Ethan Head
@@ -114,9 +115,10 @@ profiles:
   - align: center
     name: Connor Gannaway
     image: people/Charles.jpg
-    role: Undergraduate Student
+    role: B.S., Spring '25
     image_circular: true
     links:
+    alumni: true
 
   - align: center
     name: Adithya Sastry
