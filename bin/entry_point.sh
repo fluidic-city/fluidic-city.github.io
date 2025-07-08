@@ -2,6 +2,10 @@
 
 CONFIG_FILE=_config.yml 
 
+echo "Entry point script running"
+echo "Installing/updating gems..."
+bundle install
+
 /bin/bash -c "rm -f Gemfile.lock && exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling"&
 
 while true; do
@@ -15,6 +19,8 @@ while true; do
     jekyll_pid=$(pgrep -f jekyll)
     kill -KILL $jekyll_pid
 
+    echo "Re-installing gems..."
+    bundle install
     /bin/bash -c "rm -f Gemfile.lock && exec jekyll serve --watch --port=8080 --host=0.0.0.0 --livereload --verbose --trace --force_polling"&
 
   fi
