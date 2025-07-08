@@ -5,6 +5,8 @@ module Jekyll
   
       def generate(site)
         site.collections["news"].docs.each do |news|
+          next unless news.data["date"] # Skip if date is nil or missing
+          
           year = news.data["date"].year
           news.data["year"] = year
   
