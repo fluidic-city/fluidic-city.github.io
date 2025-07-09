@@ -13,7 +13,7 @@ nav_order: 2
 
 <div class="news">
   <div class="grid">
-    {% assign years = site.news | map: 'year' | uniq | sort %}
+    {% assign years = site.news | map: 'year' | where_exp: "year", "year != nil" | uniq | sort %}
     {% assign current_year = years | last %}
     {% if page.url contains '/news/' and page.url != '/news/' %}
       {% assign current_year = page.url | split: '/' | last | remove: '/' %}

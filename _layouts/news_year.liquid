@@ -5,7 +5,7 @@ layout: default
 <hr>
 <div class="news">
   <div class="grid">
-    {% assign default_year = site.news | map: 'year' | uniq | sort | last %} 
+    {% assign default_year = site.news | map: 'year' | where_exp: "year", "year != nil" | uniq | sort | last %} 
     
     {% comment %} can remove the | last filter to show all news in default news page {% endcomment %}
     
@@ -21,7 +21,7 @@ layout: default
 </div>
 <!-- Pagination links -->
 <div class="pagination-links">
-  {% assign years = site.news | map: 'year' | uniq | sort | reverse %}
+  {% assign years = site.news | map: 'year' | where_exp: "year", "year != nil" | uniq | sort | reverse %}
   
   <!-- Previous year button -->
   {% assign current_index = -1 %}
