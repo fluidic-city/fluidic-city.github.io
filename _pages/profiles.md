@@ -137,13 +137,6 @@ profiles:
   #   image_circular: true
   #   alumni: true 
 
-  # - align: center
-  #   name: Michael Villarreal
-  #   image: people/Michael.png
-  #   image_circular: true
-  #   alumni: true 
-  #   role: Research Assistant
-  #   more: "'21–'24"
   
   - align: center
     name: Supriya Sarker
@@ -157,5 +150,13 @@ profiles:
         url: https://www.linkedin.com/in/supriya-sarker-184982206/
     alumni: true
     # more: "Fall '24"
+
+  - align: center
+    name: Michael Villarreal
+    image: people/Michael.png
+    image_circular: true
+    alumni: true 
+    role: B.S., Spring '23
+  #   more: "'21–'24"
 ---
 
