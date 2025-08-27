@@ -7,7 +7,7 @@ nav: true
 nav_order: 3
 
 profiles:
-  - align: center
+  - align: center 
     name: Weizi Li
     image: people/Weizi.jpg
     role: Lab Director
