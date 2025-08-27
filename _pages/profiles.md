@@ -104,6 +104,7 @@ profiles:
     role: Undergraduate Student
     image_circular: true
     links:
+    alumni: true
 
   - align: center
     name: Alex Warden
@@ -128,6 +129,7 @@ profiles:
     links:
       - label: Website
         url: https://avs-origami.github.io/
+    alumni: true
 
   # - align: center
   #   name: Jonathan Clark
