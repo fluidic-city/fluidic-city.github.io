@@ -103,10 +103,7 @@ profiles:
     image: people/Adithya.png
     role: High School Intern
     more: '24—'25
-    image_circular: true
-    links:
-      - label: Website
-        url: https://avs-origami.github.io/
+    image_circular: true 
     alumni: true
 
   - align: center
