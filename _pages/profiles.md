@@ -101,7 +101,8 @@ profiles:
   - align: center
     name: Adithya Sastry
     image: people/Adithya.png
-    role: High School Intern, '24—'25
+    role: High School Intern
+    more: '24—'25
     image_circular: true
     links:
       - label: Website
@@ -111,7 +112,8 @@ profiles:
   - align: center
     name: Ahmed Ghazi
     image: people/Ahmed.jpg
-    role: Research Assistant, '24—'25
+    role: Research Assistant
+    more: '24—'25
     image_circular: true
     links:
     alumni: true
@@ -119,14 +121,16 @@ profiles:
   - align: center
     name: Zach Sublett
     image: people/Zach.jpg
-    role: M.S., '25
+    role: M.S.
+    more: '25
     image_circular: true
     alumni: true
 
   - align: center
     name: Connor Gannaway
     image: people/Charles.jpg
-    role: B.S., '25
+    role: Research Assistant
+    more: '25
     image_circular: true
     links:
     alumni: true
