@@ -73,7 +73,7 @@ profiles:
   - align: center
     name: Zach Sublett
     image: people/Zach.jpg
-    role: M.S., Spring '25
+    role: M.S., '25
     image_circular: true
     alumni: true
 
@@ -116,7 +116,7 @@ profiles:
   - align: center
     name: Connor Gannaway
     image: people/Charles.jpg
-    role: B.S., Spring '25
+    role: B.S., '25
     image_circular: true
     links:
     alumni: true
@@ -124,20 +124,12 @@ profiles:
   - align: center
     name: Adithya Sastry
     image: people/Adithya.png
-    role: High School Intern
+    role: High School Intern, '24—'25
     image_circular: true
     links:
       - label: Website
         url: https://avs-origami.github.io/
-    alumni: true
-
-  # - align: center
-  #   name: Jonathan Clark
-  #   image: people/Jonathan.png
-  #   role: 'Research Assistant' 
-  #   more: "Summer '24"
-  #   image_circular: true
-  #   alumni: true 
+    alumni: true 
 
 ---
 
