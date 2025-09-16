@@ -137,5 +137,26 @@ profiles:
   #   image_circular: true
   #   alumni: true 
 
+  
+  - align: center
+    name: Supriya Sarker
+    image: people/Supriya.jpg
+    role: M.S., Fall '24
+    image_circular: true 
+    links:
+      - label: Google Scholar
+        url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
+      - label: LinkedIn
+        url: https://www.linkedin.com/in/supriya-sarker-184982206/
+    alumni: true
+    # more: "Fall '24"
+
+  - align: center
+    name: Michael Villarreal
+    image: people/Michael.png
+    image_circular: true
+    alumni: true 
+    role: B.S., Spring '23
+  #   more: "'21–'24"
 ---
 
