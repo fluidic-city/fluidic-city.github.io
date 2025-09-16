@@ -111,7 +111,7 @@ profiles:
   - align: center
     name: Ahmed Ghazi
     image: people/Ahmed.jpg
-    role: Research Assistant, '24—'25
+    role: Undergraduate Student
     image_circular: true
     links:
     alumni: true
