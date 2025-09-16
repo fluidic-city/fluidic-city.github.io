@@ -97,7 +97,7 @@ profiles:
     role: Undergraduate Student
     image_circular: true
     links:
-    
+
   - align: center
     name: Adithya Sastry
     image: people/Adithya.png
