@@ -71,6 +71,13 @@ profiles:
     links:
 
   - align: center
+    name: Zach Sublett
+    image: people/Zach.jpg
+    role: M.S., '25
+    image_circular: true
+    alumni: true
+
+  - align: center
     name: Ethan Head
     image: people/Ethan.png
     role: Undergraduate Student
@@ -92,11 +99,27 @@ profiles:
     links:
 
   - align: center
+    name: Ahmed Ghazi
+    image: people/Ahmed.jpg
+    role: Undergraduate Student
+    image_circular: true
+    links:
+    alumni: true
+
+  - align: center
     name: Alex Warden
     image: people/Alex.jpg
     role: Undergraduate Student
     image_circular: true
     links:
+
+  - align: center
+    name: Connor Gannaway
+    image: people/Charles.jpg
+    role: B.S., '25
+    image_circular: true
+    links:
+    alumni: true
 
   - align: center
     name: Adithya Sastry
@@ -106,29 +129,7 @@ profiles:
     links:
       - label: Website
         url: https://avs-origami.github.io/
-    alumni: true
+    alumni: true 
 
-  - align: center
-    name: Ahmed Ghazi
-    image: people/Ahmed.jpg
-    role: Undergraduate Student
-    image_circular: true
-    links:
-    alumni: true
-
-  - align: center
-    name: Zach Sublett
-    image: people/Zach.jpg
-    role: M.S., '25
-    image_circular: true
-    alumni: true
-
-  - align: center
-    name: Connor Gannaway
-    image: people/Charles.jpg
-    role: B.S., '25
-    image_circular: true
-    links:
-    alumni: true
 ---
 
