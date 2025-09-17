@@ -94,23 +94,26 @@ profiles:
   - align: center
     name: Brent Maples
     image: people/Brent.png
-    role: Undergraduate Student
+    role: B.S., Spring '25
     image_circular: true
     links:
+    alumni: true
 
   - align: center
     name: Ahmed Ghazi
     image: people/Ahmed.jpg
-    role: Undergraduate Student
+    role: B.S., Spring '25
     image_circular: true
     links:
+    alumni: true
 
   - align: center
     name: Alex Warden
     image: people/Alex.jpg
-    role: Undergraduate Student
+    role: B.S., Spring '25
     image_circular: true
     links:
+    alumni: true
 
   - align: center
     name: Connor Gannaway
@@ -143,11 +146,11 @@ profiles:
     image: people/Supriya.jpg
     role: M.S., Fall '24
     image_circular: true 
-    links:
-      - label: Google Scholar
-        url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
-      - label: LinkedIn
-        url: https://www.linkedin.com/in/supriya-sarker-184982206/
+    # links:
+    #   - label: Google Scholar
+    #     url: https://scholar.google.com/citations?user=x3yb_SQAAAAJ&hl=en&oi=ao
+    #   - label: LinkedIn
+    #     url: https://www.linkedin.com/in/supriya-sarker-184982206/
     alumni: true
     # more: "Fall '24"
 
