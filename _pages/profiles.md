@@ -71,6 +71,23 @@ profiles:
     links:
 
   - align: center
+    name: Xiaopei Tan
+    image: people/Xiaopei.png
+    role: Undergraduate Student
+    image_circular: true
+    links:
+
+  - align: center
+    name: Adithya Sastry
+    image: people/Adithya.png
+    role: High School Intern, Fall '25
+    image_circular: true
+    links:
+      # - label: Website
+        # url: https://avs-origami.github.io/
+    alumni: true
+
+  - align: center
     name: Zach Sublett
     image: people/Zach.jpg
     role: M.S., Spring '25
@@ -80,16 +97,10 @@ profiles:
   - align: center
     name: Ethan Head
     image: people/Ethan.png
-    role: Undergraduate Student
+    role: B.S., Spring '25
     image_circular: true
     links:
-
-  - align: center
-    name: Xiaopei Tan
-    image: people/Xiaopei.png
-    role: Undergraduate Student
-    image_circular: true
-    links:
+    alumni: true
 
   - align: center
     name: Brent Maples
@@ -122,15 +133,6 @@ profiles:
     image_circular: true
     links:
     alumni: true
-
-  - align: center
-    name: Adithya Sastry
-    image: people/Adithya.png
-    role: High School Intern
-    image_circular: true
-    links:
-      - label: Website
-        url: https://avs-origami.github.io/
 
   # - align: center
   #   name: Jonathan Clark
