@@ -13,10 +13,10 @@ profiles:
     role: Lab Director
     image_circular: true 
     links: 
-      - label: Website
-        url: https://weizi-li.github.io/
+      # - label: Website
+      #   url: https://weizi-li.github.io/
       - label: Email
-        url: weizili.cs@gmail.com
+        url: weizili@utk.edu
 
   - align: center
     name: Bibek Poudel

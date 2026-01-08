@@ -4,13 +4,13 @@ title: About
 permalink: /
 subtitle: 
 
-profile:
-  align: right
-  image: mk.jpg
-  image_circular: false 
-  more_info: Min H. Kao Building
-  more_info_address: 1520 Middle Drive
-  more_info_city: Knoxville, TN 37996, USA
+# profile:
+#   align: right
+#   # image: mk.jpg
+#   image_circular: false 
+  # more_info: Min H. Kao Building
+  # more_info_address: 1520 Middle Drive
+  # more_info_city: Knoxville, TN 37996, USA
 
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -24,7 +24,7 @@ social: false # includes social icons at the bottom of the page
 #   sort_reverse: true
 ---
 
-Welcome to the Fluidic City Lab in the [Min H. Kao Department of Electrical Engineering and Computer Science](https://www.eecs.utk.edu/) at [The University of Tennessee](https://www.utk.edu/)! We are a highly interdisciplinary team passionate about shaping future urban environments through the advancement of human mobility. Our current focus lies in the integration of increasing autonomy into the mobility system and its impact on the built environment and urban inhabitants. We draw research methods and tools from machine learning/reinforcement learning, robotics, multi-agent systems, visual computing, human-computer interaction, and transportation engineering.
+Welcome to the Fluidic City Lab! <!-- in the [Min H. Kao Department of Electrical Engineering and Computer Science](https://www.eecs.utk.edu/) at [The University of Tennessee](https://www.utk.edu/)!  --> We are a highly interdisciplinary team passionate about shaping future urban environments through the advancement of human mobility. Our current focus lies in the integration of increasing autonomy into the mobility system and its impact on the built environment and urban inhabitants. We draw research methods and tools from machine learning/reinforcement learning, robotics, multi-agent systems, visual computing, human-computer interaction, and transportation engineering.
 
 <br>
 
