@@ -16,7 +16,7 @@ profiles:
       # - label: Website
       #   url: https://weizi-li.github.io/
       - label: Email
-        url: weizili@utk.edu
+        url: weizi.li@ucr.edu
 
   - align: center
     name: Bibek Poudel
